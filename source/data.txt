@@ -1,0 +1,25 @@
+Data sources:
+
+1. Openflights
+   Information about airports all over the world
+   Format: CSV
+   View link: http://openflights.org/data.html
+   Direct link: https://sourceforge.net/p/openflights/code/HEAD/tree/openflights/data/airports.dat?format=raw
+   Triplification tool: 
+   Size: 9097 triples
+
+2. Worldbank International Tourism
+   International inbound non-resident visitors to world countries
+   Format: CSV
+   View link: http://data.worldbank.org/indicator/ST.INT.ARVL
+   Direct link: http://databank.worldbank.org/data/views/reports/FileDownloadHandler.ashx?filename=4a7ca97c-3217-4c08-953a-e23e37a8cd58.csv&filetype=BULKCSV&language=en
+   Triplification tool:
+   Size: 214
+
+3. Worldbank GDP 
+   GDP indicator in US$ of world countries
+   Format: CSV
+   View link: http://data.worldbank.org/indicator/NY.GDP.MKTP.CD
+   Direct link: http://databank.worldbank.org/data/views/reports/FileDownloadHandler.ashx?filename=3d7520fe-4eb8-4dc6-b683-9e14e9f905b3.csv&filetype=BULKCSV&language=en
+   Triplification tool:
+   Size: 214
