@@ -1,0 +1,10 @@
+@prefix co:<http://www.geonames.org/countries/#>
+@prefix ei:<http://www.economic_indicators.org/ontology/#>
+
+{% for country_name, tourism_data in countries.iteritems() %}
+{%- for tourism in tourism_data %}
+{%- for year, tourists in tourism.iteritems() -%}
+co:{{ country_name }} ei:has_tourists_in_{{ year }} {{ tourists }}
+{% endfor -%}
+{% endfor -%}
+{% endfor -%}
