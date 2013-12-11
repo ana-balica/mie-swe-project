@@ -1,0 +1,10 @@
+@prefix co:<http://www.geonames.org/countries/#>
+@prefix ei:<http://www.economic_indicators.org/ontology/#>
+
+{% for country_name, gdp_data in countries.iteritems() %}
+{%- for gdp in gdp_data %}
+{%- for year, gdp_value in gdp.iteritems() -%}
+co:{{ country_name }} ei:has_gdp_in_{{ year }} {{ gdp_value }}
+{% endfor -%}
+{% endfor -%}
+{% endfor -%}
