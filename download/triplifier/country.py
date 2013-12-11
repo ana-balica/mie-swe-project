@@ -6,7 +6,7 @@ sys.path.append(os.getcwd())
 from triplifier import env
 
 
-class GDPTriplifier(object):
+class CountryTriplifier(object):
     """ Custom triplifier class - converts from csv to ttl (turtle format)
     """
     def __init__(self, source_file_path):
@@ -37,7 +37,7 @@ class GDPTriplifier(object):
                     countries[country_name] = gdp_data
         return countries
 
-    def render_template(self, data):
+    def render_template(self, template_name, data):
         """ Render the template to output a file in ttl format
 
         @param data: data structure containing infomation about countries and gdp values
@@ -46,14 +46,20 @@ class GDPTriplifier(object):
         """
         if data is None:
             raise TypeError("First triplify the data, then try to render the rdf/turtle file")
-        template = env.get_template('gdp_template.ttl')
+        template = env.get_template(template_name)
         return template.render(countries=data)
 
 
 if __name__ == "__main__":
     pwd = os.getcwd()
-    gdp = GDPTriplifier(os.path.join(pwd, 'cache/gdp.csv'))
+    gdp = CountryTriplifier(os.path.join(pwd, 'cache/gdp.csv'))
     data = gdp.triplify()
-    ttl_data = gdp.render_template(data)
+    gdp_ttl_data = gdp.render_template('gdp_template.ttl', data)
     with open(os.path.join(pwd, 'output/gdp.ttl'), "w") as f:
-        f.write(ttl_data)
+        f.write(gdp_ttl_data)
+
+    tourism = CountryTriplifier(os.path.join(pwd, 'cache/tourism.csv'))
+    data = tourism.triplify()
+    tourism_ttl_data = tourism.render_template('tourism_template.ttl', data)
+    with open(os.path.join(pwd, 'output/tourism.ttl'), 'w') as f:
+        f.write(tourism_ttl_data)
