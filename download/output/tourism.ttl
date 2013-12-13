@@ -1,1521 +1,1952 @@
-@prefix co:<http://www.geonames.org/countries/#>
-@prefix ei:<http://www.economic_indicators.org/ontology/#>
+@prefix rdf:		 <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix ei:			 <http://www.economic_indicators.org/ontology/tourism#> .
+@prefix gn:			 <http://www.geonames.org/ontology#> .
+@prefix sd:			 <http://www.self-defined.org/country#>
 
-co:Canada ei:has_tourists_in_2004 19145000
-co:Canada ei:has_tourists_in_2005 18771000
-co:Canada ei:has_tourists_in_2006 18265000
-co:Canada ei:has_tourists_in_2007 17935000
-co:Canada ei:has_tourists_in_2008 17142000
-co:Canada ei:has_tourists_in_2009 15737000
-co:Canada ei:has_tourists_in_2010 16097000
-co:Canada ei:has_tourists_in_2011 16014000
-co:Sao Tome and Principe ei:has_tourists_in_2004 11000
-co:Sao Tome and Principe ei:has_tourists_in_2005 16000
-co:Sao Tome and Principe ei:has_tourists_in_2006 12000
-co:Sao Tome and Principe ei:has_tourists_in_2007 12000
-co:Sao Tome and Principe ei:has_tourists_in_2008 14000
-co:Sao Tome and Principe ei:has_tourists_in_2009 15000
-co:Sao Tome and Principe ei:has_tourists_in_2010 8000
-co:Turkmenistan ei:has_tourists_in_2004 15000
-co:Turkmenistan ei:has_tourists_in_2005 12000
-co:Turkmenistan ei:has_tourists_in_2006 6000
-co:Turkmenistan ei:has_tourists_in_2007 8000
-co:Lao PDR ei:has_tourists_in_2004 407000
-co:Lao PDR ei:has_tourists_in_2005 672000
-co:Lao PDR ei:has_tourists_in_2006 842000
-co:Lao PDR ei:has_tourists_in_2007 1142000
-co:Lao PDR ei:has_tourists_in_2008 1295000
-co:Lao PDR ei:has_tourists_in_2009 1239000
-co:Lao PDR ei:has_tourists_in_2010 1670000
-co:Lao PDR ei:has_tourists_in_2011 1786000
-co:Lithuania ei:has_tourists_in_2004 1800000
-co:Lithuania ei:has_tourists_in_2005 2000000
-co:Lithuania ei:has_tourists_in_2006 2180000
-co:Lithuania ei:has_tourists_in_2007 1486000
-co:Lithuania ei:has_tourists_in_2008 1611000
-co:Lithuania ei:has_tourists_in_2009 1341000
-co:Lithuania ei:has_tourists_in_2010 1507000
-co:Lithuania ei:has_tourists_in_2011 1775000
-co:Cambodia ei:has_tourists_in_2004 1055000
-co:Cambodia ei:has_tourists_in_2005 1422000
-co:Cambodia ei:has_tourists_in_2006 1700000
-co:Cambodia ei:has_tourists_in_2007 2015000
-co:Cambodia ei:has_tourists_in_2008 2125000
-co:Cambodia ei:has_tourists_in_2009 2162000
-co:Cambodia ei:has_tourists_in_2010 2508000
-co:Cambodia ei:has_tourists_in_2011 2882000
-co:Switzerland ei:has_tourists_in_2005 7229000
-co:Switzerland ei:has_tourists_in_2006 7863000
-co:Switzerland ei:has_tourists_in_2007 8448000
-co:Switzerland ei:has_tourists_in_2008 8608000
-co:Switzerland ei:has_tourists_in_2009 8294000
-co:Switzerland ei:has_tourists_in_2010 8628000
-co:Switzerland ei:has_tourists_in_2011 8534000
-co:Ethiopia ei:has_tourists_in_2004 184000
-co:Ethiopia ei:has_tourists_in_2005 227000
-co:Ethiopia ei:has_tourists_in_2006 330000
-co:Ethiopia ei:has_tourists_in_2007 358000
-co:Ethiopia ei:has_tourists_in_2008 383000
-co:Ethiopia ei:has_tourists_in_2009 427000
-co:Ethiopia ei:has_tourists_in_2010 468000
-co:Ethiopia ei:has_tourists_in_2011 523000
-co:Aruba ei:has_tourists_in_2004 728000
-co:Aruba ei:has_tourists_in_2005 733000
-co:Aruba ei:has_tourists_in_2006 694000
-co:Aruba ei:has_tourists_in_2007 772000
-co:Aruba ei:has_tourists_in_2008 827000
-co:Aruba ei:has_tourists_in_2009 813000
-co:Aruba ei:has_tourists_in_2010 824000
-co:Aruba ei:has_tourists_in_2011 870000
-co:Swaziland ei:has_tourists_in_2004 459000
-co:Swaziland ei:has_tourists_in_2005 837000
-co:Swaziland ei:has_tourists_in_2006 873000
-co:Swaziland ei:has_tourists_in_2007 870000
-co:Swaziland ei:has_tourists_in_2008 754000
-co:Swaziland ei:has_tourists_in_2009 908000
-co:Swaziland ei:has_tourists_in_2010 868000
-co:Swaziland ei:has_tourists_in_2011 879000
-co:Argentina ei:has_tourists_in_2004 3457000
-co:Argentina ei:has_tourists_in_2005 3823000
-co:Argentina ei:has_tourists_in_2006 4173000
-co:Argentina ei:has_tourists_in_2007 4562000
-co:Argentina ei:has_tourists_in_2008 4700000
-co:Argentina ei:has_tourists_in_2009 4308000
-co:Argentina ei:has_tourists_in_2010 5325000
-co:Argentina ei:has_tourists_in_2011 5705000
-co:Bolivia ei:has_tourists_in_2004 480000
-co:Bolivia ei:has_tourists_in_2005 524000
-co:Bolivia ei:has_tourists_in_2006 521000
-co:Bolivia ei:has_tourists_in_2007 573000
-co:Bolivia ei:has_tourists_in_2008 594000
-co:Bolivia ei:has_tourists_in_2009 671000
-co:Bolivia ei:has_tourists_in_2010 807000
-co:Bahamas, The ei:has_tourists_in_2004 1561000
-co:Bahamas, The ei:has_tourists_in_2005 1608000
-co:Bahamas, The ei:has_tourists_in_2006 1601000
-co:Bahamas, The ei:has_tourists_in_2007 1528000
-co:Bahamas, The ei:has_tourists_in_2008 1463000
-co:Bahamas, The ei:has_tourists_in_2009 1327000
-co:Bahamas, The ei:has_tourists_in_2010 1370000
-co:Bahamas, The ei:has_tourists_in_2011 1346000
-co:Burkina Faso ei:has_tourists_in_2004 222000
-co:Burkina Faso ei:has_tourists_in_2005 245000
-co:Burkina Faso ei:has_tourists_in_2006 264000
-co:Burkina Faso ei:has_tourists_in_2007 289000
-co:Burkina Faso ei:has_tourists_in_2008 272000
-co:Burkina Faso ei:has_tourists_in_2009 269000
-co:Burkina Faso ei:has_tourists_in_2010 274000
-co:Burkina Faso ei:has_tourists_in_2011 238000
-co:Ghana ei:has_tourists_in_2004 584000
-co:Ghana ei:has_tourists_in_2005 429000
-co:Ghana ei:has_tourists_in_2006 497000
-co:Ghana ei:has_tourists_in_2007 587000
-co:Ghana ei:has_tourists_in_2008 698000
-co:Ghana ei:has_tourists_in_2009 803000
-co:Ghana ei:has_tourists_in_2010 931000
-co:Saudi Arabia ei:has_tourists_in_2004 8599000
-co:Saudi Arabia ei:has_tourists_in_2005 8037000
-co:Saudi Arabia ei:has_tourists_in_2006 8620000
-co:Saudi Arabia ei:has_tourists_in_2007 11531000
-co:Saudi Arabia ei:has_tourists_in_2008 14757000
-co:Saudi Arabia ei:has_tourists_in_2009 10897000
-co:Saudi Arabia ei:has_tourists_in_2010 10850000
-co:Saudi Arabia ei:has_tourists_in_2011 17498000
-co:Japan ei:has_tourists_in_2004 6138000
-co:Japan ei:has_tourists_in_2005 6728000
-co:Japan ei:has_tourists_in_2006 7334000
-co:Japan ei:has_tourists_in_2007 8347000
-co:Japan ei:has_tourists_in_2008 8351000
-co:Japan ei:has_tourists_in_2009 6790000
-co:Japan ei:has_tourists_in_2010 8611000
-co:Japan ei:has_tourists_in_2011 6219000
-co:American Samoa ei:has_tourists_in_2005 24000
-co:American Samoa ei:has_tourists_in_2006 25000
-co:Northern Mariana Islands ei:has_tourists_in_2004 525000
-co:Northern Mariana Islands ei:has_tourists_in_2005 498000
-co:Northern Mariana Islands ei:has_tourists_in_2006 429000
-co:Northern Mariana Islands ei:has_tourists_in_2007 385000
-co:Northern Mariana Islands ei:has_tourists_in_2008 388000
-co:Northern Mariana Islands ei:has_tourists_in_2009 345000
-co:Northern Mariana Islands ei:has_tourists_in_2010 375000
-co:Northern Mariana Islands ei:has_tourists_in_2011 336000
-co:Slovenia ei:has_tourists_in_2004 1499000
-co:Slovenia ei:has_tourists_in_2005 1555000
-co:Slovenia ei:has_tourists_in_2006 1617000
-co:Slovenia ei:has_tourists_in_2007 1751000
-co:Slovenia ei:has_tourists_in_2008 1958000
-co:Slovenia ei:has_tourists_in_2009 1824000
-co:Slovenia ei:has_tourists_in_2010 1869000
-co:Slovenia ei:has_tourists_in_2011 2037000
-co:Guatemala ei:has_tourists_in_2004 1182000
-co:Guatemala ei:has_tourists_in_2005 1316000
-co:Guatemala ei:has_tourists_in_2006 1502000
-co:Guatemala ei:has_tourists_in_2007 1628000
-co:Guatemala ei:has_tourists_in_2008 1715000
-co:Guatemala ei:has_tourists_in_2009 1777000
-co:Guatemala ei:has_tourists_in_2010 1876000
-co:Guatemala ei:has_tourists_in_2011 1823000
-co:Bosnia and Herzegovina ei:has_tourists_in_2004 190000
-co:Bosnia and Herzegovina ei:has_tourists_in_2005 217000
-co:Bosnia and Herzegovina ei:has_tourists_in_2006 256000
-co:Bosnia and Herzegovina ei:has_tourists_in_2007 306000
-co:Bosnia and Herzegovina ei:has_tourists_in_2008 322000
-co:Bosnia and Herzegovina ei:has_tourists_in_2009 311000
-co:Bosnia and Herzegovina ei:has_tourists_in_2010 365000
-co:Bosnia and Herzegovina ei:has_tourists_in_2011 392000
-co:Kuwait ei:has_tourists_in_2004 91000
-co:Kuwait ei:has_tourists_in_2005 104000
-co:Kuwait ei:has_tourists_in_2006 185000
-co:Kuwait ei:has_tourists_in_2007 293000
-co:Kuwait ei:has_tourists_in_2008 259000
-co:Kuwait ei:has_tourists_in_2009 297000
-co:Kuwait ei:has_tourists_in_2010 207000
-co:Kuwait ei:has_tourists_in_2011 269000
-co:Russian Federation ei:has_tourists_in_2004 22064000
-co:Russian Federation ei:has_tourists_in_2005 22201000
-co:Russian Federation ei:has_tourists_in_2006 22486000
-co:Russian Federation ei:has_tourists_in_2007 22909000
-co:Russian Federation ei:has_tourists_in_2008 23676000
-co:Russian Federation ei:has_tourists_in_2009 21339000
-co:Russian Federation ei:has_tourists_in_2010 22281000
-co:Russian Federation ei:has_tourists_in_2011 24932000
-co:Jordan ei:has_tourists_in_2004 2853000
-co:Jordan ei:has_tourists_in_2005 2987000
-co:Jordan ei:has_tourists_in_2006 3225000
-co:Jordan ei:has_tourists_in_2007 3431000
-co:Jordan ei:has_tourists_in_2008 3729000
-co:Jordan ei:has_tourists_in_2009 3789000
-co:Jordan ei:has_tourists_in_2010 4557000
-co:Jordan ei:has_tourists_in_2011 3975000
-co:St. Lucia ei:has_tourists_in_2004 298000
-co:St. Lucia ei:has_tourists_in_2005 318000
-co:St. Lucia ei:has_tourists_in_2006 303000
-co:St. Lucia ei:has_tourists_in_2007 287000
-co:St. Lucia ei:has_tourists_in_2008 296000
-co:St. Lucia ei:has_tourists_in_2009 278000
-co:St. Lucia ei:has_tourists_in_2010 306000
-co:St. Lucia ei:has_tourists_in_2011 312000
-co:Congo, Rep. ei:has_tourists_in_2004 31000
-co:Congo, Rep. ei:has_tourists_in_2005 35000
-co:Congo, Rep. ei:has_tourists_in_2006 46000
-co:Congo, Rep. ei:has_tourists_in_2007 55000
-co:Congo, Rep. ei:has_tourists_in_2008 62000
-co:Congo, Rep. ei:has_tourists_in_2009 94000
-co:Congo, Rep. ei:has_tourists_in_2010 101000
-co:Dominica ei:has_tourists_in_2004 80000
-co:Dominica ei:has_tourists_in_2005 79000
-co:Dominica ei:has_tourists_in_2006 84000
-co:Dominica ei:has_tourists_in_2007 81000
-co:Dominica ei:has_tourists_in_2008 81000
-co:Dominica ei:has_tourists_in_2009 75000
-co:Dominica ei:has_tourists_in_2010 77000
-co:Dominica ei:has_tourists_in_2011 76000
-co:Maldives ei:has_tourists_in_2004 617000
-co:Maldives ei:has_tourists_in_2005 395000
-co:Maldives ei:has_tourists_in_2006 602000
-co:Maldives ei:has_tourists_in_2007 676000
-co:Maldives ei:has_tourists_in_2008 683000
-co:Maldives ei:has_tourists_in_2009 656000
-co:Maldives ei:has_tourists_in_2010 792000
-co:Maldives ei:has_tourists_in_2011 931000
-co:Pakistan ei:has_tourists_in_2004 648000
-co:Pakistan ei:has_tourists_in_2005 798000
-co:Pakistan ei:has_tourists_in_2006 898000
-co:Pakistan ei:has_tourists_in_2007 840000
-co:Pakistan ei:has_tourists_in_2008 823000
-co:Pakistan ei:has_tourists_in_2009 855000
-co:Pakistan ei:has_tourists_in_2010 907000
-co:Oman ei:has_tourists_in_2004 908000
-co:Oman ei:has_tourists_in_2005 1114000
-co:Oman ei:has_tourists_in_2006 1336000
-co:Oman ei:has_tourists_in_2007 1182000
-co:Oman ei:has_tourists_in_2008 1378000
-co:Oman ei:has_tourists_in_2009 1280000
-co:Oman ei:has_tourists_in_2010 1048000
-co:Tanzania ei:has_tourists_in_2004 566000
-co:Tanzania ei:has_tourists_in_2005 590000
-co:Tanzania ei:has_tourists_in_2006 622000
-co:Tanzania ei:has_tourists_in_2007 692000
-co:Tanzania ei:has_tourists_in_2008 750000
-co:Tanzania ei:has_tourists_in_2009 695000
-co:Tanzania ei:has_tourists_in_2010 754000
-co:Tanzania ei:has_tourists_in_2011 795000
-co:Albania ei:has_tourists_in_2004 645000
-co:Albania ei:has_tourists_in_2005 748000
-co:Albania ei:has_tourists_in_2006 937000
-co:Albania ei:has_tourists_in_2007 1127000
-co:Albania ei:has_tourists_in_2008 1420000
-co:Albania ei:has_tourists_in_2009 1856000
-co:Albania ei:has_tourists_in_2010 2417000
-co:Albania ei:has_tourists_in_2011 2932000
-co:Gabon ei:has_tourists_in_2004 244000
-co:Gabon ei:has_tourists_in_2005 269000
-co:Monaco ei:has_tourists_in_2004 250000
-co:Monaco ei:has_tourists_in_2005 286000
-co:Monaco ei:has_tourists_in_2006 313000
-co:Monaco ei:has_tourists_in_2007 328000
-co:Monaco ei:has_tourists_in_2008 324000
-co:Monaco ei:has_tourists_in_2009 265000
-co:Monaco ei:has_tourists_in_2010 279000
-co:Monaco ei:has_tourists_in_2011 295000
-co:New Zealand ei:has_tourists_in_2004 2325000
-co:New Zealand ei:has_tourists_in_2005 2353000
-co:New Zealand ei:has_tourists_in_2006 2390000
-co:New Zealand ei:has_tourists_in_2007 2434000
-co:New Zealand ei:has_tourists_in_2008 2411000
-co:New Zealand ei:has_tourists_in_2009 2422000
-co:New Zealand ei:has_tourists_in_2010 2492000
-co:New Zealand ei:has_tourists_in_2011 2572000
-co:Jamaica ei:has_tourists_in_2004 1415000
-co:Jamaica ei:has_tourists_in_2005 1479000
-co:Jamaica ei:has_tourists_in_2006 1679000
-co:Jamaica ei:has_tourists_in_2007 1701000
-co:Jamaica ei:has_tourists_in_2008 1767000
-co:Jamaica ei:has_tourists_in_2009 1831000
-co:Jamaica ei:has_tourists_in_2010 1922000
-co:Jamaica ei:has_tourists_in_2011 1952000
-co:Samoa ei:has_tourists_in_2004 98000
-co:Samoa ei:has_tourists_in_2005 102000
-co:Samoa ei:has_tourists_in_2006 110000
-co:Samoa ei:has_tourists_in_2007 117000
-co:Samoa ei:has_tourists_in_2008 118000
-co:Samoa ei:has_tourists_in_2009 122000
-co:Samoa ei:has_tourists_in_2010 122000
-co:Samoa ei:has_tourists_in_2011 121000
-co:Slovak Republic ei:has_tourists_in_2004 1401000
-co:Slovak Republic ei:has_tourists_in_2005 1515000
-co:Slovak Republic ei:has_tourists_in_2006 1612000
-co:Slovak Republic ei:has_tourists_in_2007 1685000
-co:Slovak Republic ei:has_tourists_in_2008 1767000
-co:Slovak Republic ei:has_tourists_in_2009 1298000
-co:Slovak Republic ei:has_tourists_in_2010 1327000
-co:Slovak Republic ei:has_tourists_in_2011 1460000
-co:United Arab Emirates ei:has_tourists_in_2004 6195000
-co:United Arab Emirates ei:has_tourists_in_2005 7126000
-co:Guam ei:has_tourists_in_2004 1160000
-co:Guam ei:has_tourists_in_2005 1228000
-co:Guam ei:has_tourists_in_2006 1212000
-co:Guam ei:has_tourists_in_2007 1225000
-co:Guam ei:has_tourists_in_2008 1142000
-co:Guam ei:has_tourists_in_2009 1053000
-co:Guam ei:has_tourists_in_2010 1196000
-co:Guam ei:has_tourists_in_2011 1159000
-co:Uruguay ei:has_tourists_in_2004 1756000
-co:Uruguay ei:has_tourists_in_2005 1808000
-co:Uruguay ei:has_tourists_in_2006 1749000
-co:Uruguay ei:has_tourists_in_2007 1753000
-co:Uruguay ei:has_tourists_in_2008 1938000
-co:Uruguay ei:has_tourists_in_2009 2055000
-co:Uruguay ei:has_tourists_in_2010 2353000
-co:Uruguay ei:has_tourists_in_2011 2857000
-co:India ei:has_tourists_in_2004 3457000
-co:India ei:has_tourists_in_2005 3919000
-co:India ei:has_tourists_in_2006 4447000
-co:India ei:has_tourists_in_2007 5082000
-co:India ei:has_tourists_in_2008 5283000
-co:India ei:has_tourists_in_2009 5168000
-co:India ei:has_tourists_in_2010 5776000
-co:India ei:has_tourists_in_2011 6309000
-co:Azerbaijan ei:has_tourists_in_2004 989000
-co:Azerbaijan ei:has_tourists_in_2005 693000
-co:Azerbaijan ei:has_tourists_in_2006 682000
-co:Azerbaijan ei:has_tourists_in_2007 732000
-co:Azerbaijan ei:has_tourists_in_2008 1043000
-co:Azerbaijan ei:has_tourists_in_2009 1005000
-co:Azerbaijan ei:has_tourists_in_2010 1280000
-co:Azerbaijan ei:has_tourists_in_2011 1562000
-co:Lesotho ei:has_tourists_in_2006 347000
-co:Lesotho ei:has_tourists_in_2007 292000
-co:Lesotho ei:has_tourists_in_2008 285000
-co:Lesotho ei:has_tourists_in_2009 320000
-co:Lesotho ei:has_tourists_in_2010 414000
-co:Lesotho ei:has_tourists_in_2011 397000
-co:Kenya ei:has_tourists_in_2004 1199000
-co:Kenya ei:has_tourists_in_2005 1399000
-co:Kenya ei:has_tourists_in_2006 1464000
-co:Kenya ei:has_tourists_in_2007 1686000
-co:Kenya ei:has_tourists_in_2008 1141000
-co:Kenya ei:has_tourists_in_2009 1392000
-co:Kenya ei:has_tourists_in_2010 1470000
-co:Tajikistan ei:has_tourists_in_2008 325000
-co:Tajikistan ei:has_tourists_in_2009 207000
-co:Tajikistan ei:has_tourists_in_2010 160000
-co:Tajikistan ei:has_tourists_in_2011 183000
-co:Turkey ei:has_tourists_in_2004 16826000
-co:Turkey ei:has_tourists_in_2005 20273000
-co:Turkey ei:has_tourists_in_2006 18916000
-co:Turkey ei:has_tourists_in_2007 26122000
-co:Turkey ei:has_tourists_in_2008 29637000
-co:Turkey ei:has_tourists_in_2009 30435000
-co:Turkey ei:has_tourists_in_2010 31396000
-co:Turkey ei:has_tourists_in_2011 34038000
-co:Venezuela, RB ei:has_tourists_in_2004 486000
-co:Venezuela, RB ei:has_tourists_in_2005 706000
-co:Venezuela, RB ei:has_tourists_in_2006 748000
-co:Venezuela, RB ei:has_tourists_in_2007 771000
-co:Venezuela, RB ei:has_tourists_in_2008 745000
-co:Venezuela, RB ei:has_tourists_in_2009 615000
-co:Venezuela, RB ei:has_tourists_in_2010 526000
-co:Venezuela, RB ei:has_tourists_in_2011 595000
-co:Bangladesh ei:has_tourists_in_2004 271000
-co:Bangladesh ei:has_tourists_in_2005 208000
-co:Bangladesh ei:has_tourists_in_2006 200000
-co:Bangladesh ei:has_tourists_in_2007 289000
-co:Bangladesh ei:has_tourists_in_2008 467000
-co:Bangladesh ei:has_tourists_in_2009 267000
-co:Bangladesh ei:has_tourists_in_2010 303000
-co:Solomon Islands ei:has_tourists_in_2004 5600
-co:Solomon Islands ei:has_tourists_in_2005 9000
-co:Solomon Islands ei:has_tourists_in_2006 11000
-co:Solomon Islands ei:has_tourists_in_2007 14000
-co:Solomon Islands ei:has_tourists_in_2008 16000
-co:Solomon Islands ei:has_tourists_in_2009 18000
-co:Solomon Islands ei:has_tourists_in_2010 21000
-co:Solomon Islands ei:has_tourists_in_2011 23000
-co:Korea, Rep. ei:has_tourists_in_2004 5818000
-co:Korea, Rep. ei:has_tourists_in_2005 6023000
-co:Korea, Rep. ei:has_tourists_in_2006 6155000
-co:Korea, Rep. ei:has_tourists_in_2007 6448000
-co:Korea, Rep. ei:has_tourists_in_2008 6891000
-co:Korea, Rep. ei:has_tourists_in_2009 7818000
-co:Korea, Rep. ei:has_tourists_in_2010 8798000
-co:Korea, Rep. ei:has_tourists_in_2011 9795000
-co:San Marino ei:has_tourists_in_2004 42000
-co:San Marino ei:has_tourists_in_2005 50000
-co:San Marino ei:has_tourists_in_2006 50000
-co:San Marino ei:has_tourists_in_2007 69000
-co:San Marino ei:has_tourists_in_2008 115000
-co:San Marino ei:has_tourists_in_2009 151000
-co:San Marino ei:has_tourists_in_2010 120000
-co:San Marino ei:has_tourists_in_2011 156000
-co:French Polynesia ei:has_tourists_in_2004 212000
-co:French Polynesia ei:has_tourists_in_2005 208000
-co:French Polynesia ei:has_tourists_in_2006 222000
-co:French Polynesia ei:has_tourists_in_2007 218000
-co:French Polynesia ei:has_tourists_in_2008 196000
-co:French Polynesia ei:has_tourists_in_2009 160000
-co:French Polynesia ei:has_tourists_in_2010 154000
-co:French Polynesia ei:has_tourists_in_2011 163000
-co:France ei:has_tourists_in_2004 74433000
-co:France ei:has_tourists_in_2005 74988000
-co:France ei:has_tourists_in_2006 77916000
-co:France ei:has_tourists_in_2007 80853000
-co:France ei:has_tourists_in_2008 79218000
-co:France ei:has_tourists_in_2009 76764000
-co:France ei:has_tourists_in_2010 77648000
-co:France ei:has_tourists_in_2011 81411000
-co:Syrian Arab Republic ei:has_tourists_in_2004 3399000
-co:Syrian Arab Republic ei:has_tourists_in_2005 3571000
-co:Syrian Arab Republic ei:has_tourists_in_2006 4231000
-co:Syrian Arab Republic ei:has_tourists_in_2007 4158000
-co:Syrian Arab Republic ei:has_tourists_in_2008 5430000
-co:Syrian Arab Republic ei:has_tourists_in_2009 6092000
-co:Syrian Arab Republic ei:has_tourists_in_2010 8546000
-co:Bermuda ei:has_tourists_in_2004 272000
-co:Bermuda ei:has_tourists_in_2005 270000
-co:Bermuda ei:has_tourists_in_2006 299000
-co:Bermuda ei:has_tourists_in_2007 306000
-co:Bermuda ei:has_tourists_in_2008 264000
-co:Bermuda ei:has_tourists_in_2009 236000
-co:Bermuda ei:has_tourists_in_2010 232000
-co:Bermuda ei:has_tourists_in_2011 236000
-co:Namibia ei:has_tourists_in_2004 716000
-co:Namibia ei:has_tourists_in_2005 778000
-co:Namibia ei:has_tourists_in_2006 833000
-co:Namibia ei:has_tourists_in_2007 929000
-co:Namibia ei:has_tourists_in_2008 931000
-co:Namibia ei:has_tourists_in_2009 980000
-co:Namibia ei:has_tourists_in_2010 984000
-co:Peru ei:has_tourists_in_2004 1350000
-co:Peru ei:has_tourists_in_2005 1571000
-co:Peru ei:has_tourists_in_2006 1721000
-co:Peru ei:has_tourists_in_2007 1916000
-co:Peru ei:has_tourists_in_2008 2058000
-co:Peru ei:has_tourists_in_2009 2140000
-co:Peru ei:has_tourists_in_2010 2299000
-co:Peru ei:has_tourists_in_2011 2598000
-co:Vanuatu ei:has_tourists_in_2004 61000
-co:Vanuatu ei:has_tourists_in_2005 62000
-co:Vanuatu ei:has_tourists_in_2006 68000
-co:Vanuatu ei:has_tourists_in_2007 81000
-co:Vanuatu ei:has_tourists_in_2008 91000
-co:Vanuatu ei:has_tourists_in_2009 99000
-co:Vanuatu ei:has_tourists_in_2010 97000
-co:Vanuatu ei:has_tourists_in_2011 94000
-co:Nigeria ei:has_tourists_in_2004 962000
-co:Nigeria ei:has_tourists_in_2005 1010000
-co:Nigeria ei:has_tourists_in_2006 1111000
-co:Nigeria ei:has_tourists_in_2007 1212000
-co:Nigeria ei:has_tourists_in_2008 1313000
-co:Nigeria ei:has_tourists_in_2009 1414000
-co:Nigeria ei:has_tourists_in_2010 1555000
-co:Nigeria ei:has_tourists_in_2011 715000
-co:Seychelles ei:has_tourists_in_2004 121000
-co:Seychelles ei:has_tourists_in_2005 129000
-co:Seychelles ei:has_tourists_in_2006 141000
-co:Seychelles ei:has_tourists_in_2007 161000
-co:Seychelles ei:has_tourists_in_2008 159000
-co:Seychelles ei:has_tourists_in_2009 158000
-co:Seychelles ei:has_tourists_in_2010 175000
-co:Seychelles ei:has_tourists_in_2011 194000
-co:Norway ei:has_tourists_in_2004 3628000
-co:Norway ei:has_tourists_in_2005 3824000
-co:Norway ei:has_tourists_in_2006 4070000
-co:Norway ei:has_tourists_in_2007 4377000
-co:Norway ei:has_tourists_in_2008 4347000
-co:Norway ei:has_tourists_in_2009 4346000
-co:Norway ei:has_tourists_in_2010 4767000
-co:Norway ei:has_tourists_in_2011 4963000
-co:Cote d'Ivoire ei:has_tourists_in_2007 182000
-co:Cote d'Ivoire ei:has_tourists_in_2008 205000
-co:Cote d'Ivoire ei:has_tourists_in_2009 231000
-co:Cote d'Ivoire ei:has_tourists_in_2010 260000
-co:Cote d'Ivoire ei:has_tourists_in_2011 270000
-co:West Bank and Gaza ei:has_tourists_in_2004 56000
-co:West Bank and Gaza ei:has_tourists_in_2005 88000
-co:West Bank and Gaza ei:has_tourists_in_2006 123000
-co:West Bank and Gaza ei:has_tourists_in_2007 264000
-co:West Bank and Gaza ei:has_tourists_in_2008 387000
-co:West Bank and Gaza ei:has_tourists_in_2009 396000
-co:West Bank and Gaza ei:has_tourists_in_2010 522000
-co:West Bank and Gaza ei:has_tourists_in_2011 449000
-co:Benin ei:has_tourists_in_2004 174000
-co:Benin ei:has_tourists_in_2005 176000
-co:Benin ei:has_tourists_in_2006 180000
-co:Benin ei:has_tourists_in_2007 186000
-co:Benin ei:has_tourists_in_2008 188000
-co:Benin ei:has_tourists_in_2009 190000
-co:Benin ei:has_tourists_in_2010 199000
-co:Benin ei:has_tourists_in_2011 209000
-co:Cuba ei:has_tourists_in_2004 2017000
-co:Cuba ei:has_tourists_in_2005 2261000
-co:Cuba ei:has_tourists_in_2006 2150000
-co:Cuba ei:has_tourists_in_2007 2119000
-co:Cuba ei:has_tourists_in_2008 2316000
-co:Cuba ei:has_tourists_in_2009 2405000
-co:Cuba ei:has_tourists_in_2010 2507000
-co:Cuba ei:has_tourists_in_2011 2688000
-co:Cameroon ei:has_tourists_in_2006 451000
-co:Cameroon ei:has_tourists_in_2007 477000
-co:Cameroon ei:has_tourists_in_2008 487000
-co:Cameroon ei:has_tourists_in_2009 498000
-co:Cameroon ei:has_tourists_in_2010 573000
-co:Montenegro ei:has_tourists_in_2004 188000
-co:Montenegro ei:has_tourists_in_2005 272000
-co:Montenegro ei:has_tourists_in_2006 378000
-co:Montenegro ei:has_tourists_in_2007 984000
-co:Montenegro ei:has_tourists_in_2008 1031000
-co:Montenegro ei:has_tourists_in_2009 1044000
-co:Montenegro ei:has_tourists_in_2010 1088000
-co:Montenegro ei:has_tourists_in_2011 1201000
-co:Togo ei:has_tourists_in_2004 83000
-co:Togo ei:has_tourists_in_2005 81000
-co:Togo ei:has_tourists_in_2006 94000
-co:Togo ei:has_tourists_in_2007 86000
-co:Togo ei:has_tourists_in_2008 74000
-co:Togo ei:has_tourists_in_2009 150000
-co:Togo ei:has_tourists_in_2010 202000
-co:Togo ei:has_tourists_in_2011 300000
-co:China ei:has_tourists_in_2004 41761000
-co:China ei:has_tourists_in_2005 46809000
-co:China ei:has_tourists_in_2006 49913000
-co:China ei:has_tourists_in_2007 54720000
-co:China ei:has_tourists_in_2008 53049000
-co:China ei:has_tourists_in_2009 50875000
-co:China ei:has_tourists_in_2010 55664000
-co:China ei:has_tourists_in_2011 57581000
-co:Armenia ei:has_tourists_in_2004 263000
-co:Armenia ei:has_tourists_in_2005 319000
-co:Armenia ei:has_tourists_in_2006 382000
-co:Armenia ei:has_tourists_in_2007 511000
-co:Armenia ei:has_tourists_in_2008 558000
-co:Armenia ei:has_tourists_in_2009 575000
-co:Armenia ei:has_tourists_in_2010 684000
-co:Armenia ei:has_tourists_in_2011 758000
-co:Timor-Leste ei:has_tourists_in_2006 14000
-co:Timor-Leste ei:has_tourists_in_2007 22000
-co:Timor-Leste ei:has_tourists_in_2008 36000
-co:Timor-Leste ei:has_tourists_in_2009 44000
-co:Timor-Leste ei:has_tourists_in_2010 40000
-co:Timor-Leste ei:has_tourists_in_2011 51000
-co:Dominican Republic ei:has_tourists_in_2004 3450000
-co:Dominican Republic ei:has_tourists_in_2005 3691000
-co:Dominican Republic ei:has_tourists_in_2006 3965000
-co:Dominican Republic ei:has_tourists_in_2007 3980000
-co:Dominican Republic ei:has_tourists_in_2008 3980000
-co:Dominican Republic ei:has_tourists_in_2009 3992000
-co:Dominican Republic ei:has_tourists_in_2010 4125000
-co:Dominican Republic ei:has_tourists_in_2011 4306000
-co:Ukraine ei:has_tourists_in_2004 15629000
-co:Ukraine ei:has_tourists_in_2005 17631000
-co:Ukraine ei:has_tourists_in_2006 18936000
-co:Ukraine ei:has_tourists_in_2007 23122000
-co:Ukraine ei:has_tourists_in_2008 25449000
-co:Ukraine ei:has_tourists_in_2009 20798000
-co:Ukraine ei:has_tourists_in_2010 21203000
-co:Ukraine ei:has_tourists_in_2011 21415000
-co:Bahrain ei:has_tourists_in_2004 5667000
-co:Bahrain ei:has_tourists_in_2005 6313000
-co:Bahrain ei:has_tourists_in_2006 7289000
-co:Bahrain ei:has_tourists_in_2007 7833000
-co:Bahrain ei:has_tourists_in_2008 8631000
-co:Bahrain ei:has_tourists_in_2009 8861000
-co:Bahrain ei:has_tourists_in_2010 11952000
-co:Bahrain ei:has_tourists_in_2011 6732000
-co:Tonga ei:has_tourists_in_2004 41000
-co:Tonga ei:has_tourists_in_2005 42000
-co:Tonga ei:has_tourists_in_2006 39000
-co:Tonga ei:has_tourists_in_2007 46000
-co:Tonga ei:has_tourists_in_2008 49000
-co:Tonga ei:has_tourists_in_2009 51000
-co:Tonga ei:has_tourists_in_2010 45000
-co:Tonga ei:has_tourists_in_2011 46000
-co:Finland ei:has_tourists_in_2004 2840000
-co:Finland ei:has_tourists_in_2005 3140000
-co:Finland ei:has_tourists_in_2006 3375000
-co:Finland ei:has_tourists_in_2007 3519000
-co:Finland ei:has_tourists_in_2008 3583000
-co:Finland ei:has_tourists_in_2009 3423000
-co:Finland ei:has_tourists_in_2010 3670000
-co:Finland ei:has_tourists_in_2011 4192000
-co:Libya ei:has_tourists_in_2004 43000
-co:Libya ei:has_tourists_in_2005 81000
-co:Libya ei:has_tourists_in_2006 42000
-co:Libya ei:has_tourists_in_2007 38000
-co:Libya ei:has_tourists_in_2008 34000
-co:Cayman Islands ei:has_tourists_in_2004 260000
-co:Cayman Islands ei:has_tourists_in_2005 168000
-co:Cayman Islands ei:has_tourists_in_2006 267000
-co:Cayman Islands ei:has_tourists_in_2007 292000
-co:Cayman Islands ei:has_tourists_in_2008 303000
-co:Cayman Islands ei:has_tourists_in_2009 272000
-co:Cayman Islands ei:has_tourists_in_2010 288000
-co:Cayman Islands ei:has_tourists_in_2011 309000
-co:Central African Republic ei:has_tourists_in_2004 8000
-co:Central African Republic ei:has_tourists_in_2005 12000
-co:Central African Republic ei:has_tourists_in_2006 14000
-co:Central African Republic ei:has_tourists_in_2007 17000
-co:Central African Republic ei:has_tourists_in_2008 31000
-co:Central African Republic ei:has_tourists_in_2009 52000
-co:Central African Republic ei:has_tourists_in_2010 54000
-co:Mauritius ei:has_tourists_in_2004 719000
-co:Mauritius ei:has_tourists_in_2005 761000
-co:Mauritius ei:has_tourists_in_2006 788000
-co:Mauritius ei:has_tourists_in_2007 907000
-co:Mauritius ei:has_tourists_in_2008 930000
-co:Mauritius ei:has_tourists_in_2009 871000
-co:Mauritius ei:has_tourists_in_2010 935000
-co:Mauritius ei:has_tourists_in_2011 965000
-co:Liechtenstein ei:has_tourists_in_2004 49000
-co:Liechtenstein ei:has_tourists_in_2005 50000
-co:Liechtenstein ei:has_tourists_in_2006 55000
-co:Liechtenstein ei:has_tourists_in_2007 58000
-co:Liechtenstein ei:has_tourists_in_2008 58000
-co:Liechtenstein ei:has_tourists_in_2009 52000
-co:Liechtenstein ei:has_tourists_in_2010 50000
-co:Liechtenstein ei:has_tourists_in_2011 53000
-co:Belarus ei:has_tourists_in_2004 68000
-co:Belarus ei:has_tourists_in_2005 91000
-co:Belarus ei:has_tourists_in_2006 90000
-co:Belarus ei:has_tourists_in_2007 105000
-co:Belarus ei:has_tourists_in_2008 92000
-co:Belarus ei:has_tourists_in_2009 95000
-co:Belarus ei:has_tourists_in_2010 120000
-co:Belarus ei:has_tourists_in_2011 116000
-co:Mali ei:has_tourists_in_2004 113000
-co:Mali ei:has_tourists_in_2005 143000
-co:Mali ei:has_tourists_in_2006 153000
-co:Mali ei:has_tourists_in_2007 164000
-co:Mali ei:has_tourists_in_2008 190000
-co:Mali ei:has_tourists_in_2009 160000
-co:Mali ei:has_tourists_in_2010 169000
-co:Mali ei:has_tourists_in_2011 160000
-co:Micronesia, Fed. Sts. ei:has_tourists_in_2004 19000
-co:Micronesia, Fed. Sts. ei:has_tourists_in_2005 19000
-co:Micronesia, Fed. Sts. ei:has_tourists_in_2006 19000
-co:Micronesia, Fed. Sts. ei:has_tourists_in_2007 21000
-co:Micronesia, Fed. Sts. ei:has_tourists_in_2008 26000
-co:Bulgaria ei:has_tourists_in_2004 4630000
-co:Bulgaria ei:has_tourists_in_2005 4837000
-co:Bulgaria ei:has_tourists_in_2006 5158000
-co:Bulgaria ei:has_tourists_in_2007 5151000
-co:Bulgaria ei:has_tourists_in_2008 5780000
-co:Bulgaria ei:has_tourists_in_2009 5739000
-co:Bulgaria ei:has_tourists_in_2010 6047000
-co:Bulgaria ei:has_tourists_in_2011 6328000
-co:United States ei:has_tourists_in_2004 46086000
-co:United States ei:has_tourists_in_2005 49206000
-co:United States ei:has_tourists_in_2006 50977000
-co:United States ei:has_tourists_in_2007 55978000
-co:United States ei:has_tourists_in_2008 57942000
-co:United States ei:has_tourists_in_2009 54962000
-co:United States ei:has_tourists_in_2010 59796000
-co:United States ei:has_tourists_in_2011 62711000
-co:Romania ei:has_tourists_in_2004 6600000
-co:Romania ei:has_tourists_in_2005 5839000
-co:Romania ei:has_tourists_in_2006 6037000
-co:Romania ei:has_tourists_in_2007 7722000
-co:Romania ei:has_tourists_in_2008 8862000
-co:Romania ei:has_tourists_in_2009 7575000
-co:Romania ei:has_tourists_in_2010 7498000
-co:Romania ei:has_tourists_in_2011 7611000
-co:Angola ei:has_tourists_in_2004 194000
-co:Angola ei:has_tourists_in_2005 210000
-co:Angola ei:has_tourists_in_2006 121000
-co:Angola ei:has_tourists_in_2007 195000
-co:Angola ei:has_tourists_in_2008 294000
-co:Angola ei:has_tourists_in_2009 366000
-co:Angola ei:has_tourists_in_2010 425000
-co:Angola ei:has_tourists_in_2011 481000
-co:Egypt, Arab Rep. ei:has_tourists_in_2004 7795000
-co:Egypt, Arab Rep. ei:has_tourists_in_2005 8244000
-co:Egypt, Arab Rep. ei:has_tourists_in_2006 8646000
-co:Egypt, Arab Rep. ei:has_tourists_in_2007 10610000
-co:Egypt, Arab Rep. ei:has_tourists_in_2008 12296000
-co:Egypt, Arab Rep. ei:has_tourists_in_2009 11914000
-co:Egypt, Arab Rep. ei:has_tourists_in_2010 14051000
-co:Egypt, Arab Rep. ei:has_tourists_in_2011 9497000
-co:South Africa ei:has_tourists_in_2004 6678000
-co:South Africa ei:has_tourists_in_2005 7369000
-co:South Africa ei:has_tourists_in_2006 8396000
-co:South Africa ei:has_tourists_in_2007 9091000
-co:South Africa ei:has_tourists_in_2008 9592000
-co:South Africa ei:has_tourists_in_2009 7012000
-co:South Africa ei:has_tourists_in_2010 8074000
-co:South Africa ei:has_tourists_in_2011 8339000
-co:St. Vincent and the Grenadines ei:has_tourists_in_2004 87000
-co:St. Vincent and the Grenadines ei:has_tourists_in_2005 96000
-co:St. Vincent and the Grenadines ei:has_tourists_in_2006 97000
-co:St. Vincent and the Grenadines ei:has_tourists_in_2007 90000
-co:St. Vincent and the Grenadines ei:has_tourists_in_2008 84000
-co:St. Vincent and the Grenadines ei:has_tourists_in_2009 75000
-co:St. Vincent and the Grenadines ei:has_tourists_in_2010 72000
-co:St. Vincent and the Grenadines ei:has_tourists_in_2011 74000
-co:Cyprus ei:has_tourists_in_2004 2349000
-co:Cyprus ei:has_tourists_in_2005 2470000
-co:Cyprus ei:has_tourists_in_2006 2401000
-co:Cyprus ei:has_tourists_in_2007 2416000
-co:Cyprus ei:has_tourists_in_2008 2404000
-co:Cyprus ei:has_tourists_in_2009 2141000
-co:Cyprus ei:has_tourists_in_2010 2173000
-co:Cyprus ei:has_tourists_in_2011 2392000
-co:Brunei Darussalam ei:has_tourists_in_2004 119000
-co:Brunei Darussalam ei:has_tourists_in_2005 126000
-co:Brunei Darussalam ei:has_tourists_in_2006 158000
-co:Brunei Darussalam ei:has_tourists_in_2007 179000
-co:Brunei Darussalam ei:has_tourists_in_2008 226000
-co:Brunei Darussalam ei:has_tourists_in_2009 157000
-co:Brunei Darussalam ei:has_tourists_in_2010 214000
-co:Brunei Darussalam ei:has_tourists_in_2011 242000
-co:Qatar ei:has_tourists_in_2004 732000
-co:Qatar ei:has_tourists_in_2005 913000
-co:Qatar ei:has_tourists_in_2006 946000
-co:Qatar ei:has_tourists_in_2007 964000
-co:Qatar ei:has_tourists_in_2008 1405000
-co:Qatar ei:has_tourists_in_2009 1659000
-co:Qatar ei:has_tourists_in_2010 1519000
-co:Qatar ei:has_tourists_in_2011 2527000
-co:Malaysia ei:has_tourists_in_2004 15703000
-co:Malaysia ei:has_tourists_in_2005 16431000
-co:Malaysia ei:has_tourists_in_2006 17547000
-co:Malaysia ei:has_tourists_in_2007 20973000
-co:Malaysia ei:has_tourists_in_2008 22052000
-co:Malaysia ei:has_tourists_in_2009 23646000
-co:Malaysia ei:has_tourists_in_2010 24577000
-co:Malaysia ei:has_tourists_in_2011 24714000
-co:Austria ei:has_tourists_in_2004 19374000
-co:Austria ei:has_tourists_in_2005 19952000
-co:Austria ei:has_tourists_in_2006 20269000
-co:Austria ei:has_tourists_in_2007 20773000
-co:Austria ei:has_tourists_in_2008 21935000
-co:Austria ei:has_tourists_in_2009 21355000
-co:Austria ei:has_tourists_in_2010 22004000
-co:Austria ei:has_tourists_in_2011 23012000
-co:Vietnam ei:has_tourists_in_2004 2928000
-co:Vietnam ei:has_tourists_in_2005 3477000
-co:Vietnam ei:has_tourists_in_2006 3583000
-co:Vietnam ei:has_tourists_in_2007 4229000
-co:Vietnam ei:has_tourists_in_2008 4236000
-co:Vietnam ei:has_tourists_in_2009 3747000
-co:Vietnam ei:has_tourists_in_2010 5050000
-co:Vietnam ei:has_tourists_in_2011 6014000
-co:Mozambique ei:has_tourists_in_2004 470000
-co:Mozambique ei:has_tourists_in_2005 578000
-co:Mozambique ei:has_tourists_in_2006 664000
-co:Mozambique ei:has_tourists_in_2007 771000
-co:Mozambique ei:has_tourists_in_2008 1193000
-co:Mozambique ei:has_tourists_in_2009 1461000
-co:Mozambique ei:has_tourists_in_2010 1718000
-co:Uganda ei:has_tourists_in_2004 512000
-co:Uganda ei:has_tourists_in_2005 468000
-co:Uganda ei:has_tourists_in_2006 539000
-co:Uganda ei:has_tourists_in_2007 642000
-co:Uganda ei:has_tourists_in_2008 844000
-co:Uganda ei:has_tourists_in_2009 807000
-co:Uganda ei:has_tourists_in_2010 946000
-co:Uganda ei:has_tourists_in_2011 1151000
-co:Kyrgyz Republic ei:has_tourists_in_2004 398000
-co:Kyrgyz Republic ei:has_tourists_in_2005 319000
-co:Kyrgyz Republic ei:has_tourists_in_2006 766000
-co:Kyrgyz Republic ei:has_tourists_in_2007 1656000
-co:Kyrgyz Republic ei:has_tourists_in_2008 2435000
-co:Kyrgyz Republic ei:has_tourists_in_2009 2147000
-co:Kyrgyz Republic ei:has_tourists_in_2010 1316000
-co:Kyrgyz Republic ei:has_tourists_in_2011 3114000
-co:Hungary ei:has_tourists_in_2004 12212000
-co:Hungary ei:has_tourists_in_2005 9979000
-co:Hungary ei:has_tourists_in_2006 9259000
-co:Hungary ei:has_tourists_in_2007 8638000
-co:Hungary ei:has_tourists_in_2008 8814000
-co:Hungary ei:has_tourists_in_2009 9058000
-co:Hungary ei:has_tourists_in_2010 9510000
-co:Hungary ei:has_tourists_in_2011 10250000
-co:Niger ei:has_tourists_in_2004 57000
-co:Niger ei:has_tourists_in_2005 58000
-co:Niger ei:has_tourists_in_2006 60000
-co:Niger ei:has_tourists_in_2007 48000
-co:Niger ei:has_tourists_in_2008 73000
-co:Niger ei:has_tourists_in_2009 66000
-co:Niger ei:has_tourists_in_2010 74000
-co:Niger ei:has_tourists_in_2011 82000
-co:Brazil ei:has_tourists_in_2004 4794000
-co:Brazil ei:has_tourists_in_2005 5358000
-co:Brazil ei:has_tourists_in_2006 5017000
-co:Brazil ei:has_tourists_in_2007 5026000
-co:Brazil ei:has_tourists_in_2008 5050000
-co:Brazil ei:has_tourists_in_2009 4802000
-co:Brazil ei:has_tourists_in_2010 5161000
-co:Brazil ei:has_tourists_in_2011 5433000
-co:Virgin Islands (U.S.) ei:has_tourists_in_2004 563000
-co:Virgin Islands (U.S.) ei:has_tourists_in_2005 593000
-co:Virgin Islands (U.S.) ei:has_tourists_in_2006 570000
-co:Virgin Islands (U.S.) ei:has_tourists_in_2007 586000
-co:Virgin Islands (U.S.) ei:has_tourists_in_2008 574000
-co:Virgin Islands (U.S.) ei:has_tourists_in_2009 563000
-co:Virgin Islands (U.S.) ei:has_tourists_in_2010 590000
-co:Virgin Islands (U.S.) ei:has_tourists_in_2011 536000
-co:Guinea ei:has_tourists_in_2004 45000
-co:Guinea ei:has_tourists_in_2005 45000
-co:Guinea ei:has_tourists_in_2006 46000
-co:Guinea ei:has_tourists_in_2007 30000
-co:Panama ei:has_tourists_in_2004 621000
-co:Panama ei:has_tourists_in_2005 702000
-co:Panama ei:has_tourists_in_2006 843000
-co:Panama ei:has_tourists_in_2007 1103000
-co:Panama ei:has_tourists_in_2008 1247000
-co:Panama ei:has_tourists_in_2009 1200000
-co:Panama ei:has_tourists_in_2010 1324000
-co:Panama ei:has_tourists_in_2011 1473000
-co:Costa Rica ei:has_tourists_in_2004 1453000
-co:Costa Rica ei:has_tourists_in_2005 1679000
-co:Costa Rica ei:has_tourists_in_2006 1725000
-co:Costa Rica ei:has_tourists_in_2007 1980000
-co:Costa Rica ei:has_tourists_in_2008 2089000
-co:Costa Rica ei:has_tourists_in_2009 1923000
-co:Costa Rica ei:has_tourists_in_2010 2100000
-co:Costa Rica ei:has_tourists_in_2011 2192000
-co:Luxembourg ei:has_tourists_in_2004 878000
-co:Luxembourg ei:has_tourists_in_2005 913000
-co:Luxembourg ei:has_tourists_in_2006 908000
-co:Luxembourg ei:has_tourists_in_2007 917000
-co:Luxembourg ei:has_tourists_in_2008 879000
-co:Luxembourg ei:has_tourists_in_2009 849000
-co:Luxembourg ei:has_tourists_in_2010 793000
-co:Luxembourg ei:has_tourists_in_2011 871000
-co:Cape Verde ei:has_tourists_in_2004 157000
-co:Cape Verde ei:has_tourists_in_2005 198000
-co:Cape Verde ei:has_tourists_in_2006 242000
-co:Cape Verde ei:has_tourists_in_2007 267000
-co:Cape Verde ei:has_tourists_in_2008 285000
-co:Cape Verde ei:has_tourists_in_2009 287000
-co:Cape Verde ei:has_tourists_in_2010 336000
-co:Cape Verde ei:has_tourists_in_2011 428000
-co:Andorra ei:has_tourists_in_2004 2791000
-co:Andorra ei:has_tourists_in_2005 2418000
-co:Andorra ei:has_tourists_in_2006 2227000
-co:Andorra ei:has_tourists_in_2007 2189000
-co:Andorra ei:has_tourists_in_2008 2059000
-co:Andorra ei:has_tourists_in_2009 1830000
-co:Andorra ei:has_tourists_in_2010 1808000
-co:Andorra ei:has_tourists_in_2011 1948000
-co:Ireland ei:has_tourists_in_2004 6953000
-co:Ireland ei:has_tourists_in_2005 7333000
-co:Ireland ei:has_tourists_in_2006 8001000
-co:Ireland ei:has_tourists_in_2007 8332000
-co:Ireland ei:has_tourists_in_2008 8026000
-co:Ireland ei:has_tourists_in_2009 7189000
-co:Ireland ei:has_tourists_in_2010 7134000
-co:Ireland ei:has_tourists_in_2011 7630000
-co:Palau ei:has_tourists_in_2004 89000
-co:Palau ei:has_tourists_in_2005 81000
-co:Palau ei:has_tourists_in_2006 82000
-co:Palau ei:has_tourists_in_2007 88000
-co:Palau ei:has_tourists_in_2008 79000
-co:Palau ei:has_tourists_in_2009 72000
-co:Palau ei:has_tourists_in_2010 86000
-co:Palau ei:has_tourists_in_2011 109000
-co:Ecuador ei:has_tourists_in_2004 819000
-co:Ecuador ei:has_tourists_in_2005 860000
-co:Ecuador ei:has_tourists_in_2006 841000
-co:Ecuador ei:has_tourists_in_2007 937000
-co:Ecuador ei:has_tourists_in_2008 1005000
-co:Ecuador ei:has_tourists_in_2009 968000
-co:Ecuador ei:has_tourists_in_2010 1047000
-co:Ecuador ei:has_tourists_in_2011 1141000
-co:Czech Republic ei:has_tourists_in_2004 9047000
-co:Czech Republic ei:has_tourists_in_2005 9404000
-co:Czech Republic ei:has_tourists_in_2006 9539000
-co:Czech Republic ei:has_tourists_in_2007 10162000
-co:Czech Republic ei:has_tourists_in_2008 10119000
-co:Czech Republic ei:has_tourists_in_2009 8848000
-co:Czech Republic ei:has_tourists_in_2010 8629000
-co:Czech Republic ei:has_tourists_in_2011 8775000
-co:Australia ei:has_tourists_in_2004 5215000
-co:Australia ei:has_tourists_in_2005 5499000
-co:Australia ei:has_tourists_in_2006 5532000
-co:Australia ei:has_tourists_in_2007 5644000
-co:Australia ei:has_tourists_in_2008 5586000
-co:Australia ei:has_tourists_in_2009 5584000
-co:Australia ei:has_tourists_in_2010 5885000
-co:Australia ei:has_tourists_in_2011 5875000
-co:Algeria ei:has_tourists_in_2004 1234000
-co:Algeria ei:has_tourists_in_2005 1443000
-co:Algeria ei:has_tourists_in_2006 1638000
-co:Algeria ei:has_tourists_in_2007 1743000
-co:Algeria ei:has_tourists_in_2008 1772000
-co:Algeria ei:has_tourists_in_2009 1912000
-co:Algeria ei:has_tourists_in_2010 2070000
-co:Algeria ei:has_tourists_in_2011 2395000
-co:El Salvador ei:has_tourists_in_2004 951000
-co:El Salvador ei:has_tourists_in_2005 1127000
-co:El Salvador ei:has_tourists_in_2006 1279000
-co:El Salvador ei:has_tourists_in_2007 1339000
-co:El Salvador ei:has_tourists_in_2008 1385000
-co:El Salvador ei:has_tourists_in_2009 1091000
-co:El Salvador ei:has_tourists_in_2010 1150000
-co:El Salvador ei:has_tourists_in_2011 1184000
-co:Tuvalu ei:has_tourists_in_2004 1300
-co:Tuvalu ei:has_tourists_in_2005 1100
-co:Tuvalu ei:has_tourists_in_2006 1100
-co:Tuvalu ei:has_tourists_in_2007 1100
-co:Tuvalu ei:has_tourists_in_2008 1700
-co:Tuvalu ei:has_tourists_in_2009 1600
-co:Tuvalu ei:has_tourists_in_2010 1700
-co:Tuvalu ei:has_tourists_in_2011 1200
-co:St. Kitts and Nevis ei:has_tourists_in_2004 118000
-co:St. Kitts and Nevis ei:has_tourists_in_2005 141000
-co:St. Kitts and Nevis ei:has_tourists_in_2006 139000
-co:St. Kitts and Nevis ei:has_tourists_in_2007 123000
-co:St. Kitts and Nevis ei:has_tourists_in_2008 128000
-co:St. Kitts and Nevis ei:has_tourists_in_2009 93000
-co:St. Kitts and Nevis ei:has_tourists_in_2010 92000
-co:Marshall Islands ei:has_tourists_in_2004 9000
-co:Marshall Islands ei:has_tourists_in_2005 9000
-co:Marshall Islands ei:has_tourists_in_2006 6000
-co:Marshall Islands ei:has_tourists_in_2007 7000
-co:Marshall Islands ei:has_tourists_in_2008 6000
-co:Marshall Islands ei:has_tourists_in_2009 5000
-co:Marshall Islands ei:has_tourists_in_2010 5000
-co:Marshall Islands ei:has_tourists_in_2011 5000
-co:Chile ei:has_tourists_in_2004 1785000
-co:Chile ei:has_tourists_in_2005 2027000
-co:Chile ei:has_tourists_in_2006 2253000
-co:Chile ei:has_tourists_in_2007 2507000
-co:Chile ei:has_tourists_in_2008 2699000
-co:Chile ei:has_tourists_in_2009 2750000
-co:Chile ei:has_tourists_in_2010 2766000
-co:Chile ei:has_tourists_in_2011 3070000
-co:Puerto Rico ei:has_tourists_in_2004 3541000
-co:Puerto Rico ei:has_tourists_in_2005 3686000
-co:Puerto Rico ei:has_tourists_in_2006 3722000
-co:Puerto Rico ei:has_tourists_in_2007 3687000
-co:Puerto Rico ei:has_tourists_in_2008 3716000
-co:Puerto Rico ei:has_tourists_in_2009 3183000
-co:Puerto Rico ei:has_tourists_in_2010 3186000
-co:Puerto Rico ei:has_tourists_in_2011 3048000
-co:Belgium ei:has_tourists_in_2004 6710000
-co:Belgium ei:has_tourists_in_2005 6747000
-co:Belgium ei:has_tourists_in_2006 6995000
-co:Belgium ei:has_tourists_in_2007 7045000
-co:Belgium ei:has_tourists_in_2008 7165000
-co:Belgium ei:has_tourists_in_2009 6815000
-co:Belgium ei:has_tourists_in_2010 7186000
-co:Belgium ei:has_tourists_in_2011 7494000
-co:Kiribati ei:has_tourists_in_2004 3400
-co:Kiribati ei:has_tourists_in_2005 4100
-co:Kiribati ei:has_tourists_in_2006 4400
-co:Kiribati ei:has_tourists_in_2007 4700
-co:Kiribati ei:has_tourists_in_2008 3900
-co:Kiribati ei:has_tourists_in_2009 3900
-co:Kiribati ei:has_tourists_in_2010 4700
-co:Kiribati ei:has_tourists_in_2011 5300
-co:Haiti ei:has_tourists_in_2004 96000
-co:Haiti ei:has_tourists_in_2005 112000
-co:Haiti ei:has_tourists_in_2006 108000
-co:Haiti ei:has_tourists_in_2007 386000
-co:Haiti ei:has_tourists_in_2008 258000
-co:Haiti ei:has_tourists_in_2009 387000
-co:Haiti ei:has_tourists_in_2010 255000
-co:Haiti ei:has_tourists_in_2011 349000
-co:Belize ei:has_tourists_in_2004 231000
-co:Belize ei:has_tourists_in_2005 237000
-co:Belize ei:has_tourists_in_2006 247000
-co:Belize ei:has_tourists_in_2007 251000
-co:Belize ei:has_tourists_in_2008 245000
-co:Belize ei:has_tourists_in_2009 232000
-co:Belize ei:has_tourists_in_2010 242000
-co:Belize ei:has_tourists_in_2011 250000
-co:Sierra Leone ei:has_tourists_in_2004 44000
-co:Sierra Leone ei:has_tourists_in_2005 40000
-co:Sierra Leone ei:has_tourists_in_2006 34000
-co:Sierra Leone ei:has_tourists_in_2007 32000
-co:Sierra Leone ei:has_tourists_in_2008 36000
-co:Sierra Leone ei:has_tourists_in_2009 37000
-co:Sierra Leone ei:has_tourists_in_2010 39000
-co:Sierra Leone ei:has_tourists_in_2011 52000
-co:Georgia ei:has_tourists_in_2004 368000
-co:Georgia ei:has_tourists_in_2005 560000
-co:Georgia ei:has_tourists_in_2006 983000
-co:Georgia ei:has_tourists_in_2007 1052000
-co:Georgia ei:has_tourists_in_2008 1290000
-co:Georgia ei:has_tourists_in_2009 1500000
-co:Georgia ei:has_tourists_in_2010 2032000
-co:Georgia ei:has_tourists_in_2011 2822000
-co:Denmark ei:has_tourists_in_2004 4421000
-co:Denmark ei:has_tourists_in_2005 9178000
-co:Denmark ei:has_tourists_in_2006 9256000
-co:Denmark ei:has_tourists_in_2007 9284000
-co:Denmark ei:has_tourists_in_2008 9016000
-co:Denmark ei:has_tourists_in_2009 8547000
-co:Denmark ei:has_tourists_in_2010 8744000
-co:Denmark ei:has_tourists_in_2011 7363000
-co:Philippines ei:has_tourists_in_2004 2291000
-co:Philippines ei:has_tourists_in_2005 2623000
-co:Philippines ei:has_tourists_in_2006 2843000
-co:Philippines ei:has_tourists_in_2007 3092000
-co:Philippines ei:has_tourists_in_2008 3139000
-co:Philippines ei:has_tourists_in_2009 3017000
-co:Philippines ei:has_tourists_in_2010 3520000
-co:Philippines ei:has_tourists_in_2011 3917000
-co:Moldova ei:has_tourists_in_2004 24000
-co:Moldova ei:has_tourists_in_2005 23000
-co:Moldova ei:has_tourists_in_2006 13000
-co:Moldova ei:has_tourists_in_2007 13000
-co:Moldova ei:has_tourists_in_2008 7000
-co:Moldova ei:has_tourists_in_2009 7000
-co:Moldova ei:has_tourists_in_2010 8000
-co:Moldova ei:has_tourists_in_2011 11000
-co:Portugal ei:has_tourists_in_2004 5654000
-co:Portugal ei:has_tourists_in_2005 5769000
-co:Portugal ei:has_tourists_in_2006 6349000
-co:Portugal ei:has_tourists_in_2007 6788000
-co:Portugal ei:has_tourists_in_2008 6962000
-co:Portugal ei:has_tourists_in_2009 6439000
-co:Portugal ei:has_tourists_in_2010 6756000
-co:Portugal ei:has_tourists_in_2011 7264000
-co:Morocco ei:has_tourists_in_2004 5477000
-co:Morocco ei:has_tourists_in_2005 5843000
-co:Morocco ei:has_tourists_in_2006 6558000
-co:Morocco ei:has_tourists_in_2007 7408000
-co:Morocco ei:has_tourists_in_2008 7879000
-co:Morocco ei:has_tourists_in_2009 8341000
-co:Morocco ei:has_tourists_in_2010 9288000
-co:Morocco ei:has_tourists_in_2011 9342000
-co:Croatia ei:has_tourists_in_2004 7912000
-co:Croatia ei:has_tourists_in_2005 7743000
-co:Croatia ei:has_tourists_in_2006 7988000
-co:Croatia ei:has_tourists_in_2007 8559000
-co:Croatia ei:has_tourists_in_2008 8665000
-co:Croatia ei:has_tourists_in_2009 8694000
-co:Croatia ei:has_tourists_in_2010 9111000
-co:Croatia ei:has_tourists_in_2011 9927000
-co:Mongolia ei:has_tourists_in_2004 301000
-co:Mongolia ei:has_tourists_in_2005 338000
-co:Mongolia ei:has_tourists_in_2006 386000
-co:Mongolia ei:has_tourists_in_2007 452000
-co:Mongolia ei:has_tourists_in_2008 446000
-co:Mongolia ei:has_tourists_in_2009 411000
-co:Mongolia ei:has_tourists_in_2010 457000
-co:Guinea-Bissau ei:has_tourists_in_2005 5000
-co:Guinea-Bissau ei:has_tourists_in_2006 12000
-co:Guinea-Bissau ei:has_tourists_in_2007 30000
-co:Thailand ei:has_tourists_in_2004 11737000
-co:Thailand ei:has_tourists_in_2005 11567000
-co:Thailand ei:has_tourists_in_2006 13822000
-co:Thailand ei:has_tourists_in_2007 14464000
-co:Thailand ei:has_tourists_in_2008 14584000
-co:Thailand ei:has_tourists_in_2009 14150000
-co:Thailand ei:has_tourists_in_2010 15936000
-co:Thailand ei:has_tourists_in_2011 19230000
-co:Macedonia, FYR ei:has_tourists_in_2004 165000
-co:Macedonia, FYR ei:has_tourists_in_2005 197000
-co:Macedonia, FYR ei:has_tourists_in_2006 202000
-co:Macedonia, FYR ei:has_tourists_in_2007 230000
-co:Macedonia, FYR ei:has_tourists_in_2008 255000
-co:Macedonia, FYR ei:has_tourists_in_2009 259000
-co:Macedonia, FYR ei:has_tourists_in_2010 262000
-co:Macedonia, FYR ei:has_tourists_in_2011 327000
-co:Grenada ei:has_tourists_in_2004 134000
-co:Grenada ei:has_tourists_in_2005 99000
-co:Grenada ei:has_tourists_in_2006 119000
-co:Grenada ei:has_tourists_in_2007 130000
-co:Grenada ei:has_tourists_in_2008 130000
-co:Grenada ei:has_tourists_in_2009 114000
-co:Grenada ei:has_tourists_in_2010 110000
-co:Grenada ei:has_tourists_in_2011 118000
-co:Yemen, Rep. ei:has_tourists_in_2004 274000
-co:Yemen, Rep. ei:has_tourists_in_2005 336000
-co:Yemen, Rep. ei:has_tourists_in_2006 1061000
-co:Yemen, Rep. ei:has_tourists_in_2007 948000
-co:Yemen, Rep. ei:has_tourists_in_2008 1023000
-co:Yemen, Rep. ei:has_tourists_in_2009 1028000
-co:Yemen, Rep. ei:has_tourists_in_2010 1025000
-co:Iraq ei:has_tourists_in_2008 864000
-co:Iraq ei:has_tourists_in_2009 1262000
-co:Iraq ei:has_tourists_in_2010 1518000
-co:Chad ei:has_tourists_in_2006 46000
-co:Chad ei:has_tourists_in_2007 77000
-co:Chad ei:has_tourists_in_2008 61000
-co:Chad ei:has_tourists_in_2009 70000
-co:Chad ei:has_tourists_in_2010 71000
-co:Estonia ei:has_tourists_in_2004 1750000
-co:Estonia ei:has_tourists_in_2005 1917000
-co:Estonia ei:has_tourists_in_2006 1940000
-co:Estonia ei:has_tourists_in_2007 1900000
-co:Estonia ei:has_tourists_in_2008 2079000
-co:Estonia ei:has_tourists_in_2009 2059000
-co:Estonia ei:has_tourists_in_2010 2372000
-co:Estonia ei:has_tourists_in_2011 2665000
-co:Sweden ei:has_tourists_in_2004 4676000
-co:Sweden ei:has_tourists_in_2005 4883000
-co:Sweden ei:has_tourists_in_2006 4729000
-co:Sweden ei:has_tourists_in_2007 5224000
-co:Sweden ei:has_tourists_in_2008 4555000
-co:Sweden ei:has_tourists_in_2009 4678000
-co:Sweden ei:has_tourists_in_2010 4951000
-co:Sweden ei:has_tourists_in_2011 5006000
-co:Mexico ei:has_tourists_in_2004 20618000
-co:Mexico ei:has_tourists_in_2005 21915000
-co:Mexico ei:has_tourists_in_2006 21353000
-co:Mexico ei:has_tourists_in_2007 21606000
-co:Mexico ei:has_tourists_in_2008 22931000
-co:Mexico ei:has_tourists_in_2009 22346000
-co:Mexico ei:has_tourists_in_2010 23290000
-co:Mexico ei:has_tourists_in_2011 23403000
-co:Hong Kong SAR, China ei:has_tourists_in_2004 13655000
-co:Hong Kong SAR, China ei:has_tourists_in_2005 14773000
-co:Hong Kong SAR, China ei:has_tourists_in_2006 15821000
-co:Hong Kong SAR, China ei:has_tourists_in_2007 17154000
-co:Hong Kong SAR, China ei:has_tourists_in_2008 17319000
-co:Hong Kong SAR, China ei:has_tourists_in_2009 16926000
-co:Hong Kong SAR, China ei:has_tourists_in_2010 20085000
-co:Hong Kong SAR, China ei:has_tourists_in_2011 22316000
-co:Uzbekistan ei:has_tourists_in_2004 262000
-co:Uzbekistan ei:has_tourists_in_2005 242000
-co:Uzbekistan ei:has_tourists_in_2006 560000
-co:Uzbekistan ei:has_tourists_in_2007 903000
-co:Uzbekistan ei:has_tourists_in_2008 1069000
-co:Uzbekistan ei:has_tourists_in_2009 1215000
-co:Uzbekistan ei:has_tourists_in_2010 975000
-co:Djibouti ei:has_tourists_in_2004 26000
-co:Djibouti ei:has_tourists_in_2005 30000
-co:Djibouti ei:has_tourists_in_2006 40000
-co:Djibouti ei:has_tourists_in_2007 40000
-co:Djibouti ei:has_tourists_in_2008 53000
-co:Rwanda ei:has_tourists_in_2006 494000
-co:Rwanda ei:has_tourists_in_2007 566000
-co:Rwanda ei:has_tourists_in_2008 621000
-co:Rwanda ei:has_tourists_in_2009 646000
-co:Rwanda ei:has_tourists_in_2010 619000
-co:Antigua and Barbuda ei:has_tourists_in_2004 246000
-co:Antigua and Barbuda ei:has_tourists_in_2005 245000
-co:Antigua and Barbuda ei:has_tourists_in_2006 254000
-co:Antigua and Barbuda ei:has_tourists_in_2007 262000
-co:Antigua and Barbuda ei:has_tourists_in_2008 266000
-co:Antigua and Barbuda ei:has_tourists_in_2009 234000
-co:Antigua and Barbuda ei:has_tourists_in_2010 230000
-co:Antigua and Barbuda ei:has_tourists_in_2011 241000
-co:Spain ei:has_tourists_in_2004 52430000
-co:Spain ei:has_tourists_in_2005 55914000
-co:Spain ei:has_tourists_in_2006 58004000
-co:Spain ei:has_tourists_in_2007 58666000
-co:Spain ei:has_tourists_in_2008 57192000
-co:Spain ei:has_tourists_in_2009 52178000
-co:Spain ei:has_tourists_in_2010 52677000
-co:Spain ei:has_tourists_in_2011 56694000
-co:Colombia ei:has_tourists_in_2004 791000
-co:Colombia ei:has_tourists_in_2005 933000
-co:Colombia ei:has_tourists_in_2006 2045000
-co:Colombia ei:has_tourists_in_2007 2254000
-co:Colombia ei:has_tourists_in_2008 2317000
-co:Colombia ei:has_tourists_in_2009 2302000
-co:Colombia ei:has_tourists_in_2010 2385000
-co:Burundi ei:has_tourists_in_2004 133000
-co:Burundi ei:has_tourists_in_2005 148000
-co:Burundi ei:has_tourists_in_2006 214000
-co:Burundi ei:has_tourists_in_2007 192000
-co:Burundi ei:has_tourists_in_2008 202000
-co:Burundi ei:has_tourists_in_2009 212000
-co:Burundi ei:has_tourists_in_2010 142000
-co:Fiji ei:has_tourists_in_2004 504000
-co:Fiji ei:has_tourists_in_2005 545000
-co:Fiji ei:has_tourists_in_2006 549000
-co:Fiji ei:has_tourists_in_2007 540000
-co:Fiji ei:has_tourists_in_2008 585000
-co:Fiji ei:has_tourists_in_2009 542000
-co:Fiji ei:has_tourists_in_2010 632000
-co:Fiji ei:has_tourists_in_2011 675000
-co:Barbados ei:has_tourists_in_2004 552000
-co:Barbados ei:has_tourists_in_2005 548000
-co:Barbados ei:has_tourists_in_2006 563000
-co:Barbados ei:has_tourists_in_2007 575000
-co:Barbados ei:has_tourists_in_2008 568000
-co:Barbados ei:has_tourists_in_2009 519000
-co:Barbados ei:has_tourists_in_2010 532000
-co:Barbados ei:has_tourists_in_2011 568000
-co:Madagascar ei:has_tourists_in_2004 229000
-co:Madagascar ei:has_tourists_in_2005 277000
-co:Madagascar ei:has_tourists_in_2006 312000
-co:Madagascar ei:has_tourists_in_2007 344000
-co:Madagascar ei:has_tourists_in_2008 375000
-co:Madagascar ei:has_tourists_in_2009 163000
-co:Madagascar ei:has_tourists_in_2010 196000
-co:Madagascar ei:has_tourists_in_2011 225000
-co:Italy ei:has_tourists_in_2004 37071000
-co:Italy ei:has_tourists_in_2005 36513000
-co:Italy ei:has_tourists_in_2006 41058000
-co:Italy ei:has_tourists_in_2007 43654000
-co:Italy ei:has_tourists_in_2008 42734000
-co:Italy ei:has_tourists_in_2009 43239000
-co:Italy ei:has_tourists_in_2010 43626000
-co:Italy ei:has_tourists_in_2011 46119000
-co:Curacao ei:has_tourists_in_2004 223000
-co:Curacao ei:has_tourists_in_2005 222000
-co:Curacao ei:has_tourists_in_2006 234000
-co:Curacao ei:has_tourists_in_2007 300000
-co:Curacao ei:has_tourists_in_2008 409000
-co:Curacao ei:has_tourists_in_2009 367000
-co:Curacao ei:has_tourists_in_2010 342000
-co:Curacao ei:has_tourists_in_2011 390000
-co:Bhutan ei:has_tourists_in_2004 9000
-co:Bhutan ei:has_tourists_in_2005 14000
-co:Bhutan ei:has_tourists_in_2006 17000
-co:Bhutan ei:has_tourists_in_2007 21000
-co:Bhutan ei:has_tourists_in_2008 28000
-co:Bhutan ei:has_tourists_in_2009 23000
-co:Bhutan ei:has_tourists_in_2010 41000
-co:Bhutan ei:has_tourists_in_2011 66000
-co:Sudan ei:has_tourists_in_2004 61000
-co:Sudan ei:has_tourists_in_2005 246000
-co:Sudan ei:has_tourists_in_2006 328000
-co:Sudan ei:has_tourists_in_2007 436000
-co:Sudan ei:has_tourists_in_2008 440000
-co:Sudan ei:has_tourists_in_2009 420000
-co:Sudan ei:has_tourists_in_2010 495000
-co:Sudan ei:has_tourists_in_2011 536000
-co:Nepal ei:has_tourists_in_2004 385000
-co:Nepal ei:has_tourists_in_2005 375000
-co:Nepal ei:has_tourists_in_2006 384000
-co:Nepal ei:has_tourists_in_2007 527000
-co:Nepal ei:has_tourists_in_2008 500000
-co:Nepal ei:has_tourists_in_2009 510000
-co:Nepal ei:has_tourists_in_2010 603000
-co:Nepal ei:has_tourists_in_2011 736000
-co:Singapore ei:has_tourists_in_2004 6553000
-co:Singapore ei:has_tourists_in_2005 7079000
-co:Singapore ei:has_tourists_in_2006 7588000
-co:Singapore ei:has_tourists_in_2007 7957000
-co:Singapore ei:has_tourists_in_2008 7778000
-co:Singapore ei:has_tourists_in_2009 7489000
-co:Singapore ei:has_tourists_in_2010 9161000
-co:Singapore ei:has_tourists_in_2011 10390000
-co:Malta ei:has_tourists_in_2004 1156000
-co:Malta ei:has_tourists_in_2005 1171000
-co:Malta ei:has_tourists_in_2006 1124000
-co:Malta ei:has_tourists_in_2007 1244000
-co:Malta ei:has_tourists_in_2008 1291000
-co:Malta ei:has_tourists_in_2009 1182000
-co:Malta ei:has_tourists_in_2010 1336000
-co:Malta ei:has_tourists_in_2011 1412000
-co:Netherlands ei:has_tourists_in_2004 9646000
-co:Netherlands ei:has_tourists_in_2005 10012000
-co:Netherlands ei:has_tourists_in_2006 10739000
-co:Netherlands ei:has_tourists_in_2007 11008000
-co:Netherlands ei:has_tourists_in_2008 10104000
-co:Netherlands ei:has_tourists_in_2009 9921000
-co:Netherlands ei:has_tourists_in_2010 10883000
-co:Netherlands ei:has_tourists_in_2011 11300000
-co:Macao SAR, China ei:has_tourists_in_2004 8324000
-co:Macao SAR, China ei:has_tourists_in_2005 9014000
-co:Macao SAR, China ei:has_tourists_in_2006 10683000
-co:Macao SAR, China ei:has_tourists_in_2007 12945000
-co:Macao SAR, China ei:has_tourists_in_2008 10610000
-co:Macao SAR, China ei:has_tourists_in_2009 10402000
-co:Macao SAR, China ei:has_tourists_in_2010 11926000
-co:Macao SAR, China ei:has_tourists_in_2011 12925000
-co:Suriname ei:has_tourists_in_2004 138000
-co:Suriname ei:has_tourists_in_2005 161000
-co:Suriname ei:has_tourists_in_2006 154000
-co:Suriname ei:has_tourists_in_2007 167000
-co:Suriname ei:has_tourists_in_2008 151000
-co:Suriname ei:has_tourists_in_2009 151000
-co:Suriname ei:has_tourists_in_2010 205000
-co:Suriname ei:has_tourists_in_2011 220000
-co:Turks and Caicos Islands ei:has_tourists_in_2004 173000
-co:Turks and Caicos Islands ei:has_tourists_in_2005 176000
-co:Turks and Caicos Islands ei:has_tourists_in_2006 248000
-co:Turks and Caicos Islands ei:has_tourists_in_2007 265000
-co:Turks and Caicos Islands ei:has_tourists_in_2008 352000
-co:Turks and Caicos Islands ei:has_tourists_in_2009 351000
-co:Turks and Caicos Islands ei:has_tourists_in_2010 281000
-co:Turks and Caicos Islands ei:has_tourists_in_2011 354000
-co:Iran, Islamic Rep. ei:has_tourists_in_2004 1659000
-co:Iran, Islamic Rep. ei:has_tourists_in_2005 1889000
-co:Iran, Islamic Rep. ei:has_tourists_in_2006 2735000
-co:Iran, Islamic Rep. ei:has_tourists_in_2007 2219000
-co:Iran, Islamic Rep. ei:has_tourists_in_2008 2034000
-co:Iran, Islamic Rep. ei:has_tourists_in_2009 2116000
-co:Iran, Islamic Rep. ei:has_tourists_in_2010 2938000
-co:Iran, Islamic Rep. ei:has_tourists_in_2011 3354000
-co:Israel ei:has_tourists_in_2004 1506000
-co:Israel ei:has_tourists_in_2005 1903000
-co:Israel ei:has_tourists_in_2006 1825000
-co:Israel ei:has_tourists_in_2007 2067000
-co:Israel ei:has_tourists_in_2008 2572000
-co:Israel ei:has_tourists_in_2009 2321000
-co:Israel ei:has_tourists_in_2010 2803000
-co:Israel ei:has_tourists_in_2011 2820000
-co:Indonesia ei:has_tourists_in_2004 5321000
-co:Indonesia ei:has_tourists_in_2005 5002000
-co:Indonesia ei:has_tourists_in_2006 4871000
-co:Indonesia ei:has_tourists_in_2007 5506000
-co:Indonesia ei:has_tourists_in_2008 6234000
-co:Indonesia ei:has_tourists_in_2009 6324000
-co:Indonesia ei:has_tourists_in_2010 7003000
-co:Indonesia ei:has_tourists_in_2011 7650000
-co:Iceland ei:has_tourists_in_2004 360000
-co:Iceland ei:has_tourists_in_2005 374000
-co:Iceland ei:has_tourists_in_2006 422000
-co:Iceland ei:has_tourists_in_2007 485000
-co:Iceland ei:has_tourists_in_2008 502000
-co:Iceland ei:has_tourists_in_2009 494000
-co:Iceland ei:has_tourists_in_2010 489000
-co:Iceland ei:has_tourists_in_2011 566000
-co:Zambia ei:has_tourists_in_2004 515000
-co:Zambia ei:has_tourists_in_2005 669000
-co:Zambia ei:has_tourists_in_2006 757000
-co:Zambia ei:has_tourists_in_2007 897000
-co:Zambia ei:has_tourists_in_2008 812000
-co:Zambia ei:has_tourists_in_2009 710000
-co:Zambia ei:has_tourists_in_2010 815000
-co:Senegal ei:has_tourists_in_2004 667000
-co:Senegal ei:has_tourists_in_2005 769000
-co:Senegal ei:has_tourists_in_2006 866000
-co:Senegal ei:has_tourists_in_2007 875000
-co:Senegal ei:has_tourists_in_2008 867000
-co:Senegal ei:has_tourists_in_2009 810000
-co:Senegal ei:has_tourists_in_2010 900000
-co:Senegal ei:has_tourists_in_2011 1001000
-co:Papua New Guinea ei:has_tourists_in_2004 59000
-co:Papua New Guinea ei:has_tourists_in_2005 69000
-co:Papua New Guinea ei:has_tourists_in_2006 78000
-co:Papua New Guinea ei:has_tourists_in_2007 104000
-co:Papua New Guinea ei:has_tourists_in_2008 114000
-co:Papua New Guinea ei:has_tourists_in_2009 126000
-co:Papua New Guinea ei:has_tourists_in_2010 146000
-co:Papua New Guinea ei:has_tourists_in_2011 165000
-co:Malawi ei:has_tourists_in_2004 427000
-co:Malawi ei:has_tourists_in_2005 438000
-co:Malawi ei:has_tourists_in_2006 638000
-co:Malawi ei:has_tourists_in_2007 735000
-co:Malawi ei:has_tourists_in_2008 742000
-co:Malawi ei:has_tourists_in_2009 755000
-co:Malawi ei:has_tourists_in_2010 746000
-co:Malawi ei:has_tourists_in_2011 767000
-co:Trinidad and Tobago ei:has_tourists_in_2004 443000
-co:Trinidad and Tobago ei:has_tourists_in_2005 463000
-co:Trinidad and Tobago ei:has_tourists_in_2006 461000
-co:Trinidad and Tobago ei:has_tourists_in_2007 449000
-co:Trinidad and Tobago ei:has_tourists_in_2008 437000
-co:Trinidad and Tobago ei:has_tourists_in_2009 419000
-co:Trinidad and Tobago ei:has_tourists_in_2010 386000
-co:Zimbabwe ei:has_tourists_in_2004 1854000
-co:Zimbabwe ei:has_tourists_in_2005 1559000
-co:Zimbabwe ei:has_tourists_in_2006 2287000
-co:Zimbabwe ei:has_tourists_in_2007 2506000
-co:Zimbabwe ei:has_tourists_in_2008 1956000
-co:Zimbabwe ei:has_tourists_in_2009 2017000
-co:Zimbabwe ei:has_tourists_in_2010 2239000
-co:Zimbabwe ei:has_tourists_in_2011 2423000
-co:Germany ei:has_tourists_in_2004 20137000
-co:Germany ei:has_tourists_in_2005 21500000
-co:Germany ei:has_tourists_in_2006 23569000
-co:Germany ei:has_tourists_in_2007 24421000
-co:Germany ei:has_tourists_in_2008 24884000
-co:Germany ei:has_tourists_in_2009 24220000
-co:Germany ei:has_tourists_in_2010 26875000
-co:Germany ei:has_tourists_in_2011 28374000
-co:Kazakhstan ei:has_tourists_in_2004 3073000
-co:Kazakhstan ei:has_tourists_in_2005 3143000
-co:Kazakhstan ei:has_tourists_in_2006 3468000
-co:Kazakhstan ei:has_tourists_in_2007 3876000
-co:Kazakhstan ei:has_tourists_in_2008 3447000
-co:Kazakhstan ei:has_tourists_in_2009 3118000
-co:Kazakhstan ei:has_tourists_in_2010 3393000
-co:Poland ei:has_tourists_in_2004 14290000
-co:Poland ei:has_tourists_in_2005 15200000
-co:Poland ei:has_tourists_in_2006 15670000
-co:Poland ei:has_tourists_in_2007 14975000
-co:Poland ei:has_tourists_in_2008 12960000
-co:Poland ei:has_tourists_in_2009 11890000
-co:Poland ei:has_tourists_in_2010 12470000
-co:Poland ei:has_tourists_in_2011 13350000
-co:Eritrea ei:has_tourists_in_2004 87000
-co:Eritrea ei:has_tourists_in_2005 83000
-co:Eritrea ei:has_tourists_in_2006 78000
-co:Eritrea ei:has_tourists_in_2007 81000
-co:Eritrea ei:has_tourists_in_2008 70000
-co:Eritrea ei:has_tourists_in_2009 79000
-co:Eritrea ei:has_tourists_in_2010 84000
-co:Eritrea ei:has_tourists_in_2011 107000
-co:New Caledonia ei:has_tourists_in_2004 100000
-co:New Caledonia ei:has_tourists_in_2005 101000
-co:New Caledonia ei:has_tourists_in_2006 100000
-co:New Caledonia ei:has_tourists_in_2007 103000
-co:New Caledonia ei:has_tourists_in_2008 104000
-co:New Caledonia ei:has_tourists_in_2009 99000
-co:New Caledonia ei:has_tourists_in_2010 99000
-co:New Caledonia ei:has_tourists_in_2011 112000
-co:Sri Lanka ei:has_tourists_in_2004 566000
-co:Sri Lanka ei:has_tourists_in_2005 549000
-co:Sri Lanka ei:has_tourists_in_2006 560000
-co:Sri Lanka ei:has_tourists_in_2007 494000
-co:Sri Lanka ei:has_tourists_in_2008 438000
-co:Sri Lanka ei:has_tourists_in_2009 448000
-co:Sri Lanka ei:has_tourists_in_2010 654000
-co:Sri Lanka ei:has_tourists_in_2011 856000
-co:Latvia ei:has_tourists_in_2004 1079000
-co:Latvia ei:has_tourists_in_2005 1116000
-co:Latvia ei:has_tourists_in_2006 1535000
-co:Latvia ei:has_tourists_in_2007 1653000
-co:Latvia ei:has_tourists_in_2008 1684000
-co:Latvia ei:has_tourists_in_2009 1323000
-co:Latvia ei:has_tourists_in_2010 1373000
-co:Latvia ei:has_tourists_in_2011 1493000
-co:Guyana ei:has_tourists_in_2004 122000
-co:Guyana ei:has_tourists_in_2005 117000
-co:Guyana ei:has_tourists_in_2006 113000
-co:Guyana ei:has_tourists_in_2007 134000
-co:Guyana ei:has_tourists_in_2008 130000
-co:Guyana ei:has_tourists_in_2009 141000
-co:Guyana ei:has_tourists_in_2010 152000
-co:Guyana ei:has_tourists_in_2011 157000
-co:Honduras ei:has_tourists_in_2004 641000
-co:Honduras ei:has_tourists_in_2005 673000
-co:Honduras ei:has_tourists_in_2006 739000
-co:Honduras ei:has_tourists_in_2007 804000
-co:Honduras ei:has_tourists_in_2008 869000
-co:Honduras ei:has_tourists_in_2009 836000
-co:Honduras ei:has_tourists_in_2010 863000
-co:Honduras ei:has_tourists_in_2011 871000
-co:Myanmar ei:has_tourists_in_2004 242000
-co:Myanmar ei:has_tourists_in_2005 232000
-co:Myanmar ei:has_tourists_in_2006 264000
-co:Myanmar ei:has_tourists_in_2007 248000
-co:Myanmar ei:has_tourists_in_2008 193000
-co:Myanmar ei:has_tourists_in_2009 243000
-co:Myanmar ei:has_tourists_in_2010 311000
-co:Myanmar ei:has_tourists_in_2011 391000
-co:Tunisia ei:has_tourists_in_2004 5998000
-co:Tunisia ei:has_tourists_in_2005 6378000
-co:Tunisia ei:has_tourists_in_2006 6550000
-co:Tunisia ei:has_tourists_in_2007 6762000
-co:Tunisia ei:has_tourists_in_2008 7050000
-co:Tunisia ei:has_tourists_in_2009 6901000
-co:Tunisia ei:has_tourists_in_2010 6903000
-co:Tunisia ei:has_tourists_in_2011 4785000
-co:Nicaragua ei:has_tourists_in_2004 615000
-co:Nicaragua ei:has_tourists_in_2005 712000
-co:Nicaragua ei:has_tourists_in_2006 749000
-co:Nicaragua ei:has_tourists_in_2007 800000
-co:Nicaragua ei:has_tourists_in_2008 858000
-co:Nicaragua ei:has_tourists_in_2009 932000
-co:Nicaragua ei:has_tourists_in_2010 1011000
-co:Nicaragua ei:has_tourists_in_2011 1060000
-co:Congo, Dem. Rep. ei:has_tourists_in_2004 36000
-co:Congo, Dem. Rep. ei:has_tourists_in_2005 61000
-co:Congo, Dem. Rep. ei:has_tourists_in_2006 55000
-co:Congo, Dem. Rep. ei:has_tourists_in_2007 47000
-co:Congo, Dem. Rep. ei:has_tourists_in_2008 50000
-co:Congo, Dem. Rep. ei:has_tourists_in_2009 53000
-co:Congo, Dem. Rep. ei:has_tourists_in_2010 81000
-co:Congo, Dem. Rep. ei:has_tourists_in_2011 186000
-co:Serbia ei:has_tourists_in_2004 392000
-co:Serbia ei:has_tourists_in_2005 453000
-co:Serbia ei:has_tourists_in_2006 469000
-co:Serbia ei:has_tourists_in_2007 696000
-co:Serbia ei:has_tourists_in_2008 646000
-co:Serbia ei:has_tourists_in_2009 645000
-co:Serbia ei:has_tourists_in_2010 683000
-co:Serbia ei:has_tourists_in_2011 764000
-co:Botswana ei:has_tourists_in_2004 1523000
-co:Botswana ei:has_tourists_in_2005 1474000
-co:Botswana ei:has_tourists_in_2006 1426000
-co:Botswana ei:has_tourists_in_2007 1736000
-co:Botswana ei:has_tourists_in_2008 2101000
-co:Botswana ei:has_tourists_in_2009 2103000
-co:Botswana ei:has_tourists_in_2010 2145000
-co:United Kingdom ei:has_tourists_in_2004 25678000
-co:United Kingdom ei:has_tourists_in_2005 28039000
-co:United Kingdom ei:has_tourists_in_2006 30654000
-co:United Kingdom ei:has_tourists_in_2007 30870000
-co:United Kingdom ei:has_tourists_in_2008 30142000
-co:United Kingdom ei:has_tourists_in_2009 28199000
-co:United Kingdom ei:has_tourists_in_2010 28295000
-co:United Kingdom ei:has_tourists_in_2011 29306000
-co:Gambia, The ei:has_tourists_in_2004 90000
-co:Gambia, The ei:has_tourists_in_2005 108000
-co:Gambia, The ei:has_tourists_in_2006 125000
-co:Gambia, The ei:has_tourists_in_2007 143000
-co:Gambia, The ei:has_tourists_in_2008 147000
-co:Gambia, The ei:has_tourists_in_2009 142000
-co:Gambia, The ei:has_tourists_in_2010 91000
-co:Gambia, The ei:has_tourists_in_2011 106000
-co:Sint Maarten (Dutch part) ei:has_tourists_in_2004 475000
-co:Sint Maarten (Dutch part) ei:has_tourists_in_2005 468000
-co:Sint Maarten (Dutch part) ei:has_tourists_in_2006 468000
-co:Sint Maarten (Dutch part) ei:has_tourists_in_2007 469000
-co:Sint Maarten (Dutch part) ei:has_tourists_in_2008 475000
-co:Sint Maarten (Dutch part) ei:has_tourists_in_2009 440000
-co:Sint Maarten (Dutch part) ei:has_tourists_in_2010 443000
-co:Sint Maarten (Dutch part) ei:has_tourists_in_2011 424000
-co:Greece ei:has_tourists_in_2004 13313000
-co:Greece ei:has_tourists_in_2005 14765000
-co:Greece ei:has_tourists_in_2006 16039000
-co:Greece ei:has_tourists_in_2007 16165000
-co:Greece ei:has_tourists_in_2008 15939000
-co:Greece ei:has_tourists_in_2009 14915000
-co:Greece ei:has_tourists_in_2010 15007000
-co:Greece ei:has_tourists_in_2011 16427000
-co:Paraguay ei:has_tourists_in_2004 309000
-co:Paraguay ei:has_tourists_in_2005 341000
-co:Paraguay ei:has_tourists_in_2006 388000
-co:Paraguay ei:has_tourists_in_2007 416000
-co:Paraguay ei:has_tourists_in_2008 428000
-co:Paraguay ei:has_tourists_in_2009 439000
-co:Paraguay ei:has_tourists_in_2010 465000
-co:Paraguay ei:has_tourists_in_2011 524000
-co:Lebanon ei:has_tourists_in_2004 1278000
-co:Lebanon ei:has_tourists_in_2005 1140000
-co:Lebanon ei:has_tourists_in_2006 1063000
-co:Lebanon ei:has_tourists_in_2007 1017000
-co:Lebanon ei:has_tourists_in_2008 1333000
-co:Lebanon ei:has_tourists_in_2009 1844000
-co:Lebanon ei:has_tourists_in_2010 2168000
-co:Lebanon ei:has_tourists_in_2011 1655000
-co:Comoros ei:has_tourists_in_2004 23000
-co:Comoros ei:has_tourists_in_2005 26000
-co:Comoros ei:has_tourists_in_2006 29000
-co:Comoros ei:has_tourists_in_2007 15000
-co:Comoros ei:has_tourists_in_2008 15000
-co:Comoros ei:has_tourists_in_2009 11000
+sd:Canada a dbpedia-owl:country .
+sd:Canada gn:countryCode "CAN" .
+sd:Canada ei:has_tourists_in_2004 19145000 .
+sd:Canada ei:has_tourists_in_2005 18771000 .
+sd:Canada ei:has_tourists_in_2006 18265000 .
+sd:Canada ei:has_tourists_in_2007 17935000 .
+sd:Canada ei:has_tourists_in_2008 17142000 .
+sd:Canada ei:has_tourists_in_2009 15737000 .
+sd:Canada ei:has_tourists_in_2010 16097000 .
+sd:Canada ei:has_tourists_in_2011 16014000 .
+sd:Sao Tome and Principe a dbpedia-owl:country .
+sd:Sao Tome and Principe gn:countryCode "STP" .
+sd:Sao Tome and Principe ei:has_tourists_in_2004 11000 .
+sd:Sao Tome and Principe ei:has_tourists_in_2005 16000 .
+sd:Sao Tome and Principe ei:has_tourists_in_2006 12000 .
+sd:Sao Tome and Principe ei:has_tourists_in_2007 12000 .
+sd:Sao Tome and Principe ei:has_tourists_in_2008 14000 .
+sd:Sao Tome and Principe ei:has_tourists_in_2009 15000 .
+sd:Sao Tome and Principe ei:has_tourists_in_2010 8000 .
+sd:Turkmenistan a dbpedia-owl:country .
+sd:Turkmenistan gn:countryCode "TKM" .
+sd:Turkmenistan ei:has_tourists_in_2004 15000 .
+sd:Turkmenistan ei:has_tourists_in_2005 12000 .
+sd:Turkmenistan ei:has_tourists_in_2006 6000 .
+sd:Turkmenistan ei:has_tourists_in_2007 8000 .
+sd:Lao PDR a dbpedia-owl:country .
+sd:Lao PDR gn:countryCode "LAO" .
+sd:Lao PDR ei:has_tourists_in_2004 407000 .
+sd:Lao PDR ei:has_tourists_in_2005 672000 .
+sd:Lao PDR ei:has_tourists_in_2006 842000 .
+sd:Lao PDR ei:has_tourists_in_2007 1142000 .
+sd:Lao PDR ei:has_tourists_in_2008 1295000 .
+sd:Lao PDR ei:has_tourists_in_2009 1239000 .
+sd:Lao PDR ei:has_tourists_in_2010 1670000 .
+sd:Lao PDR ei:has_tourists_in_2011 1786000 .
+sd:Lithuania a dbpedia-owl:country .
+sd:Lithuania gn:countryCode "LTU" .
+sd:Lithuania ei:has_tourists_in_2004 1800000 .
+sd:Lithuania ei:has_tourists_in_2005 2000000 .
+sd:Lithuania ei:has_tourists_in_2006 2180000 .
+sd:Lithuania ei:has_tourists_in_2007 1486000 .
+sd:Lithuania ei:has_tourists_in_2008 1611000 .
+sd:Lithuania ei:has_tourists_in_2009 1341000 .
+sd:Lithuania ei:has_tourists_in_2010 1507000 .
+sd:Lithuania ei:has_tourists_in_2011 1775000 .
+sd:Cambodia a dbpedia-owl:country .
+sd:Cambodia gn:countryCode "KHM" .
+sd:Cambodia ei:has_tourists_in_2004 1055000 .
+sd:Cambodia ei:has_tourists_in_2005 1422000 .
+sd:Cambodia ei:has_tourists_in_2006 1700000 .
+sd:Cambodia ei:has_tourists_in_2007 2015000 .
+sd:Cambodia ei:has_tourists_in_2008 2125000 .
+sd:Cambodia ei:has_tourists_in_2009 2162000 .
+sd:Cambodia ei:has_tourists_in_2010 2508000 .
+sd:Cambodia ei:has_tourists_in_2011 2882000 .
+sd:Switzerland a dbpedia-owl:country .
+sd:Switzerland gn:countryCode "CHE" .
+sd:Switzerland ei:has_tourists_in_2005 7229000 .
+sd:Switzerland ei:has_tourists_in_2006 7863000 .
+sd:Switzerland ei:has_tourists_in_2007 8448000 .
+sd:Switzerland ei:has_tourists_in_2008 8608000 .
+sd:Switzerland ei:has_tourists_in_2009 8294000 .
+sd:Switzerland ei:has_tourists_in_2010 8628000 .
+sd:Switzerland ei:has_tourists_in_2011 8534000 .
+sd:Ethiopia a dbpedia-owl:country .
+sd:Ethiopia gn:countryCode "ETH" .
+sd:Ethiopia ei:has_tourists_in_2004 184000 .
+sd:Ethiopia ei:has_tourists_in_2005 227000 .
+sd:Ethiopia ei:has_tourists_in_2006 330000 .
+sd:Ethiopia ei:has_tourists_in_2007 358000 .
+sd:Ethiopia ei:has_tourists_in_2008 383000 .
+sd:Ethiopia ei:has_tourists_in_2009 427000 .
+sd:Ethiopia ei:has_tourists_in_2010 468000 .
+sd:Ethiopia ei:has_tourists_in_2011 523000 .
+sd:Aruba a dbpedia-owl:country .
+sd:Aruba gn:countryCode "ABW" .
+sd:Aruba ei:has_tourists_in_2004 728000 .
+sd:Aruba ei:has_tourists_in_2005 733000 .
+sd:Aruba ei:has_tourists_in_2006 694000 .
+sd:Aruba ei:has_tourists_in_2007 772000 .
+sd:Aruba ei:has_tourists_in_2008 827000 .
+sd:Aruba ei:has_tourists_in_2009 813000 .
+sd:Aruba ei:has_tourists_in_2010 824000 .
+sd:Aruba ei:has_tourists_in_2011 870000 .
+sd:Swaziland a dbpedia-owl:country .
+sd:Swaziland gn:countryCode "SWZ" .
+sd:Swaziland ei:has_tourists_in_2004 459000 .
+sd:Swaziland ei:has_tourists_in_2005 837000 .
+sd:Swaziland ei:has_tourists_in_2006 873000 .
+sd:Swaziland ei:has_tourists_in_2007 870000 .
+sd:Swaziland ei:has_tourists_in_2008 754000 .
+sd:Swaziland ei:has_tourists_in_2009 908000 .
+sd:Swaziland ei:has_tourists_in_2010 868000 .
+sd:Swaziland ei:has_tourists_in_2011 879000 .
+sd:Argentina a dbpedia-owl:country .
+sd:Argentina gn:countryCode "ARG" .
+sd:Argentina ei:has_tourists_in_2004 3457000 .
+sd:Argentina ei:has_tourists_in_2005 3823000 .
+sd:Argentina ei:has_tourists_in_2006 4173000 .
+sd:Argentina ei:has_tourists_in_2007 4562000 .
+sd:Argentina ei:has_tourists_in_2008 4700000 .
+sd:Argentina ei:has_tourists_in_2009 4308000 .
+sd:Argentina ei:has_tourists_in_2010 5325000 .
+sd:Argentina ei:has_tourists_in_2011 5705000 .
+sd:Bolivia a dbpedia-owl:country .
+sd:Bolivia gn:countryCode "BOL" .
+sd:Bolivia ei:has_tourists_in_2004 480000 .
+sd:Bolivia ei:has_tourists_in_2005 524000 .
+sd:Bolivia ei:has_tourists_in_2006 521000 .
+sd:Bolivia ei:has_tourists_in_2007 573000 .
+sd:Bolivia ei:has_tourists_in_2008 594000 .
+sd:Bolivia ei:has_tourists_in_2009 671000 .
+sd:Bolivia ei:has_tourists_in_2010 807000 .
+sd:Bahamas, The a dbpedia-owl:country .
+sd:Bahamas, The gn:countryCode "BHS" .
+sd:Bahamas, The ei:has_tourists_in_2004 1561000 .
+sd:Bahamas, The ei:has_tourists_in_2005 1608000 .
+sd:Bahamas, The ei:has_tourists_in_2006 1601000 .
+sd:Bahamas, The ei:has_tourists_in_2007 1528000 .
+sd:Bahamas, The ei:has_tourists_in_2008 1463000 .
+sd:Bahamas, The ei:has_tourists_in_2009 1327000 .
+sd:Bahamas, The ei:has_tourists_in_2010 1370000 .
+sd:Bahamas, The ei:has_tourists_in_2011 1346000 .
+sd:Burkina Faso a dbpedia-owl:country .
+sd:Burkina Faso gn:countryCode "BFA" .
+sd:Burkina Faso ei:has_tourists_in_2004 222000 .
+sd:Burkina Faso ei:has_tourists_in_2005 245000 .
+sd:Burkina Faso ei:has_tourists_in_2006 264000 .
+sd:Burkina Faso ei:has_tourists_in_2007 289000 .
+sd:Burkina Faso ei:has_tourists_in_2008 272000 .
+sd:Burkina Faso ei:has_tourists_in_2009 269000 .
+sd:Burkina Faso ei:has_tourists_in_2010 274000 .
+sd:Burkina Faso ei:has_tourists_in_2011 238000 .
+sd:Ghana a dbpedia-owl:country .
+sd:Ghana gn:countryCode "GHA" .
+sd:Ghana ei:has_tourists_in_2004 584000 .
+sd:Ghana ei:has_tourists_in_2005 429000 .
+sd:Ghana ei:has_tourists_in_2006 497000 .
+sd:Ghana ei:has_tourists_in_2007 587000 .
+sd:Ghana ei:has_tourists_in_2008 698000 .
+sd:Ghana ei:has_tourists_in_2009 803000 .
+sd:Ghana ei:has_tourists_in_2010 931000 .
+sd:Saudi Arabia a dbpedia-owl:country .
+sd:Saudi Arabia gn:countryCode "SAU" .
+sd:Saudi Arabia ei:has_tourists_in_2004 8599000 .
+sd:Saudi Arabia ei:has_tourists_in_2005 8037000 .
+sd:Saudi Arabia ei:has_tourists_in_2006 8620000 .
+sd:Saudi Arabia ei:has_tourists_in_2007 11531000 .
+sd:Saudi Arabia ei:has_tourists_in_2008 14757000 .
+sd:Saudi Arabia ei:has_tourists_in_2009 10897000 .
+sd:Saudi Arabia ei:has_tourists_in_2010 10850000 .
+sd:Saudi Arabia ei:has_tourists_in_2011 17498000 .
+sd:Japan a dbpedia-owl:country .
+sd:Japan gn:countryCode "JPN" .
+sd:Japan ei:has_tourists_in_2004 6138000 .
+sd:Japan ei:has_tourists_in_2005 6728000 .
+sd:Japan ei:has_tourists_in_2006 7334000 .
+sd:Japan ei:has_tourists_in_2007 8347000 .
+sd:Japan ei:has_tourists_in_2008 8351000 .
+sd:Japan ei:has_tourists_in_2009 6790000 .
+sd:Japan ei:has_tourists_in_2010 8611000 .
+sd:Japan ei:has_tourists_in_2011 6219000 .
+sd:Channel Islands a dbpedia-owl:country .
+sd:Channel Islands gn:countryCode "CHI" .
+sd:American Samoa a dbpedia-owl:country .
+sd:American Samoa gn:countryCode "ASM" .
+sd:American Samoa ei:has_tourists_in_2005 24000 .
+sd:American Samoa ei:has_tourists_in_2006 25000 .
+sd:Northern Mariana Islands a dbpedia-owl:country .
+sd:Northern Mariana Islands gn:countryCode "MNP" .
+sd:Northern Mariana Islands ei:has_tourists_in_2004 525000 .
+sd:Northern Mariana Islands ei:has_tourists_in_2005 498000 .
+sd:Northern Mariana Islands ei:has_tourists_in_2006 429000 .
+sd:Northern Mariana Islands ei:has_tourists_in_2007 385000 .
+sd:Northern Mariana Islands ei:has_tourists_in_2008 388000 .
+sd:Northern Mariana Islands ei:has_tourists_in_2009 345000 .
+sd:Northern Mariana Islands ei:has_tourists_in_2010 375000 .
+sd:Northern Mariana Islands ei:has_tourists_in_2011 336000 .
+sd:Slovenia a dbpedia-owl:country .
+sd:Slovenia gn:countryCode "SVN" .
+sd:Slovenia ei:has_tourists_in_2004 1499000 .
+sd:Slovenia ei:has_tourists_in_2005 1555000 .
+sd:Slovenia ei:has_tourists_in_2006 1617000 .
+sd:Slovenia ei:has_tourists_in_2007 1751000 .
+sd:Slovenia ei:has_tourists_in_2008 1958000 .
+sd:Slovenia ei:has_tourists_in_2009 1824000 .
+sd:Slovenia ei:has_tourists_in_2010 1869000 .
+sd:Slovenia ei:has_tourists_in_2011 2037000 .
+sd:Guatemala a dbpedia-owl:country .
+sd:Guatemala gn:countryCode "GTM" .
+sd:Guatemala ei:has_tourists_in_2004 1182000 .
+sd:Guatemala ei:has_tourists_in_2005 1316000 .
+sd:Guatemala ei:has_tourists_in_2006 1502000 .
+sd:Guatemala ei:has_tourists_in_2007 1628000 .
+sd:Guatemala ei:has_tourists_in_2008 1715000 .
+sd:Guatemala ei:has_tourists_in_2009 1777000 .
+sd:Guatemala ei:has_tourists_in_2010 1876000 .
+sd:Guatemala ei:has_tourists_in_2011 1823000 .
+sd:Bosnia and Herzegovina a dbpedia-owl:country .
+sd:Bosnia and Herzegovina gn:countryCode "BIH" .
+sd:Bosnia and Herzegovina ei:has_tourists_in_2004 190000 .
+sd:Bosnia and Herzegovina ei:has_tourists_in_2005 217000 .
+sd:Bosnia and Herzegovina ei:has_tourists_in_2006 256000 .
+sd:Bosnia and Herzegovina ei:has_tourists_in_2007 306000 .
+sd:Bosnia and Herzegovina ei:has_tourists_in_2008 322000 .
+sd:Bosnia and Herzegovina ei:has_tourists_in_2009 311000 .
+sd:Bosnia and Herzegovina ei:has_tourists_in_2010 365000 .
+sd:Bosnia and Herzegovina ei:has_tourists_in_2011 392000 .
+sd:Kuwait a dbpedia-owl:country .
+sd:Kuwait gn:countryCode "KWT" .
+sd:Kuwait ei:has_tourists_in_2004 91000 .
+sd:Kuwait ei:has_tourists_in_2005 104000 .
+sd:Kuwait ei:has_tourists_in_2006 185000 .
+sd:Kuwait ei:has_tourists_in_2007 293000 .
+sd:Kuwait ei:has_tourists_in_2008 259000 .
+sd:Kuwait ei:has_tourists_in_2009 297000 .
+sd:Kuwait ei:has_tourists_in_2010 207000 .
+sd:Kuwait ei:has_tourists_in_2011 269000 .
+sd:Russian Federation a dbpedia-owl:country .
+sd:Russian Federation gn:countryCode "RUS" .
+sd:Russian Federation ei:has_tourists_in_2004 22064000 .
+sd:Russian Federation ei:has_tourists_in_2005 22201000 .
+sd:Russian Federation ei:has_tourists_in_2006 22486000 .
+sd:Russian Federation ei:has_tourists_in_2007 22909000 .
+sd:Russian Federation ei:has_tourists_in_2008 23676000 .
+sd:Russian Federation ei:has_tourists_in_2009 21339000 .
+sd:Russian Federation ei:has_tourists_in_2010 22281000 .
+sd:Russian Federation ei:has_tourists_in_2011 24932000 .
+sd:Jordan a dbpedia-owl:country .
+sd:Jordan gn:countryCode "JOR" .
+sd:Jordan ei:has_tourists_in_2004 2853000 .
+sd:Jordan ei:has_tourists_in_2005 2987000 .
+sd:Jordan ei:has_tourists_in_2006 3225000 .
+sd:Jordan ei:has_tourists_in_2007 3431000 .
+sd:Jordan ei:has_tourists_in_2008 3729000 .
+sd:Jordan ei:has_tourists_in_2009 3789000 .
+sd:Jordan ei:has_tourists_in_2010 4557000 .
+sd:Jordan ei:has_tourists_in_2011 3975000 .
+sd:St. Lucia a dbpedia-owl:country .
+sd:St. Lucia gn:countryCode "LCA" .
+sd:St. Lucia ei:has_tourists_in_2004 298000 .
+sd:St. Lucia ei:has_tourists_in_2005 318000 .
+sd:St. Lucia ei:has_tourists_in_2006 303000 .
+sd:St. Lucia ei:has_tourists_in_2007 287000 .
+sd:St. Lucia ei:has_tourists_in_2008 296000 .
+sd:St. Lucia ei:has_tourists_in_2009 278000 .
+sd:St. Lucia ei:has_tourists_in_2010 306000 .
+sd:St. Lucia ei:has_tourists_in_2011 312000 .
+sd:Congo, Rep. a dbpedia-owl:country .
+sd:Congo, Rep. gn:countryCode "COG" .
+sd:Congo, Rep. ei:has_tourists_in_2004 31000 .
+sd:Congo, Rep. ei:has_tourists_in_2005 35000 .
+sd:Congo, Rep. ei:has_tourists_in_2006 46000 .
+sd:Congo, Rep. ei:has_tourists_in_2007 55000 .
+sd:Congo, Rep. ei:has_tourists_in_2008 62000 .
+sd:Congo, Rep. ei:has_tourists_in_2009 94000 .
+sd:Congo, Rep. ei:has_tourists_in_2010 101000 .
+sd:Dominica a dbpedia-owl:country .
+sd:Dominica gn:countryCode "DMA" .
+sd:Dominica ei:has_tourists_in_2004 80000 .
+sd:Dominica ei:has_tourists_in_2005 79000 .
+sd:Dominica ei:has_tourists_in_2006 84000 .
+sd:Dominica ei:has_tourists_in_2007 81000 .
+sd:Dominica ei:has_tourists_in_2008 81000 .
+sd:Dominica ei:has_tourists_in_2009 75000 .
+sd:Dominica ei:has_tourists_in_2010 77000 .
+sd:Dominica ei:has_tourists_in_2011 76000 .
+sd:Liberia a dbpedia-owl:country .
+sd:Liberia gn:countryCode "LBR" .
+sd:Maldives a dbpedia-owl:country .
+sd:Maldives gn:countryCode "MDV" .
+sd:Maldives ei:has_tourists_in_2004 617000 .
+sd:Maldives ei:has_tourists_in_2005 395000 .
+sd:Maldives ei:has_tourists_in_2006 602000 .
+sd:Maldives ei:has_tourists_in_2007 676000 .
+sd:Maldives ei:has_tourists_in_2008 683000 .
+sd:Maldives ei:has_tourists_in_2009 656000 .
+sd:Maldives ei:has_tourists_in_2010 792000 .
+sd:Maldives ei:has_tourists_in_2011 931000 .
+sd:Pakistan a dbpedia-owl:country .
+sd:Pakistan gn:countryCode "PAK" .
+sd:Pakistan ei:has_tourists_in_2004 648000 .
+sd:Pakistan ei:has_tourists_in_2005 798000 .
+sd:Pakistan ei:has_tourists_in_2006 898000 .
+sd:Pakistan ei:has_tourists_in_2007 840000 .
+sd:Pakistan ei:has_tourists_in_2008 823000 .
+sd:Pakistan ei:has_tourists_in_2009 855000 .
+sd:Pakistan ei:has_tourists_in_2010 907000 .
+sd:Oman a dbpedia-owl:country .
+sd:Oman gn:countryCode "OMN" .
+sd:Oman ei:has_tourists_in_2004 908000 .
+sd:Oman ei:has_tourists_in_2005 1114000 .
+sd:Oman ei:has_tourists_in_2006 1336000 .
+sd:Oman ei:has_tourists_in_2007 1182000 .
+sd:Oman ei:has_tourists_in_2008 1378000 .
+sd:Oman ei:has_tourists_in_2009 1280000 .
+sd:Oman ei:has_tourists_in_2010 1048000 .
+sd:Tanzania a dbpedia-owl:country .
+sd:Tanzania gn:countryCode "TZA" .
+sd:Tanzania ei:has_tourists_in_2004 566000 .
+sd:Tanzania ei:has_tourists_in_2005 590000 .
+sd:Tanzania ei:has_tourists_in_2006 622000 .
+sd:Tanzania ei:has_tourists_in_2007 692000 .
+sd:Tanzania ei:has_tourists_in_2008 750000 .
+sd:Tanzania ei:has_tourists_in_2009 695000 .
+sd:Tanzania ei:has_tourists_in_2010 754000 .
+sd:Tanzania ei:has_tourists_in_2011 795000 .
+sd:Albania a dbpedia-owl:country .
+sd:Albania gn:countryCode "ALB" .
+sd:Albania ei:has_tourists_in_2004 645000 .
+sd:Albania ei:has_tourists_in_2005 748000 .
+sd:Albania ei:has_tourists_in_2006 937000 .
+sd:Albania ei:has_tourists_in_2007 1127000 .
+sd:Albania ei:has_tourists_in_2008 1420000 .
+sd:Albania ei:has_tourists_in_2009 1856000 .
+sd:Albania ei:has_tourists_in_2010 2417000 .
+sd:Albania ei:has_tourists_in_2011 2932000 .
+sd:Gabon a dbpedia-owl:country .
+sd:Gabon gn:countryCode "GAB" .
+sd:Gabon ei:has_tourists_in_2004 244000 .
+sd:Gabon ei:has_tourists_in_2005 269000 .
+sd:Monaco a dbpedia-owl:country .
+sd:Monaco gn:countryCode "MCO" .
+sd:Monaco ei:has_tourists_in_2004 250000 .
+sd:Monaco ei:has_tourists_in_2005 286000 .
+sd:Monaco ei:has_tourists_in_2006 313000 .
+sd:Monaco ei:has_tourists_in_2007 328000 .
+sd:Monaco ei:has_tourists_in_2008 324000 .
+sd:Monaco ei:has_tourists_in_2009 265000 .
+sd:Monaco ei:has_tourists_in_2010 279000 .
+sd:Monaco ei:has_tourists_in_2011 295000 .
+sd:New Zealand a dbpedia-owl:country .
+sd:New Zealand gn:countryCode "NZL" .
+sd:New Zealand ei:has_tourists_in_2004 2325000 .
+sd:New Zealand ei:has_tourists_in_2005 2353000 .
+sd:New Zealand ei:has_tourists_in_2006 2390000 .
+sd:New Zealand ei:has_tourists_in_2007 2434000 .
+sd:New Zealand ei:has_tourists_in_2008 2411000 .
+sd:New Zealand ei:has_tourists_in_2009 2422000 .
+sd:New Zealand ei:has_tourists_in_2010 2492000 .
+sd:New Zealand ei:has_tourists_in_2011 2572000 .
+sd:Jamaica a dbpedia-owl:country .
+sd:Jamaica gn:countryCode "JAM" .
+sd:Jamaica ei:has_tourists_in_2004 1415000 .
+sd:Jamaica ei:has_tourists_in_2005 1479000 .
+sd:Jamaica ei:has_tourists_in_2006 1679000 .
+sd:Jamaica ei:has_tourists_in_2007 1701000 .
+sd:Jamaica ei:has_tourists_in_2008 1767000 .
+sd:Jamaica ei:has_tourists_in_2009 1831000 .
+sd:Jamaica ei:has_tourists_in_2010 1922000 .
+sd:Jamaica ei:has_tourists_in_2011 1952000 .
+sd:Greenland a dbpedia-owl:country .
+sd:Greenland gn:countryCode "GRL" .
+sd:Samoa a dbpedia-owl:country .
+sd:Samoa gn:countryCode "WSM" .
+sd:Samoa ei:has_tourists_in_2004 98000 .
+sd:Samoa ei:has_tourists_in_2005 102000 .
+sd:Samoa ei:has_tourists_in_2006 110000 .
+sd:Samoa ei:has_tourists_in_2007 117000 .
+sd:Samoa ei:has_tourists_in_2008 118000 .
+sd:Samoa ei:has_tourists_in_2009 122000 .
+sd:Samoa ei:has_tourists_in_2010 122000 .
+sd:Samoa ei:has_tourists_in_2011 121000 .
+sd:Slovak Republic a dbpedia-owl:country .
+sd:Slovak Republic gn:countryCode "SVK" .
+sd:Slovak Republic ei:has_tourists_in_2004 1401000 .
+sd:Slovak Republic ei:has_tourists_in_2005 1515000 .
+sd:Slovak Republic ei:has_tourists_in_2006 1612000 .
+sd:Slovak Republic ei:has_tourists_in_2007 1685000 .
+sd:Slovak Republic ei:has_tourists_in_2008 1767000 .
+sd:Slovak Republic ei:has_tourists_in_2009 1298000 .
+sd:Slovak Republic ei:has_tourists_in_2010 1327000 .
+sd:Slovak Republic ei:has_tourists_in_2011 1460000 .
+sd:United Arab Emirates a dbpedia-owl:country .
+sd:United Arab Emirates gn:countryCode "ARE" .
+sd:United Arab Emirates ei:has_tourists_in_2004 6195000 .
+sd:United Arab Emirates ei:has_tourists_in_2005 7126000 .
+sd:Guam a dbpedia-owl:country .
+sd:Guam gn:countryCode "GUM" .
+sd:Guam ei:has_tourists_in_2004 1160000 .
+sd:Guam ei:has_tourists_in_2005 1228000 .
+sd:Guam ei:has_tourists_in_2006 1212000 .
+sd:Guam ei:has_tourists_in_2007 1225000 .
+sd:Guam ei:has_tourists_in_2008 1142000 .
+sd:Guam ei:has_tourists_in_2009 1053000 .
+sd:Guam ei:has_tourists_in_2010 1196000 .
+sd:Guam ei:has_tourists_in_2011 1159000 .
+sd:Uruguay a dbpedia-owl:country .
+sd:Uruguay gn:countryCode "URY" .
+sd:Uruguay ei:has_tourists_in_2004 1756000 .
+sd:Uruguay ei:has_tourists_in_2005 1808000 .
+sd:Uruguay ei:has_tourists_in_2006 1749000 .
+sd:Uruguay ei:has_tourists_in_2007 1753000 .
+sd:Uruguay ei:has_tourists_in_2008 1938000 .
+sd:Uruguay ei:has_tourists_in_2009 2055000 .
+sd:Uruguay ei:has_tourists_in_2010 2353000 .
+sd:Uruguay ei:has_tourists_in_2011 2857000 .
+sd:India a dbpedia-owl:country .
+sd:India gn:countryCode "IND" .
+sd:India ei:has_tourists_in_2004 3457000 .
+sd:India ei:has_tourists_in_2005 3919000 .
+sd:India ei:has_tourists_in_2006 4447000 .
+sd:India ei:has_tourists_in_2007 5082000 .
+sd:India ei:has_tourists_in_2008 5283000 .
+sd:India ei:has_tourists_in_2009 5168000 .
+sd:India ei:has_tourists_in_2010 5776000 .
+sd:India ei:has_tourists_in_2011 6309000 .
+sd:Azerbaijan a dbpedia-owl:country .
+sd:Azerbaijan gn:countryCode "AZE" .
+sd:Azerbaijan ei:has_tourists_in_2004 989000 .
+sd:Azerbaijan ei:has_tourists_in_2005 693000 .
+sd:Azerbaijan ei:has_tourists_in_2006 682000 .
+sd:Azerbaijan ei:has_tourists_in_2007 732000 .
+sd:Azerbaijan ei:has_tourists_in_2008 1043000 .
+sd:Azerbaijan ei:has_tourists_in_2009 1005000 .
+sd:Azerbaijan ei:has_tourists_in_2010 1280000 .
+sd:Azerbaijan ei:has_tourists_in_2011 1562000 .
+sd:Lesotho a dbpedia-owl:country .
+sd:Lesotho gn:countryCode "LSO" .
+sd:Lesotho ei:has_tourists_in_2006 347000 .
+sd:Lesotho ei:has_tourists_in_2007 292000 .
+sd:Lesotho ei:has_tourists_in_2008 285000 .
+sd:Lesotho ei:has_tourists_in_2009 320000 .
+sd:Lesotho ei:has_tourists_in_2010 414000 .
+sd:Lesotho ei:has_tourists_in_2011 397000 .
+sd:Kenya a dbpedia-owl:country .
+sd:Kenya gn:countryCode "KEN" .
+sd:Kenya ei:has_tourists_in_2004 1199000 .
+sd:Kenya ei:has_tourists_in_2005 1399000 .
+sd:Kenya ei:has_tourists_in_2006 1464000 .
+sd:Kenya ei:has_tourists_in_2007 1686000 .
+sd:Kenya ei:has_tourists_in_2008 1141000 .
+sd:Kenya ei:has_tourists_in_2009 1392000 .
+sd:Kenya ei:has_tourists_in_2010 1470000 .
+sd:Tajikistan a dbpedia-owl:country .
+sd:Tajikistan gn:countryCode "TJK" .
+sd:Tajikistan ei:has_tourists_in_2008 325000 .
+sd:Tajikistan ei:has_tourists_in_2009 207000 .
+sd:Tajikistan ei:has_tourists_in_2010 160000 .
+sd:Tajikistan ei:has_tourists_in_2011 183000 .
+sd:Turkey a dbpedia-owl:country .
+sd:Turkey gn:countryCode "TUR" .
+sd:Turkey ei:has_tourists_in_2004 16826000 .
+sd:Turkey ei:has_tourists_in_2005 20273000 .
+sd:Turkey ei:has_tourists_in_2006 18916000 .
+sd:Turkey ei:has_tourists_in_2007 26122000 .
+sd:Turkey ei:has_tourists_in_2008 29637000 .
+sd:Turkey ei:has_tourists_in_2009 30435000 .
+sd:Turkey ei:has_tourists_in_2010 31396000 .
+sd:Turkey ei:has_tourists_in_2011 34038000 .
+sd:Afghanistan a dbpedia-owl:country .
+sd:Afghanistan gn:countryCode "AFG" .
+sd:Venezuela, RB a dbpedia-owl:country .
+sd:Venezuela, RB gn:countryCode "VEN" .
+sd:Venezuela, RB ei:has_tourists_in_2004 486000 .
+sd:Venezuela, RB ei:has_tourists_in_2005 706000 .
+sd:Venezuela, RB ei:has_tourists_in_2006 748000 .
+sd:Venezuela, RB ei:has_tourists_in_2007 771000 .
+sd:Venezuela, RB ei:has_tourists_in_2008 745000 .
+sd:Venezuela, RB ei:has_tourists_in_2009 615000 .
+sd:Venezuela, RB ei:has_tourists_in_2010 526000 .
+sd:Venezuela, RB ei:has_tourists_in_2011 595000 .
+sd:Bangladesh a dbpedia-owl:country .
+sd:Bangladesh gn:countryCode "BGD" .
+sd:Bangladesh ei:has_tourists_in_2004 271000 .
+sd:Bangladesh ei:has_tourists_in_2005 208000 .
+sd:Bangladesh ei:has_tourists_in_2006 200000 .
+sd:Bangladesh ei:has_tourists_in_2007 289000 .
+sd:Bangladesh ei:has_tourists_in_2008 467000 .
+sd:Bangladesh ei:has_tourists_in_2009 267000 .
+sd:Bangladesh ei:has_tourists_in_2010 303000 .
+sd:Mauritania a dbpedia-owl:country .
+sd:Mauritania gn:countryCode "MRT" .
+sd:Solomon Islands a dbpedia-owl:country .
+sd:Solomon Islands gn:countryCode "SLB" .
+sd:Solomon Islands ei:has_tourists_in_2004 5600 .
+sd:Solomon Islands ei:has_tourists_in_2005 9000 .
+sd:Solomon Islands ei:has_tourists_in_2006 11000 .
+sd:Solomon Islands ei:has_tourists_in_2007 14000 .
+sd:Solomon Islands ei:has_tourists_in_2008 16000 .
+sd:Solomon Islands ei:has_tourists_in_2009 18000 .
+sd:Solomon Islands ei:has_tourists_in_2010 21000 .
+sd:Solomon Islands ei:has_tourists_in_2011 23000 .
+sd:Korea, Rep. a dbpedia-owl:country .
+sd:Korea, Rep. gn:countryCode "KOR" .
+sd:Korea, Rep. ei:has_tourists_in_2004 5818000 .
+sd:Korea, Rep. ei:has_tourists_in_2005 6023000 .
+sd:Korea, Rep. ei:has_tourists_in_2006 6155000 .
+sd:Korea, Rep. ei:has_tourists_in_2007 6448000 .
+sd:Korea, Rep. ei:has_tourists_in_2008 6891000 .
+sd:Korea, Rep. ei:has_tourists_in_2009 7818000 .
+sd:Korea, Rep. ei:has_tourists_in_2010 8798000 .
+sd:Korea, Rep. ei:has_tourists_in_2011 9795000 .
+sd:San Marino a dbpedia-owl:country .
+sd:San Marino gn:countryCode "SMR" .
+sd:San Marino ei:has_tourists_in_2004 42000 .
+sd:San Marino ei:has_tourists_in_2005 50000 .
+sd:San Marino ei:has_tourists_in_2006 50000 .
+sd:San Marino ei:has_tourists_in_2007 69000 .
+sd:San Marino ei:has_tourists_in_2008 115000 .
+sd:San Marino ei:has_tourists_in_2009 151000 .
+sd:San Marino ei:has_tourists_in_2010 120000 .
+sd:San Marino ei:has_tourists_in_2011 156000 .
+sd:French Polynesia a dbpedia-owl:country .
+sd:French Polynesia gn:countryCode "PYF" .
+sd:French Polynesia ei:has_tourists_in_2004 212000 .
+sd:French Polynesia ei:has_tourists_in_2005 208000 .
+sd:French Polynesia ei:has_tourists_in_2006 222000 .
+sd:French Polynesia ei:has_tourists_in_2007 218000 .
+sd:French Polynesia ei:has_tourists_in_2008 196000 .
+sd:French Polynesia ei:has_tourists_in_2009 160000 .
+sd:French Polynesia ei:has_tourists_in_2010 154000 .
+sd:French Polynesia ei:has_tourists_in_2011 163000 .
+sd:France a dbpedia-owl:country .
+sd:France gn:countryCode "FRA" .
+sd:France ei:has_tourists_in_2004 74433000 .
+sd:France ei:has_tourists_in_2005 74988000 .
+sd:France ei:has_tourists_in_2006 77916000 .
+sd:France ei:has_tourists_in_2007 80853000 .
+sd:France ei:has_tourists_in_2008 79218000 .
+sd:France ei:has_tourists_in_2009 76764000 .
+sd:France ei:has_tourists_in_2010 77648000 .
+sd:France ei:has_tourists_in_2011 81411000 .
+sd:Syrian Arab Republic a dbpedia-owl:country .
+sd:Syrian Arab Republic gn:countryCode "SYR" .
+sd:Syrian Arab Republic ei:has_tourists_in_2004 3399000 .
+sd:Syrian Arab Republic ei:has_tourists_in_2005 3571000 .
+sd:Syrian Arab Republic ei:has_tourists_in_2006 4231000 .
+sd:Syrian Arab Republic ei:has_tourists_in_2007 4158000 .
+sd:Syrian Arab Republic ei:has_tourists_in_2008 5430000 .
+sd:Syrian Arab Republic ei:has_tourists_in_2009 6092000 .
+sd:Syrian Arab Republic ei:has_tourists_in_2010 8546000 .
+sd:Bermuda a dbpedia-owl:country .
+sd:Bermuda gn:countryCode "BMU" .
+sd:Bermuda ei:has_tourists_in_2004 272000 .
+sd:Bermuda ei:has_tourists_in_2005 270000 .
+sd:Bermuda ei:has_tourists_in_2006 299000 .
+sd:Bermuda ei:has_tourists_in_2007 306000 .
+sd:Bermuda ei:has_tourists_in_2008 264000 .
+sd:Bermuda ei:has_tourists_in_2009 236000 .
+sd:Bermuda ei:has_tourists_in_2010 232000 .
+sd:Bermuda ei:has_tourists_in_2011 236000 .
+sd:Namibia a dbpedia-owl:country .
+sd:Namibia gn:countryCode "NAM" .
+sd:Namibia ei:has_tourists_in_2004 716000 .
+sd:Namibia ei:has_tourists_in_2005 778000 .
+sd:Namibia ei:has_tourists_in_2006 833000 .
+sd:Namibia ei:has_tourists_in_2007 929000 .
+sd:Namibia ei:has_tourists_in_2008 931000 .
+sd:Namibia ei:has_tourists_in_2009 980000 .
+sd:Namibia ei:has_tourists_in_2010 984000 .
+sd:Somalia a dbpedia-owl:country .
+sd:Somalia gn:countryCode "SOM" .
+sd:Peru a dbpedia-owl:country .
+sd:Peru gn:countryCode "PER" .
+sd:Peru ei:has_tourists_in_2004 1350000 .
+sd:Peru ei:has_tourists_in_2005 1571000 .
+sd:Peru ei:has_tourists_in_2006 1721000 .
+sd:Peru ei:has_tourists_in_2007 1916000 .
+sd:Peru ei:has_tourists_in_2008 2058000 .
+sd:Peru ei:has_tourists_in_2009 2140000 .
+sd:Peru ei:has_tourists_in_2010 2299000 .
+sd:Peru ei:has_tourists_in_2011 2598000 .
+sd:Vanuatu a dbpedia-owl:country .
+sd:Vanuatu gn:countryCode "VUT" .
+sd:Vanuatu ei:has_tourists_in_2004 61000 .
+sd:Vanuatu ei:has_tourists_in_2005 62000 .
+sd:Vanuatu ei:has_tourists_in_2006 68000 .
+sd:Vanuatu ei:has_tourists_in_2007 81000 .
+sd:Vanuatu ei:has_tourists_in_2008 91000 .
+sd:Vanuatu ei:has_tourists_in_2009 99000 .
+sd:Vanuatu ei:has_tourists_in_2010 97000 .
+sd:Vanuatu ei:has_tourists_in_2011 94000 .
+sd:Nigeria a dbpedia-owl:country .
+sd:Nigeria gn:countryCode "NGA" .
+sd:Nigeria ei:has_tourists_in_2004 962000 .
+sd:Nigeria ei:has_tourists_in_2005 1010000 .
+sd:Nigeria ei:has_tourists_in_2006 1111000 .
+sd:Nigeria ei:has_tourists_in_2007 1212000 .
+sd:Nigeria ei:has_tourists_in_2008 1313000 .
+sd:Nigeria ei:has_tourists_in_2009 1414000 .
+sd:Nigeria ei:has_tourists_in_2010 1555000 .
+sd:Nigeria ei:has_tourists_in_2011 715000 .
+sd:Seychelles a dbpedia-owl:country .
+sd:Seychelles gn:countryCode "SYC" .
+sd:Seychelles ei:has_tourists_in_2004 121000 .
+sd:Seychelles ei:has_tourists_in_2005 129000 .
+sd:Seychelles ei:has_tourists_in_2006 141000 .
+sd:Seychelles ei:has_tourists_in_2007 161000 .
+sd:Seychelles ei:has_tourists_in_2008 159000 .
+sd:Seychelles ei:has_tourists_in_2009 158000 .
+sd:Seychelles ei:has_tourists_in_2010 175000 .
+sd:Seychelles ei:has_tourists_in_2011 194000 .
+sd:Norway a dbpedia-owl:country .
+sd:Norway gn:countryCode "NOR" .
+sd:Norway ei:has_tourists_in_2004 3628000 .
+sd:Norway ei:has_tourists_in_2005 3824000 .
+sd:Norway ei:has_tourists_in_2006 4070000 .
+sd:Norway ei:has_tourists_in_2007 4377000 .
+sd:Norway ei:has_tourists_in_2008 4347000 .
+sd:Norway ei:has_tourists_in_2009 4346000 .
+sd:Norway ei:has_tourists_in_2010 4767000 .
+sd:Norway ei:has_tourists_in_2011 4963000 .
+sd:Cote d'Ivoire a dbpedia-owl:country .
+sd:Cote d'Ivoire gn:countryCode "CIV" .
+sd:Cote d'Ivoire ei:has_tourists_in_2007 182000 .
+sd:Cote d'Ivoire ei:has_tourists_in_2008 205000 .
+sd:Cote d'Ivoire ei:has_tourists_in_2009 231000 .
+sd:Cote d'Ivoire ei:has_tourists_in_2010 260000 .
+sd:Cote d'Ivoire ei:has_tourists_in_2011 270000 .
+sd:West Bank and Gaza a dbpedia-owl:country .
+sd:West Bank and Gaza gn:countryCode "WBG" .
+sd:West Bank and Gaza ei:has_tourists_in_2004 56000 .
+sd:West Bank and Gaza ei:has_tourists_in_2005 88000 .
+sd:West Bank and Gaza ei:has_tourists_in_2006 123000 .
+sd:West Bank and Gaza ei:has_tourists_in_2007 264000 .
+sd:West Bank and Gaza ei:has_tourists_in_2008 387000 .
+sd:West Bank and Gaza ei:has_tourists_in_2009 396000 .
+sd:West Bank and Gaza ei:has_tourists_in_2010 522000 .
+sd:West Bank and Gaza ei:has_tourists_in_2011 449000 .
+sd:Benin a dbpedia-owl:country .
+sd:Benin gn:countryCode "BEN" .
+sd:Benin ei:has_tourists_in_2004 174000 .
+sd:Benin ei:has_tourists_in_2005 176000 .
+sd:Benin ei:has_tourists_in_2006 180000 .
+sd:Benin ei:has_tourists_in_2007 186000 .
+sd:Benin ei:has_tourists_in_2008 188000 .
+sd:Benin ei:has_tourists_in_2009 190000 .
+sd:Benin ei:has_tourists_in_2010 199000 .
+sd:Benin ei:has_tourists_in_2011 209000 .
+sd:Cuba a dbpedia-owl:country .
+sd:Cuba gn:countryCode "CUB" .
+sd:Cuba ei:has_tourists_in_2004 2017000 .
+sd:Cuba ei:has_tourists_in_2005 2261000 .
+sd:Cuba ei:has_tourists_in_2006 2150000 .
+sd:Cuba ei:has_tourists_in_2007 2119000 .
+sd:Cuba ei:has_tourists_in_2008 2316000 .
+sd:Cuba ei:has_tourists_in_2009 2405000 .
+sd:Cuba ei:has_tourists_in_2010 2507000 .
+sd:Cuba ei:has_tourists_in_2011 2688000 .
+sd:Cameroon a dbpedia-owl:country .
+sd:Cameroon gn:countryCode "CMR" .
+sd:Cameroon ei:has_tourists_in_2006 451000 .
+sd:Cameroon ei:has_tourists_in_2007 477000 .
+sd:Cameroon ei:has_tourists_in_2008 487000 .
+sd:Cameroon ei:has_tourists_in_2009 498000 .
+sd:Cameroon ei:has_tourists_in_2010 573000 .
+sd:Montenegro a dbpedia-owl:country .
+sd:Montenegro gn:countryCode "MNE" .
+sd:Montenegro ei:has_tourists_in_2004 188000 .
+sd:Montenegro ei:has_tourists_in_2005 272000 .
+sd:Montenegro ei:has_tourists_in_2006 378000 .
+sd:Montenegro ei:has_tourists_in_2007 984000 .
+sd:Montenegro ei:has_tourists_in_2008 1031000 .
+sd:Montenegro ei:has_tourists_in_2009 1044000 .
+sd:Montenegro ei:has_tourists_in_2010 1088000 .
+sd:Montenegro ei:has_tourists_in_2011 1201000 .
+sd:Togo a dbpedia-owl:country .
+sd:Togo gn:countryCode "TGO" .
+sd:Togo ei:has_tourists_in_2004 83000 .
+sd:Togo ei:has_tourists_in_2005 81000 .
+sd:Togo ei:has_tourists_in_2006 94000 .
+sd:Togo ei:has_tourists_in_2007 86000 .
+sd:Togo ei:has_tourists_in_2008 74000 .
+sd:Togo ei:has_tourists_in_2009 150000 .
+sd:Togo ei:has_tourists_in_2010 202000 .
+sd:Togo ei:has_tourists_in_2011 300000 .
+sd:China a dbpedia-owl:country .
+sd:China gn:countryCode "CHN" .
+sd:China ei:has_tourists_in_2004 41761000 .
+sd:China ei:has_tourists_in_2005 46809000 .
+sd:China ei:has_tourists_in_2006 49913000 .
+sd:China ei:has_tourists_in_2007 54720000 .
+sd:China ei:has_tourists_in_2008 53049000 .
+sd:China ei:has_tourists_in_2009 50875000 .
+sd:China ei:has_tourists_in_2010 55664000 .
+sd:China ei:has_tourists_in_2011 57581000 .
+sd:Armenia a dbpedia-owl:country .
+sd:Armenia gn:countryCode "ARM" .
+sd:Armenia ei:has_tourists_in_2004 263000 .
+sd:Armenia ei:has_tourists_in_2005 319000 .
+sd:Armenia ei:has_tourists_in_2006 382000 .
+sd:Armenia ei:has_tourists_in_2007 511000 .
+sd:Armenia ei:has_tourists_in_2008 558000 .
+sd:Armenia ei:has_tourists_in_2009 575000 .
+sd:Armenia ei:has_tourists_in_2010 684000 .
+sd:Armenia ei:has_tourists_in_2011 758000 .
+sd:Timor-Leste a dbpedia-owl:country .
+sd:Timor-Leste gn:countryCode "TMP" .
+sd:Timor-Leste ei:has_tourists_in_2006 14000 .
+sd:Timor-Leste ei:has_tourists_in_2007 22000 .
+sd:Timor-Leste ei:has_tourists_in_2008 36000 .
+sd:Timor-Leste ei:has_tourists_in_2009 44000 .
+sd:Timor-Leste ei:has_tourists_in_2010 40000 .
+sd:Timor-Leste ei:has_tourists_in_2011 51000 .
+sd:Dominican Republic a dbpedia-owl:country .
+sd:Dominican Republic gn:countryCode "DOM" .
+sd:Dominican Republic ei:has_tourists_in_2004 3450000 .
+sd:Dominican Republic ei:has_tourists_in_2005 3691000 .
+sd:Dominican Republic ei:has_tourists_in_2006 3965000 .
+sd:Dominican Republic ei:has_tourists_in_2007 3980000 .
+sd:Dominican Republic ei:has_tourists_in_2008 3980000 .
+sd:Dominican Republic ei:has_tourists_in_2009 3992000 .
+sd:Dominican Republic ei:has_tourists_in_2010 4125000 .
+sd:Dominican Republic ei:has_tourists_in_2011 4306000 .
+sd:Ukraine a dbpedia-owl:country .
+sd:Ukraine gn:countryCode "UKR" .
+sd:Ukraine ei:has_tourists_in_2004 15629000 .
+sd:Ukraine ei:has_tourists_in_2005 17631000 .
+sd:Ukraine ei:has_tourists_in_2006 18936000 .
+sd:Ukraine ei:has_tourists_in_2007 23122000 .
+sd:Ukraine ei:has_tourists_in_2008 25449000 .
+sd:Ukraine ei:has_tourists_in_2009 20798000 .
+sd:Ukraine ei:has_tourists_in_2010 21203000 .
+sd:Ukraine ei:has_tourists_in_2011 21415000 .
+sd:Bahrain a dbpedia-owl:country .
+sd:Bahrain gn:countryCode "BHR" .
+sd:Bahrain ei:has_tourists_in_2004 5667000 .
+sd:Bahrain ei:has_tourists_in_2005 6313000 .
+sd:Bahrain ei:has_tourists_in_2006 7289000 .
+sd:Bahrain ei:has_tourists_in_2007 7833000 .
+sd:Bahrain ei:has_tourists_in_2008 8631000 .
+sd:Bahrain ei:has_tourists_in_2009 8861000 .
+sd:Bahrain ei:has_tourists_in_2010 11952000 .
+sd:Bahrain ei:has_tourists_in_2011 6732000 .
+sd:Tonga a dbpedia-owl:country .
+sd:Tonga gn:countryCode "TON" .
+sd:Tonga ei:has_tourists_in_2004 41000 .
+sd:Tonga ei:has_tourists_in_2005 42000 .
+sd:Tonga ei:has_tourists_in_2006 39000 .
+sd:Tonga ei:has_tourists_in_2007 46000 .
+sd:Tonga ei:has_tourists_in_2008 49000 .
+sd:Tonga ei:has_tourists_in_2009 51000 .
+sd:Tonga ei:has_tourists_in_2010 45000 .
+sd:Tonga ei:has_tourists_in_2011 46000 .
+sd:Finland a dbpedia-owl:country .
+sd:Finland gn:countryCode "FIN" .
+sd:Finland ei:has_tourists_in_2004 2840000 .
+sd:Finland ei:has_tourists_in_2005 3140000 .
+sd:Finland ei:has_tourists_in_2006 3375000 .
+sd:Finland ei:has_tourists_in_2007 3519000 .
+sd:Finland ei:has_tourists_in_2008 3583000 .
+sd:Finland ei:has_tourists_in_2009 3423000 .
+sd:Finland ei:has_tourists_in_2010 3670000 .
+sd:Finland ei:has_tourists_in_2011 4192000 .
+sd:Libya a dbpedia-owl:country .
+sd:Libya gn:countryCode "LBY" .
+sd:Libya ei:has_tourists_in_2004 43000 .
+sd:Libya ei:has_tourists_in_2005 81000 .
+sd:Libya ei:has_tourists_in_2006 42000 .
+sd:Libya ei:has_tourists_in_2007 38000 .
+sd:Libya ei:has_tourists_in_2008 34000 .
+sd:Cayman Islands a dbpedia-owl:country .
+sd:Cayman Islands gn:countryCode "CYM" .
+sd:Cayman Islands ei:has_tourists_in_2004 260000 .
+sd:Cayman Islands ei:has_tourists_in_2005 168000 .
+sd:Cayman Islands ei:has_tourists_in_2006 267000 .
+sd:Cayman Islands ei:has_tourists_in_2007 292000 .
+sd:Cayman Islands ei:has_tourists_in_2008 303000 .
+sd:Cayman Islands ei:has_tourists_in_2009 272000 .
+sd:Cayman Islands ei:has_tourists_in_2010 288000 .
+sd:Cayman Islands ei:has_tourists_in_2011 309000 .
+sd:Central African Republic a dbpedia-owl:country .
+sd:Central African Republic gn:countryCode "CAF" .
+sd:Central African Republic ei:has_tourists_in_2004 8000 .
+sd:Central African Republic ei:has_tourists_in_2005 12000 .
+sd:Central African Republic ei:has_tourists_in_2006 14000 .
+sd:Central African Republic ei:has_tourists_in_2007 17000 .
+sd:Central African Republic ei:has_tourists_in_2008 31000 .
+sd:Central African Republic ei:has_tourists_in_2009 52000 .
+sd:Central African Republic ei:has_tourists_in_2010 54000 .
+sd:Mauritius a dbpedia-owl:country .
+sd:Mauritius gn:countryCode "MUS" .
+sd:Mauritius ei:has_tourists_in_2004 719000 .
+sd:Mauritius ei:has_tourists_in_2005 761000 .
+sd:Mauritius ei:has_tourists_in_2006 788000 .
+sd:Mauritius ei:has_tourists_in_2007 907000 .
+sd:Mauritius ei:has_tourists_in_2008 930000 .
+sd:Mauritius ei:has_tourists_in_2009 871000 .
+sd:Mauritius ei:has_tourists_in_2010 935000 .
+sd:Mauritius ei:has_tourists_in_2011 965000 .
+sd:Liechtenstein a dbpedia-owl:country .
+sd:Liechtenstein gn:countryCode "LIE" .
+sd:Liechtenstein ei:has_tourists_in_2004 49000 .
+sd:Liechtenstein ei:has_tourists_in_2005 50000 .
+sd:Liechtenstein ei:has_tourists_in_2006 55000 .
+sd:Liechtenstein ei:has_tourists_in_2007 58000 .
+sd:Liechtenstein ei:has_tourists_in_2008 58000 .
+sd:Liechtenstein ei:has_tourists_in_2009 52000 .
+sd:Liechtenstein ei:has_tourists_in_2010 50000 .
+sd:Liechtenstein ei:has_tourists_in_2011 53000 .
+sd:Belarus a dbpedia-owl:country .
+sd:Belarus gn:countryCode "BLR" .
+sd:Belarus ei:has_tourists_in_2004 68000 .
+sd:Belarus ei:has_tourists_in_2005 91000 .
+sd:Belarus ei:has_tourists_in_2006 90000 .
+sd:Belarus ei:has_tourists_in_2007 105000 .
+sd:Belarus ei:has_tourists_in_2008 92000 .
+sd:Belarus ei:has_tourists_in_2009 95000 .
+sd:Belarus ei:has_tourists_in_2010 120000 .
+sd:Belarus ei:has_tourists_in_2011 116000 .
+sd:Mali a dbpedia-owl:country .
+sd:Mali gn:countryCode "MLI" .
+sd:Mali ei:has_tourists_in_2004 113000 .
+sd:Mali ei:has_tourists_in_2005 143000 .
+sd:Mali ei:has_tourists_in_2006 153000 .
+sd:Mali ei:has_tourists_in_2007 164000 .
+sd:Mali ei:has_tourists_in_2008 190000 .
+sd:Mali ei:has_tourists_in_2009 160000 .
+sd:Mali ei:has_tourists_in_2010 169000 .
+sd:Mali ei:has_tourists_in_2011 160000 .
+sd:Micronesia, Fed. Sts. a dbpedia-owl:country .
+sd:Micronesia, Fed. Sts. gn:countryCode "FSM" .
+sd:Micronesia, Fed. Sts. ei:has_tourists_in_2004 19000 .
+sd:Micronesia, Fed. Sts. ei:has_tourists_in_2005 19000 .
+sd:Micronesia, Fed. Sts. ei:has_tourists_in_2006 19000 .
+sd:Micronesia, Fed. Sts. ei:has_tourists_in_2007 21000 .
+sd:Micronesia, Fed. Sts. ei:has_tourists_in_2008 26000 .
+sd:Korea, Dem. Rep. a dbpedia-owl:country .
+sd:Korea, Dem. Rep. gn:countryCode "PRK" .
+sd:Bulgaria a dbpedia-owl:country .
+sd:Bulgaria gn:countryCode "BGR" .
+sd:Bulgaria ei:has_tourists_in_2004 4630000 .
+sd:Bulgaria ei:has_tourists_in_2005 4837000 .
+sd:Bulgaria ei:has_tourists_in_2006 5158000 .
+sd:Bulgaria ei:has_tourists_in_2007 5151000 .
+sd:Bulgaria ei:has_tourists_in_2008 5780000 .
+sd:Bulgaria ei:has_tourists_in_2009 5739000 .
+sd:Bulgaria ei:has_tourists_in_2010 6047000 .
+sd:Bulgaria ei:has_tourists_in_2011 6328000 .
+sd:United States a dbpedia-owl:country .
+sd:United States gn:countryCode "USA" .
+sd:United States ei:has_tourists_in_2004 46086000 .
+sd:United States ei:has_tourists_in_2005 49206000 .
+sd:United States ei:has_tourists_in_2006 50977000 .
+sd:United States ei:has_tourists_in_2007 55978000 .
+sd:United States ei:has_tourists_in_2008 57942000 .
+sd:United States ei:has_tourists_in_2009 54962000 .
+sd:United States ei:has_tourists_in_2010 59796000 .
+sd:United States ei:has_tourists_in_2011 62711000 .
+sd:Romania a dbpedia-owl:country .
+sd:Romania gn:countryCode "ROM" .
+sd:Romania ei:has_tourists_in_2004 6600000 .
+sd:Romania ei:has_tourists_in_2005 5839000 .
+sd:Romania ei:has_tourists_in_2006 6037000 .
+sd:Romania ei:has_tourists_in_2007 7722000 .
+sd:Romania ei:has_tourists_in_2008 8862000 .
+sd:Romania ei:has_tourists_in_2009 7575000 .
+sd:Romania ei:has_tourists_in_2010 7498000 .
+sd:Romania ei:has_tourists_in_2011 7611000 .
+sd:Angola a dbpedia-owl:country .
+sd:Angola gn:countryCode "AGO" .
+sd:Angola ei:has_tourists_in_2004 194000 .
+sd:Angola ei:has_tourists_in_2005 210000 .
+sd:Angola ei:has_tourists_in_2006 121000 .
+sd:Angola ei:has_tourists_in_2007 195000 .
+sd:Angola ei:has_tourists_in_2008 294000 .
+sd:Angola ei:has_tourists_in_2009 366000 .
+sd:Angola ei:has_tourists_in_2010 425000 .
+sd:Angola ei:has_tourists_in_2011 481000 .
+sd:Egypt, Arab Rep. a dbpedia-owl:country .
+sd:Egypt, Arab Rep. gn:countryCode "EGY" .
+sd:Egypt, Arab Rep. ei:has_tourists_in_2004 7795000 .
+sd:Egypt, Arab Rep. ei:has_tourists_in_2005 8244000 .
+sd:Egypt, Arab Rep. ei:has_tourists_in_2006 8646000 .
+sd:Egypt, Arab Rep. ei:has_tourists_in_2007 10610000 .
+sd:Egypt, Arab Rep. ei:has_tourists_in_2008 12296000 .
+sd:Egypt, Arab Rep. ei:has_tourists_in_2009 11914000 .
+sd:Egypt, Arab Rep. ei:has_tourists_in_2010 14051000 .
+sd:Egypt, Arab Rep. ei:has_tourists_in_2011 9497000 .
+sd:South Africa a dbpedia-owl:country .
+sd:South Africa gn:countryCode "ZAF" .
+sd:South Africa ei:has_tourists_in_2004 6678000 .
+sd:South Africa ei:has_tourists_in_2005 7369000 .
+sd:South Africa ei:has_tourists_in_2006 8396000 .
+sd:South Africa ei:has_tourists_in_2007 9091000 .
+sd:South Africa ei:has_tourists_in_2008 9592000 .
+sd:South Africa ei:has_tourists_in_2009 7012000 .
+sd:South Africa ei:has_tourists_in_2010 8074000 .
+sd:South Africa ei:has_tourists_in_2011 8339000 .
+sd:St. Vincent and the Grenadines a dbpedia-owl:country .
+sd:St. Vincent and the Grenadines gn:countryCode "VCT" .
+sd:St. Vincent and the Grenadines ei:has_tourists_in_2004 87000 .
+sd:St. Vincent and the Grenadines ei:has_tourists_in_2005 96000 .
+sd:St. Vincent and the Grenadines ei:has_tourists_in_2006 97000 .
+sd:St. Vincent and the Grenadines ei:has_tourists_in_2007 90000 .
+sd:St. Vincent and the Grenadines ei:has_tourists_in_2008 84000 .
+sd:St. Vincent and the Grenadines ei:has_tourists_in_2009 75000 .
+sd:St. Vincent and the Grenadines ei:has_tourists_in_2010 72000 .
+sd:St. Vincent and the Grenadines ei:has_tourists_in_2011 74000 .
+sd:Cyprus a dbpedia-owl:country .
+sd:Cyprus gn:countryCode "CYP" .
+sd:Cyprus ei:has_tourists_in_2004 2349000 .
+sd:Cyprus ei:has_tourists_in_2005 2470000 .
+sd:Cyprus ei:has_tourists_in_2006 2401000 .
+sd:Cyprus ei:has_tourists_in_2007 2416000 .
+sd:Cyprus ei:has_tourists_in_2008 2404000 .
+sd:Cyprus ei:has_tourists_in_2009 2141000 .
+sd:Cyprus ei:has_tourists_in_2010 2173000 .
+sd:Cyprus ei:has_tourists_in_2011 2392000 .
+sd:Brunei Darussalam a dbpedia-owl:country .
+sd:Brunei Darussalam gn:countryCode "BRN" .
+sd:Brunei Darussalam ei:has_tourists_in_2004 119000 .
+sd:Brunei Darussalam ei:has_tourists_in_2005 126000 .
+sd:Brunei Darussalam ei:has_tourists_in_2006 158000 .
+sd:Brunei Darussalam ei:has_tourists_in_2007 179000 .
+sd:Brunei Darussalam ei:has_tourists_in_2008 226000 .
+sd:Brunei Darussalam ei:has_tourists_in_2009 157000 .
+sd:Brunei Darussalam ei:has_tourists_in_2010 214000 .
+sd:Brunei Darussalam ei:has_tourists_in_2011 242000 .
+sd:Qatar a dbpedia-owl:country .
+sd:Qatar gn:countryCode "QAT" .
+sd:Qatar ei:has_tourists_in_2004 732000 .
+sd:Qatar ei:has_tourists_in_2005 913000 .
+sd:Qatar ei:has_tourists_in_2006 946000 .
+sd:Qatar ei:has_tourists_in_2007 964000 .
+sd:Qatar ei:has_tourists_in_2008 1405000 .
+sd:Qatar ei:has_tourists_in_2009 1659000 .
+sd:Qatar ei:has_tourists_in_2010 1519000 .
+sd:Qatar ei:has_tourists_in_2011 2527000 .
+sd:Malaysia a dbpedia-owl:country .
+sd:Malaysia gn:countryCode "MYS" .
+sd:Malaysia ei:has_tourists_in_2004 15703000 .
+sd:Malaysia ei:has_tourists_in_2005 16431000 .
+sd:Malaysia ei:has_tourists_in_2006 17547000 .
+sd:Malaysia ei:has_tourists_in_2007 20973000 .
+sd:Malaysia ei:has_tourists_in_2008 22052000 .
+sd:Malaysia ei:has_tourists_in_2009 23646000 .
+sd:Malaysia ei:has_tourists_in_2010 24577000 .
+sd:Malaysia ei:has_tourists_in_2011 24714000 .
+sd:Austria a dbpedia-owl:country .
+sd:Austria gn:countryCode "AUT" .
+sd:Austria ei:has_tourists_in_2004 19374000 .
+sd:Austria ei:has_tourists_in_2005 19952000 .
+sd:Austria ei:has_tourists_in_2006 20269000 .
+sd:Austria ei:has_tourists_in_2007 20773000 .
+sd:Austria ei:has_tourists_in_2008 21935000 .
+sd:Austria ei:has_tourists_in_2009 21355000 .
+sd:Austria ei:has_tourists_in_2010 22004000 .
+sd:Austria ei:has_tourists_in_2011 23012000 .
+sd:Vietnam a dbpedia-owl:country .
+sd:Vietnam gn:countryCode "VNM" .
+sd:Vietnam ei:has_tourists_in_2004 2928000 .
+sd:Vietnam ei:has_tourists_in_2005 3477000 .
+sd:Vietnam ei:has_tourists_in_2006 3583000 .
+sd:Vietnam ei:has_tourists_in_2007 4229000 .
+sd:Vietnam ei:has_tourists_in_2008 4236000 .
+sd:Vietnam ei:has_tourists_in_2009 3747000 .
+sd:Vietnam ei:has_tourists_in_2010 5050000 .
+sd:Vietnam ei:has_tourists_in_2011 6014000 .
+sd:Mozambique a dbpedia-owl:country .
+sd:Mozambique gn:countryCode "MOZ" .
+sd:Mozambique ei:has_tourists_in_2004 470000 .
+sd:Mozambique ei:has_tourists_in_2005 578000 .
+sd:Mozambique ei:has_tourists_in_2006 664000 .
+sd:Mozambique ei:has_tourists_in_2007 771000 .
+sd:Mozambique ei:has_tourists_in_2008 1193000 .
+sd:Mozambique ei:has_tourists_in_2009 1461000 .
+sd:Mozambique ei:has_tourists_in_2010 1718000 .
+sd:Uganda a dbpedia-owl:country .
+sd:Uganda gn:countryCode "UGA" .
+sd:Uganda ei:has_tourists_in_2004 512000 .
+sd:Uganda ei:has_tourists_in_2005 468000 .
+sd:Uganda ei:has_tourists_in_2006 539000 .
+sd:Uganda ei:has_tourists_in_2007 642000 .
+sd:Uganda ei:has_tourists_in_2008 844000 .
+sd:Uganda ei:has_tourists_in_2009 807000 .
+sd:Uganda ei:has_tourists_in_2010 946000 .
+sd:Uganda ei:has_tourists_in_2011 1151000 .
+sd:Kyrgyz Republic a dbpedia-owl:country .
+sd:Kyrgyz Republic gn:countryCode "KGZ" .
+sd:Kyrgyz Republic ei:has_tourists_in_2004 398000 .
+sd:Kyrgyz Republic ei:has_tourists_in_2005 319000 .
+sd:Kyrgyz Republic ei:has_tourists_in_2006 766000 .
+sd:Kyrgyz Republic ei:has_tourists_in_2007 1656000 .
+sd:Kyrgyz Republic ei:has_tourists_in_2008 2435000 .
+sd:Kyrgyz Republic ei:has_tourists_in_2009 2147000 .
+sd:Kyrgyz Republic ei:has_tourists_in_2010 1316000 .
+sd:Kyrgyz Republic ei:has_tourists_in_2011 3114000 .
+sd:Hungary a dbpedia-owl:country .
+sd:Hungary gn:countryCode "HUN" .
+sd:Hungary ei:has_tourists_in_2004 12212000 .
+sd:Hungary ei:has_tourists_in_2005 9979000 .
+sd:Hungary ei:has_tourists_in_2006 9259000 .
+sd:Hungary ei:has_tourists_in_2007 8638000 .
+sd:Hungary ei:has_tourists_in_2008 8814000 .
+sd:Hungary ei:has_tourists_in_2009 9058000 .
+sd:Hungary ei:has_tourists_in_2010 9510000 .
+sd:Hungary ei:has_tourists_in_2011 10250000 .
+sd:Niger a dbpedia-owl:country .
+sd:Niger gn:countryCode "NER" .
+sd:Niger ei:has_tourists_in_2004 57000 .
+sd:Niger ei:has_tourists_in_2005 58000 .
+sd:Niger ei:has_tourists_in_2006 60000 .
+sd:Niger ei:has_tourists_in_2007 48000 .
+sd:Niger ei:has_tourists_in_2008 73000 .
+sd:Niger ei:has_tourists_in_2009 66000 .
+sd:Niger ei:has_tourists_in_2010 74000 .
+sd:Niger ei:has_tourists_in_2011 82000 .
+sd:Isle of Man a dbpedia-owl:country .
+sd:Isle of Man gn:countryCode "IMY" .
+sd:Brazil a dbpedia-owl:country .
+sd:Brazil gn:countryCode "BRA" .
+sd:Brazil ei:has_tourists_in_2004 4794000 .
+sd:Brazil ei:has_tourists_in_2005 5358000 .
+sd:Brazil ei:has_tourists_in_2006 5017000 .
+sd:Brazil ei:has_tourists_in_2007 5026000 .
+sd:Brazil ei:has_tourists_in_2008 5050000 .
+sd:Brazil ei:has_tourists_in_2009 4802000 .
+sd:Brazil ei:has_tourists_in_2010 5161000 .
+sd:Brazil ei:has_tourists_in_2011 5433000 .
+sd:Virgin Islands (U.S.) a dbpedia-owl:country .
+sd:Virgin Islands (U.S.) gn:countryCode "VIR" .
+sd:Virgin Islands (U.S.) ei:has_tourists_in_2004 563000 .
+sd:Virgin Islands (U.S.) ei:has_tourists_in_2005 593000 .
+sd:Virgin Islands (U.S.) ei:has_tourists_in_2006 570000 .
+sd:Virgin Islands (U.S.) ei:has_tourists_in_2007 586000 .
+sd:Virgin Islands (U.S.) ei:has_tourists_in_2008 574000 .
+sd:Virgin Islands (U.S.) ei:has_tourists_in_2009 563000 .
+sd:Virgin Islands (U.S.) ei:has_tourists_in_2010 590000 .
+sd:Virgin Islands (U.S.) ei:has_tourists_in_2011 536000 .
+sd:Guinea a dbpedia-owl:country .
+sd:Guinea gn:countryCode "GIN" .
+sd:Guinea ei:has_tourists_in_2004 45000 .
+sd:Guinea ei:has_tourists_in_2005 45000 .
+sd:Guinea ei:has_tourists_in_2006 46000 .
+sd:Guinea ei:has_tourists_in_2007 30000 .
+sd:Panama a dbpedia-owl:country .
+sd:Panama gn:countryCode "PAN" .
+sd:Panama ei:has_tourists_in_2004 621000 .
+sd:Panama ei:has_tourists_in_2005 702000 .
+sd:Panama ei:has_tourists_in_2006 843000 .
+sd:Panama ei:has_tourists_in_2007 1103000 .
+sd:Panama ei:has_tourists_in_2008 1247000 .
+sd:Panama ei:has_tourists_in_2009 1200000 .
+sd:Panama ei:has_tourists_in_2010 1324000 .
+sd:Panama ei:has_tourists_in_2011 1473000 .
+sd:Costa Rica a dbpedia-owl:country .
+sd:Costa Rica gn:countryCode "CRI" .
+sd:Costa Rica ei:has_tourists_in_2004 1453000 .
+sd:Costa Rica ei:has_tourists_in_2005 1679000 .
+sd:Costa Rica ei:has_tourists_in_2006 1725000 .
+sd:Costa Rica ei:has_tourists_in_2007 1980000 .
+sd:Costa Rica ei:has_tourists_in_2008 2089000 .
+sd:Costa Rica ei:has_tourists_in_2009 1923000 .
+sd:Costa Rica ei:has_tourists_in_2010 2100000 .
+sd:Costa Rica ei:has_tourists_in_2011 2192000 .
+sd:Luxembourg a dbpedia-owl:country .
+sd:Luxembourg gn:countryCode "LUX" .
+sd:Luxembourg ei:has_tourists_in_2004 878000 .
+sd:Luxembourg ei:has_tourists_in_2005 913000 .
+sd:Luxembourg ei:has_tourists_in_2006 908000 .
+sd:Luxembourg ei:has_tourists_in_2007 917000 .
+sd:Luxembourg ei:has_tourists_in_2008 879000 .
+sd:Luxembourg ei:has_tourists_in_2009 849000 .
+sd:Luxembourg ei:has_tourists_in_2010 793000 .
+sd:Luxembourg ei:has_tourists_in_2011 871000 .
+sd:Cape Verde a dbpedia-owl:country .
+sd:Cape Verde gn:countryCode "CPV" .
+sd:Cape Verde ei:has_tourists_in_2004 157000 .
+sd:Cape Verde ei:has_tourists_in_2005 198000 .
+sd:Cape Verde ei:has_tourists_in_2006 242000 .
+sd:Cape Verde ei:has_tourists_in_2007 267000 .
+sd:Cape Verde ei:has_tourists_in_2008 285000 .
+sd:Cape Verde ei:has_tourists_in_2009 287000 .
+sd:Cape Verde ei:has_tourists_in_2010 336000 .
+sd:Cape Verde ei:has_tourists_in_2011 428000 .
+sd:Andorra a dbpedia-owl:country .
+sd:Andorra gn:countryCode "ADO" .
+sd:Andorra ei:has_tourists_in_2004 2791000 .
+sd:Andorra ei:has_tourists_in_2005 2418000 .
+sd:Andorra ei:has_tourists_in_2006 2227000 .
+sd:Andorra ei:has_tourists_in_2007 2189000 .
+sd:Andorra ei:has_tourists_in_2008 2059000 .
+sd:Andorra ei:has_tourists_in_2009 1830000 .
+sd:Andorra ei:has_tourists_in_2010 1808000 .
+sd:Andorra ei:has_tourists_in_2011 1948000 .
+sd:Ireland a dbpedia-owl:country .
+sd:Ireland gn:countryCode "IRL" .
+sd:Ireland ei:has_tourists_in_2004 6953000 .
+sd:Ireland ei:has_tourists_in_2005 7333000 .
+sd:Ireland ei:has_tourists_in_2006 8001000 .
+sd:Ireland ei:has_tourists_in_2007 8332000 .
+sd:Ireland ei:has_tourists_in_2008 8026000 .
+sd:Ireland ei:has_tourists_in_2009 7189000 .
+sd:Ireland ei:has_tourists_in_2010 7134000 .
+sd:Ireland ei:has_tourists_in_2011 7630000 .
+sd:Palau a dbpedia-owl:country .
+sd:Palau gn:countryCode "PLW" .
+sd:Palau ei:has_tourists_in_2004 89000 .
+sd:Palau ei:has_tourists_in_2005 81000 .
+sd:Palau ei:has_tourists_in_2006 82000 .
+sd:Palau ei:has_tourists_in_2007 88000 .
+sd:Palau ei:has_tourists_in_2008 79000 .
+sd:Palau ei:has_tourists_in_2009 72000 .
+sd:Palau ei:has_tourists_in_2010 86000 .
+sd:Palau ei:has_tourists_in_2011 109000 .
+sd:Faeroe Islands a dbpedia-owl:country .
+sd:Faeroe Islands gn:countryCode "FRO" .
+sd:Ecuador a dbpedia-owl:country .
+sd:Ecuador gn:countryCode "ECU" .
+sd:Ecuador ei:has_tourists_in_2004 819000 .
+sd:Ecuador ei:has_tourists_in_2005 860000 .
+sd:Ecuador ei:has_tourists_in_2006 841000 .
+sd:Ecuador ei:has_tourists_in_2007 937000 .
+sd:Ecuador ei:has_tourists_in_2008 1005000 .
+sd:Ecuador ei:has_tourists_in_2009 968000 .
+sd:Ecuador ei:has_tourists_in_2010 1047000 .
+sd:Ecuador ei:has_tourists_in_2011 1141000 .
+sd:Czech Republic a dbpedia-owl:country .
+sd:Czech Republic gn:countryCode "CZE" .
+sd:Czech Republic ei:has_tourists_in_2004 9047000 .
+sd:Czech Republic ei:has_tourists_in_2005 9404000 .
+sd:Czech Republic ei:has_tourists_in_2006 9539000 .
+sd:Czech Republic ei:has_tourists_in_2007 10162000 .
+sd:Czech Republic ei:has_tourists_in_2008 10119000 .
+sd:Czech Republic ei:has_tourists_in_2009 8848000 .
+sd:Czech Republic ei:has_tourists_in_2010 8629000 .
+sd:Czech Republic ei:has_tourists_in_2011 8775000 .
+sd:Australia a dbpedia-owl:country .
+sd:Australia gn:countryCode "AUS" .
+sd:Australia ei:has_tourists_in_2004 5215000 .
+sd:Australia ei:has_tourists_in_2005 5499000 .
+sd:Australia ei:has_tourists_in_2006 5532000 .
+sd:Australia ei:has_tourists_in_2007 5644000 .
+sd:Australia ei:has_tourists_in_2008 5586000 .
+sd:Australia ei:has_tourists_in_2009 5584000 .
+sd:Australia ei:has_tourists_in_2010 5885000 .
+sd:Australia ei:has_tourists_in_2011 5875000 .
+sd:Algeria a dbpedia-owl:country .
+sd:Algeria gn:countryCode "DZA" .
+sd:Algeria ei:has_tourists_in_2004 1234000 .
+sd:Algeria ei:has_tourists_in_2005 1443000 .
+sd:Algeria ei:has_tourists_in_2006 1638000 .
+sd:Algeria ei:has_tourists_in_2007 1743000 .
+sd:Algeria ei:has_tourists_in_2008 1772000 .
+sd:Algeria ei:has_tourists_in_2009 1912000 .
+sd:Algeria ei:has_tourists_in_2010 2070000 .
+sd:Algeria ei:has_tourists_in_2011 2395000 .
+sd:El Salvador a dbpedia-owl:country .
+sd:El Salvador gn:countryCode "SLV" .
+sd:El Salvador ei:has_tourists_in_2004 951000 .
+sd:El Salvador ei:has_tourists_in_2005 1127000 .
+sd:El Salvador ei:has_tourists_in_2006 1279000 .
+sd:El Salvador ei:has_tourists_in_2007 1339000 .
+sd:El Salvador ei:has_tourists_in_2008 1385000 .
+sd:El Salvador ei:has_tourists_in_2009 1091000 .
+sd:El Salvador ei:has_tourists_in_2010 1150000 .
+sd:El Salvador ei:has_tourists_in_2011 1184000 .
+sd:Tuvalu a dbpedia-owl:country .
+sd:Tuvalu gn:countryCode "TUV" .
+sd:Tuvalu ei:has_tourists_in_2004 1300 .
+sd:Tuvalu ei:has_tourists_in_2005 1100 .
+sd:Tuvalu ei:has_tourists_in_2006 1100 .
+sd:Tuvalu ei:has_tourists_in_2007 1100 .
+sd:Tuvalu ei:has_tourists_in_2008 1700 .
+sd:Tuvalu ei:has_tourists_in_2009 1600 .
+sd:Tuvalu ei:has_tourists_in_2010 1700 .
+sd:Tuvalu ei:has_tourists_in_2011 1200 .
+sd:St. Kitts and Nevis a dbpedia-owl:country .
+sd:St. Kitts and Nevis gn:countryCode "KNA" .
+sd:St. Kitts and Nevis ei:has_tourists_in_2004 118000 .
+sd:St. Kitts and Nevis ei:has_tourists_in_2005 141000 .
+sd:St. Kitts and Nevis ei:has_tourists_in_2006 139000 .
+sd:St. Kitts and Nevis ei:has_tourists_in_2007 123000 .
+sd:St. Kitts and Nevis ei:has_tourists_in_2008 128000 .
+sd:St. Kitts and Nevis ei:has_tourists_in_2009 93000 .
+sd:St. Kitts and Nevis ei:has_tourists_in_2010 92000 .
+sd:Marshall Islands a dbpedia-owl:country .
+sd:Marshall Islands gn:countryCode "MHL" .
+sd:Marshall Islands ei:has_tourists_in_2004 9000 .
+sd:Marshall Islands ei:has_tourists_in_2005 9000 .
+sd:Marshall Islands ei:has_tourists_in_2006 6000 .
+sd:Marshall Islands ei:has_tourists_in_2007 7000 .
+sd:Marshall Islands ei:has_tourists_in_2008 6000 .
+sd:Marshall Islands ei:has_tourists_in_2009 5000 .
+sd:Marshall Islands ei:has_tourists_in_2010 5000 .
+sd:Marshall Islands ei:has_tourists_in_2011 5000 .
+sd:Chile a dbpedia-owl:country .
+sd:Chile gn:countryCode "CHL" .
+sd:Chile ei:has_tourists_in_2004 1785000 .
+sd:Chile ei:has_tourists_in_2005 2027000 .
+sd:Chile ei:has_tourists_in_2006 2253000 .
+sd:Chile ei:has_tourists_in_2007 2507000 .
+sd:Chile ei:has_tourists_in_2008 2699000 .
+sd:Chile ei:has_tourists_in_2009 2750000 .
+sd:Chile ei:has_tourists_in_2010 2766000 .
+sd:Chile ei:has_tourists_in_2011 3070000 .
+sd:Puerto Rico a dbpedia-owl:country .
+sd:Puerto Rico gn:countryCode "PRI" .
+sd:Puerto Rico ei:has_tourists_in_2004 3541000 .
+sd:Puerto Rico ei:has_tourists_in_2005 3686000 .
+sd:Puerto Rico ei:has_tourists_in_2006 3722000 .
+sd:Puerto Rico ei:has_tourists_in_2007 3687000 .
+sd:Puerto Rico ei:has_tourists_in_2008 3716000 .
+sd:Puerto Rico ei:has_tourists_in_2009 3183000 .
+sd:Puerto Rico ei:has_tourists_in_2010 3186000 .
+sd:Puerto Rico ei:has_tourists_in_2011 3048000 .
+sd:Belgium a dbpedia-owl:country .
+sd:Belgium gn:countryCode "BEL" .
+sd:Belgium ei:has_tourists_in_2004 6710000 .
+sd:Belgium ei:has_tourists_in_2005 6747000 .
+sd:Belgium ei:has_tourists_in_2006 6995000 .
+sd:Belgium ei:has_tourists_in_2007 7045000 .
+sd:Belgium ei:has_tourists_in_2008 7165000 .
+sd:Belgium ei:has_tourists_in_2009 6815000 .
+sd:Belgium ei:has_tourists_in_2010 7186000 .
+sd:Belgium ei:has_tourists_in_2011 7494000 .
+sd:Kiribati a dbpedia-owl:country .
+sd:Kiribati gn:countryCode "KIR" .
+sd:Kiribati ei:has_tourists_in_2004 3400 .
+sd:Kiribati ei:has_tourists_in_2005 4100 .
+sd:Kiribati ei:has_tourists_in_2006 4400 .
+sd:Kiribati ei:has_tourists_in_2007 4700 .
+sd:Kiribati ei:has_tourists_in_2008 3900 .
+sd:Kiribati ei:has_tourists_in_2009 3900 .
+sd:Kiribati ei:has_tourists_in_2010 4700 .
+sd:Kiribati ei:has_tourists_in_2011 5300 .
+sd:Haiti a dbpedia-owl:country .
+sd:Haiti gn:countryCode "HTI" .
+sd:Haiti ei:has_tourists_in_2004 96000 .
+sd:Haiti ei:has_tourists_in_2005 112000 .
+sd:Haiti ei:has_tourists_in_2006 108000 .
+sd:Haiti ei:has_tourists_in_2007 386000 .
+sd:Haiti ei:has_tourists_in_2008 258000 .
+sd:Haiti ei:has_tourists_in_2009 387000 .
+sd:Haiti ei:has_tourists_in_2010 255000 .
+sd:Haiti ei:has_tourists_in_2011 349000 .
+sd:Belize a dbpedia-owl:country .
+sd:Belize gn:countryCode "BLZ" .
+sd:Belize ei:has_tourists_in_2004 231000 .
+sd:Belize ei:has_tourists_in_2005 237000 .
+sd:Belize ei:has_tourists_in_2006 247000 .
+sd:Belize ei:has_tourists_in_2007 251000 .
+sd:Belize ei:has_tourists_in_2008 245000 .
+sd:Belize ei:has_tourists_in_2009 232000 .
+sd:Belize ei:has_tourists_in_2010 242000 .
+sd:Belize ei:has_tourists_in_2011 250000 .
+sd:Sierra Leone a dbpedia-owl:country .
+sd:Sierra Leone gn:countryCode "SLE" .
+sd:Sierra Leone ei:has_tourists_in_2004 44000 .
+sd:Sierra Leone ei:has_tourists_in_2005 40000 .
+sd:Sierra Leone ei:has_tourists_in_2006 34000 .
+sd:Sierra Leone ei:has_tourists_in_2007 32000 .
+sd:Sierra Leone ei:has_tourists_in_2008 36000 .
+sd:Sierra Leone ei:has_tourists_in_2009 37000 .
+sd:Sierra Leone ei:has_tourists_in_2010 39000 .
+sd:Sierra Leone ei:has_tourists_in_2011 52000 .
+sd:Georgia a dbpedia-owl:country .
+sd:Georgia gn:countryCode "GEO" .
+sd:Georgia ei:has_tourists_in_2004 368000 .
+sd:Georgia ei:has_tourists_in_2005 560000 .
+sd:Georgia ei:has_tourists_in_2006 983000 .
+sd:Georgia ei:has_tourists_in_2007 1052000 .
+sd:Georgia ei:has_tourists_in_2008 1290000 .
+sd:Georgia ei:has_tourists_in_2009 1500000 .
+sd:Georgia ei:has_tourists_in_2010 2032000 .
+sd:Georgia ei:has_tourists_in_2011 2822000 .
+sd:Denmark a dbpedia-owl:country .
+sd:Denmark gn:countryCode "DNK" .
+sd:Denmark ei:has_tourists_in_2004 4421000 .
+sd:Denmark ei:has_tourists_in_2005 9178000 .
+sd:Denmark ei:has_tourists_in_2006 9256000 .
+sd:Denmark ei:has_tourists_in_2007 9284000 .
+sd:Denmark ei:has_tourists_in_2008 9016000 .
+sd:Denmark ei:has_tourists_in_2009 8547000 .
+sd:Denmark ei:has_tourists_in_2010 8744000 .
+sd:Denmark ei:has_tourists_in_2011 7363000 .
+sd:Philippines a dbpedia-owl:country .
+sd:Philippines gn:countryCode "PHL" .
+sd:Philippines ei:has_tourists_in_2004 2291000 .
+sd:Philippines ei:has_tourists_in_2005 2623000 .
+sd:Philippines ei:has_tourists_in_2006 2843000 .
+sd:Philippines ei:has_tourists_in_2007 3092000 .
+sd:Philippines ei:has_tourists_in_2008 3139000 .
+sd:Philippines ei:has_tourists_in_2009 3017000 .
+sd:Philippines ei:has_tourists_in_2010 3520000 .
+sd:Philippines ei:has_tourists_in_2011 3917000 .
+sd:Moldova a dbpedia-owl:country .
+sd:Moldova gn:countryCode "MDA" .
+sd:Moldova ei:has_tourists_in_2004 24000 .
+sd:Moldova ei:has_tourists_in_2005 23000 .
+sd:Moldova ei:has_tourists_in_2006 13000 .
+sd:Moldova ei:has_tourists_in_2007 13000 .
+sd:Moldova ei:has_tourists_in_2008 7000 .
+sd:Moldova ei:has_tourists_in_2009 7000 .
+sd:Moldova ei:has_tourists_in_2010 8000 .
+sd:Moldova ei:has_tourists_in_2011 11000 .
+sd:Portugal a dbpedia-owl:country .
+sd:Portugal gn:countryCode "PRT" .
+sd:Portugal ei:has_tourists_in_2004 5654000 .
+sd:Portugal ei:has_tourists_in_2005 5769000 .
+sd:Portugal ei:has_tourists_in_2006 6349000 .
+sd:Portugal ei:has_tourists_in_2007 6788000 .
+sd:Portugal ei:has_tourists_in_2008 6962000 .
+sd:Portugal ei:has_tourists_in_2009 6439000 .
+sd:Portugal ei:has_tourists_in_2010 6756000 .
+sd:Portugal ei:has_tourists_in_2011 7264000 .
+sd:Morocco a dbpedia-owl:country .
+sd:Morocco gn:countryCode "MAR" .
+sd:Morocco ei:has_tourists_in_2004 5477000 .
+sd:Morocco ei:has_tourists_in_2005 5843000 .
+sd:Morocco ei:has_tourists_in_2006 6558000 .
+sd:Morocco ei:has_tourists_in_2007 7408000 .
+sd:Morocco ei:has_tourists_in_2008 7879000 .
+sd:Morocco ei:has_tourists_in_2009 8341000 .
+sd:Morocco ei:has_tourists_in_2010 9288000 .
+sd:Morocco ei:has_tourists_in_2011 9342000 .
+sd:Croatia a dbpedia-owl:country .
+sd:Croatia gn:countryCode "HRV" .
+sd:Croatia ei:has_tourists_in_2004 7912000 .
+sd:Croatia ei:has_tourists_in_2005 7743000 .
+sd:Croatia ei:has_tourists_in_2006 7988000 .
+sd:Croatia ei:has_tourists_in_2007 8559000 .
+sd:Croatia ei:has_tourists_in_2008 8665000 .
+sd:Croatia ei:has_tourists_in_2009 8694000 .
+sd:Croatia ei:has_tourists_in_2010 9111000 .
+sd:Croatia ei:has_tourists_in_2011 9927000 .
+sd:Mongolia a dbpedia-owl:country .
+sd:Mongolia gn:countryCode "MNG" .
+sd:Mongolia ei:has_tourists_in_2004 301000 .
+sd:Mongolia ei:has_tourists_in_2005 338000 .
+sd:Mongolia ei:has_tourists_in_2006 386000 .
+sd:Mongolia ei:has_tourists_in_2007 452000 .
+sd:Mongolia ei:has_tourists_in_2008 446000 .
+sd:Mongolia ei:has_tourists_in_2009 411000 .
+sd:Mongolia ei:has_tourists_in_2010 457000 .
+sd:Guinea-Bissau a dbpedia-owl:country .
+sd:Guinea-Bissau gn:countryCode "GNB" .
+sd:Guinea-Bissau ei:has_tourists_in_2005 5000 .
+sd:Guinea-Bissau ei:has_tourists_in_2006 12000 .
+sd:Guinea-Bissau ei:has_tourists_in_2007 30000 .
+sd:Thailand a dbpedia-owl:country .
+sd:Thailand gn:countryCode "THA" .
+sd:Thailand ei:has_tourists_in_2004 11737000 .
+sd:Thailand ei:has_tourists_in_2005 11567000 .
+sd:Thailand ei:has_tourists_in_2006 13822000 .
+sd:Thailand ei:has_tourists_in_2007 14464000 .
+sd:Thailand ei:has_tourists_in_2008 14584000 .
+sd:Thailand ei:has_tourists_in_2009 14150000 .
+sd:Thailand ei:has_tourists_in_2010 15936000 .
+sd:Thailand ei:has_tourists_in_2011 19230000 .
+sd:Macedonia, FYR a dbpedia-owl:country .
+sd:Macedonia, FYR gn:countryCode "MKD" .
+sd:Macedonia, FYR ei:has_tourists_in_2004 165000 .
+sd:Macedonia, FYR ei:has_tourists_in_2005 197000 .
+sd:Macedonia, FYR ei:has_tourists_in_2006 202000 .
+sd:Macedonia, FYR ei:has_tourists_in_2007 230000 .
+sd:Macedonia, FYR ei:has_tourists_in_2008 255000 .
+sd:Macedonia, FYR ei:has_tourists_in_2009 259000 .
+sd:Macedonia, FYR ei:has_tourists_in_2010 262000 .
+sd:Macedonia, FYR ei:has_tourists_in_2011 327000 .
+sd:Grenada a dbpedia-owl:country .
+sd:Grenada gn:countryCode "GRD" .
+sd:Grenada ei:has_tourists_in_2004 134000 .
+sd:Grenada ei:has_tourists_in_2005 99000 .
+sd:Grenada ei:has_tourists_in_2006 119000 .
+sd:Grenada ei:has_tourists_in_2007 130000 .
+sd:Grenada ei:has_tourists_in_2008 130000 .
+sd:Grenada ei:has_tourists_in_2009 114000 .
+sd:Grenada ei:has_tourists_in_2010 110000 .
+sd:Grenada ei:has_tourists_in_2011 118000 .
+sd:Yemen, Rep. a dbpedia-owl:country .
+sd:Yemen, Rep. gn:countryCode "YEM" .
+sd:Yemen, Rep. ei:has_tourists_in_2004 274000 .
+sd:Yemen, Rep. ei:has_tourists_in_2005 336000 .
+sd:Yemen, Rep. ei:has_tourists_in_2006 1061000 .
+sd:Yemen, Rep. ei:has_tourists_in_2007 948000 .
+sd:Yemen, Rep. ei:has_tourists_in_2008 1023000 .
+sd:Yemen, Rep. ei:has_tourists_in_2009 1028000 .
+sd:Yemen, Rep. ei:has_tourists_in_2010 1025000 .
+sd:Iraq a dbpedia-owl:country .
+sd:Iraq gn:countryCode "IRQ" .
+sd:Iraq ei:has_tourists_in_2008 864000 .
+sd:Iraq ei:has_tourists_in_2009 1262000 .
+sd:Iraq ei:has_tourists_in_2010 1518000 .
+sd:Chad a dbpedia-owl:country .
+sd:Chad gn:countryCode "TCD" .
+sd:Chad ei:has_tourists_in_2006 46000 .
+sd:Chad ei:has_tourists_in_2007 77000 .
+sd:Chad ei:has_tourists_in_2008 61000 .
+sd:Chad ei:has_tourists_in_2009 70000 .
+sd:Chad ei:has_tourists_in_2010 71000 .
+sd:Estonia a dbpedia-owl:country .
+sd:Estonia gn:countryCode "EST" .
+sd:Estonia ei:has_tourists_in_2004 1750000 .
+sd:Estonia ei:has_tourists_in_2005 1917000 .
+sd:Estonia ei:has_tourists_in_2006 1940000 .
+sd:Estonia ei:has_tourists_in_2007 1900000 .
+sd:Estonia ei:has_tourists_in_2008 2079000 .
+sd:Estonia ei:has_tourists_in_2009 2059000 .
+sd:Estonia ei:has_tourists_in_2010 2372000 .
+sd:Estonia ei:has_tourists_in_2011 2665000 .
+sd:Kosovo a dbpedia-owl:country .
+sd:Kosovo gn:countryCode "KSV" .
+sd:Sweden a dbpedia-owl:country .
+sd:Sweden gn:countryCode "SWE" .
+sd:Sweden ei:has_tourists_in_2004 4676000 .
+sd:Sweden ei:has_tourists_in_2005 4883000 .
+sd:Sweden ei:has_tourists_in_2006 4729000 .
+sd:Sweden ei:has_tourists_in_2007 5224000 .
+sd:Sweden ei:has_tourists_in_2008 4555000 .
+sd:Sweden ei:has_tourists_in_2009 4678000 .
+sd:Sweden ei:has_tourists_in_2010 4951000 .
+sd:Sweden ei:has_tourists_in_2011 5006000 .
+sd:Mexico a dbpedia-owl:country .
+sd:Mexico gn:countryCode "MEX" .
+sd:Mexico ei:has_tourists_in_2004 20618000 .
+sd:Mexico ei:has_tourists_in_2005 21915000 .
+sd:Mexico ei:has_tourists_in_2006 21353000 .
+sd:Mexico ei:has_tourists_in_2007 21606000 .
+sd:Mexico ei:has_tourists_in_2008 22931000 .
+sd:Mexico ei:has_tourists_in_2009 22346000 .
+sd:Mexico ei:has_tourists_in_2010 23290000 .
+sd:Mexico ei:has_tourists_in_2011 23403000 .
+sd:Hong Kong SAR, China a dbpedia-owl:country .
+sd:Hong Kong SAR, China gn:countryCode "HKG" .
+sd:Hong Kong SAR, China ei:has_tourists_in_2004 13655000 .
+sd:Hong Kong SAR, China ei:has_tourists_in_2005 14773000 .
+sd:Hong Kong SAR, China ei:has_tourists_in_2006 15821000 .
+sd:Hong Kong SAR, China ei:has_tourists_in_2007 17154000 .
+sd:Hong Kong SAR, China ei:has_tourists_in_2008 17319000 .
+sd:Hong Kong SAR, China ei:has_tourists_in_2009 16926000 .
+sd:Hong Kong SAR, China ei:has_tourists_in_2010 20085000 .
+sd:Hong Kong SAR, China ei:has_tourists_in_2011 22316000 .
+sd:Uzbekistan a dbpedia-owl:country .
+sd:Uzbekistan gn:countryCode "UZB" .
+sd:Uzbekistan ei:has_tourists_in_2004 262000 .
+sd:Uzbekistan ei:has_tourists_in_2005 242000 .
+sd:Uzbekistan ei:has_tourists_in_2006 560000 .
+sd:Uzbekistan ei:has_tourists_in_2007 903000 .
+sd:Uzbekistan ei:has_tourists_in_2008 1069000 .
+sd:Uzbekistan ei:has_tourists_in_2009 1215000 .
+sd:Uzbekistan ei:has_tourists_in_2010 975000 .
+sd:Djibouti a dbpedia-owl:country .
+sd:Djibouti gn:countryCode "DJI" .
+sd:Djibouti ei:has_tourists_in_2004 26000 .
+sd:Djibouti ei:has_tourists_in_2005 30000 .
+sd:Djibouti ei:has_tourists_in_2006 40000 .
+sd:Djibouti ei:has_tourists_in_2007 40000 .
+sd:Djibouti ei:has_tourists_in_2008 53000 .
+sd:Rwanda a dbpedia-owl:country .
+sd:Rwanda gn:countryCode "RWA" .
+sd:Rwanda ei:has_tourists_in_2006 494000 .
+sd:Rwanda ei:has_tourists_in_2007 566000 .
+sd:Rwanda ei:has_tourists_in_2008 621000 .
+sd:Rwanda ei:has_tourists_in_2009 646000 .
+sd:Rwanda ei:has_tourists_in_2010 619000 .
+sd:Antigua and Barbuda a dbpedia-owl:country .
+sd:Antigua and Barbuda gn:countryCode "ATG" .
+sd:Antigua and Barbuda ei:has_tourists_in_2004 246000 .
+sd:Antigua and Barbuda ei:has_tourists_in_2005 245000 .
+sd:Antigua and Barbuda ei:has_tourists_in_2006 254000 .
+sd:Antigua and Barbuda ei:has_tourists_in_2007 262000 .
+sd:Antigua and Barbuda ei:has_tourists_in_2008 266000 .
+sd:Antigua and Barbuda ei:has_tourists_in_2009 234000 .
+sd:Antigua and Barbuda ei:has_tourists_in_2010 230000 .
+sd:Antigua and Barbuda ei:has_tourists_in_2011 241000 .
+sd:Spain a dbpedia-owl:country .
+sd:Spain gn:countryCode "ESP" .
+sd:Spain ei:has_tourists_in_2004 52430000 .
+sd:Spain ei:has_tourists_in_2005 55914000 .
+sd:Spain ei:has_tourists_in_2006 58004000 .
+sd:Spain ei:has_tourists_in_2007 58666000 .
+sd:Spain ei:has_tourists_in_2008 57192000 .
+sd:Spain ei:has_tourists_in_2009 52178000 .
+sd:Spain ei:has_tourists_in_2010 52677000 .
+sd:Spain ei:has_tourists_in_2011 56694000 .
+sd:Colombia a dbpedia-owl:country .
+sd:Colombia gn:countryCode "COL" .
+sd:Colombia ei:has_tourists_in_2004 791000 .
+sd:Colombia ei:has_tourists_in_2005 933000 .
+sd:Colombia ei:has_tourists_in_2006 2045000 .
+sd:Colombia ei:has_tourists_in_2007 2254000 .
+sd:Colombia ei:has_tourists_in_2008 2317000 .
+sd:Colombia ei:has_tourists_in_2009 2302000 .
+sd:Colombia ei:has_tourists_in_2010 2385000 .
+sd:Burundi a dbpedia-owl:country .
+sd:Burundi gn:countryCode "BDI" .
+sd:Burundi ei:has_tourists_in_2004 133000 .
+sd:Burundi ei:has_tourists_in_2005 148000 .
+sd:Burundi ei:has_tourists_in_2006 214000 .
+sd:Burundi ei:has_tourists_in_2007 192000 .
+sd:Burundi ei:has_tourists_in_2008 202000 .
+sd:Burundi ei:has_tourists_in_2009 212000 .
+sd:Burundi ei:has_tourists_in_2010 142000 .
+sd:Fiji a dbpedia-owl:country .
+sd:Fiji gn:countryCode "FJI" .
+sd:Fiji ei:has_tourists_in_2004 504000 .
+sd:Fiji ei:has_tourists_in_2005 545000 .
+sd:Fiji ei:has_tourists_in_2006 549000 .
+sd:Fiji ei:has_tourists_in_2007 540000 .
+sd:Fiji ei:has_tourists_in_2008 585000 .
+sd:Fiji ei:has_tourists_in_2009 542000 .
+sd:Fiji ei:has_tourists_in_2010 632000 .
+sd:Fiji ei:has_tourists_in_2011 675000 .
+sd:Barbados a dbpedia-owl:country .
+sd:Barbados gn:countryCode "BRB" .
+sd:Barbados ei:has_tourists_in_2004 552000 .
+sd:Barbados ei:has_tourists_in_2005 548000 .
+sd:Barbados ei:has_tourists_in_2006 563000 .
+sd:Barbados ei:has_tourists_in_2007 575000 .
+sd:Barbados ei:has_tourists_in_2008 568000 .
+sd:Barbados ei:has_tourists_in_2009 519000 .
+sd:Barbados ei:has_tourists_in_2010 532000 .
+sd:Barbados ei:has_tourists_in_2011 568000 .
+sd:Madagascar a dbpedia-owl:country .
+sd:Madagascar gn:countryCode "MDG" .
+sd:Madagascar ei:has_tourists_in_2004 229000 .
+sd:Madagascar ei:has_tourists_in_2005 277000 .
+sd:Madagascar ei:has_tourists_in_2006 312000 .
+sd:Madagascar ei:has_tourists_in_2007 344000 .
+sd:Madagascar ei:has_tourists_in_2008 375000 .
+sd:Madagascar ei:has_tourists_in_2009 163000 .
+sd:Madagascar ei:has_tourists_in_2010 196000 .
+sd:Madagascar ei:has_tourists_in_2011 225000 .
+sd:Italy a dbpedia-owl:country .
+sd:Italy gn:countryCode "ITA" .
+sd:Italy ei:has_tourists_in_2004 37071000 .
+sd:Italy ei:has_tourists_in_2005 36513000 .
+sd:Italy ei:has_tourists_in_2006 41058000 .
+sd:Italy ei:has_tourists_in_2007 43654000 .
+sd:Italy ei:has_tourists_in_2008 42734000 .
+sd:Italy ei:has_tourists_in_2009 43239000 .
+sd:Italy ei:has_tourists_in_2010 43626000 .
+sd:Italy ei:has_tourists_in_2011 46119000 .
+sd:Curacao a dbpedia-owl:country .
+sd:Curacao gn:countryCode "CUW" .
+sd:Curacao ei:has_tourists_in_2004 223000 .
+sd:Curacao ei:has_tourists_in_2005 222000 .
+sd:Curacao ei:has_tourists_in_2006 234000 .
+sd:Curacao ei:has_tourists_in_2007 300000 .
+sd:Curacao ei:has_tourists_in_2008 409000 .
+sd:Curacao ei:has_tourists_in_2009 367000 .
+sd:Curacao ei:has_tourists_in_2010 342000 .
+sd:Curacao ei:has_tourists_in_2011 390000 .
+sd:Bhutan a dbpedia-owl:country .
+sd:Bhutan gn:countryCode "BTN" .
+sd:Bhutan ei:has_tourists_in_2004 9000 .
+sd:Bhutan ei:has_tourists_in_2005 14000 .
+sd:Bhutan ei:has_tourists_in_2006 17000 .
+sd:Bhutan ei:has_tourists_in_2007 21000 .
+sd:Bhutan ei:has_tourists_in_2008 28000 .
+sd:Bhutan ei:has_tourists_in_2009 23000 .
+sd:Bhutan ei:has_tourists_in_2010 41000 .
+sd:Bhutan ei:has_tourists_in_2011 66000 .
+sd:Sudan a dbpedia-owl:country .
+sd:Sudan gn:countryCode "SDN" .
+sd:Sudan ei:has_tourists_in_2004 61000 .
+sd:Sudan ei:has_tourists_in_2005 246000 .
+sd:Sudan ei:has_tourists_in_2006 328000 .
+sd:Sudan ei:has_tourists_in_2007 436000 .
+sd:Sudan ei:has_tourists_in_2008 440000 .
+sd:Sudan ei:has_tourists_in_2009 420000 .
+sd:Sudan ei:has_tourists_in_2010 495000 .
+sd:Sudan ei:has_tourists_in_2011 536000 .
+sd:Nepal a dbpedia-owl:country .
+sd:Nepal gn:countryCode "NPL" .
+sd:Nepal ei:has_tourists_in_2004 385000 .
+sd:Nepal ei:has_tourists_in_2005 375000 .
+sd:Nepal ei:has_tourists_in_2006 384000 .
+sd:Nepal ei:has_tourists_in_2007 527000 .
+sd:Nepal ei:has_tourists_in_2008 500000 .
+sd:Nepal ei:has_tourists_in_2009 510000 .
+sd:Nepal ei:has_tourists_in_2010 603000 .
+sd:Nepal ei:has_tourists_in_2011 736000 .
+sd:Singapore a dbpedia-owl:country .
+sd:Singapore gn:countryCode "SGP" .
+sd:Singapore ei:has_tourists_in_2004 6553000 .
+sd:Singapore ei:has_tourists_in_2005 7079000 .
+sd:Singapore ei:has_tourists_in_2006 7588000 .
+sd:Singapore ei:has_tourists_in_2007 7957000 .
+sd:Singapore ei:has_tourists_in_2008 7778000 .
+sd:Singapore ei:has_tourists_in_2009 7489000 .
+sd:Singapore ei:has_tourists_in_2010 9161000 .
+sd:Singapore ei:has_tourists_in_2011 10390000 .
+sd:Malta a dbpedia-owl:country .
+sd:Malta gn:countryCode "MLT" .
+sd:Malta ei:has_tourists_in_2004 1156000 .
+sd:Malta ei:has_tourists_in_2005 1171000 .
+sd:Malta ei:has_tourists_in_2006 1124000 .
+sd:Malta ei:has_tourists_in_2007 1244000 .
+sd:Malta ei:has_tourists_in_2008 1291000 .
+sd:Malta ei:has_tourists_in_2009 1182000 .
+sd:Malta ei:has_tourists_in_2010 1336000 .
+sd:Malta ei:has_tourists_in_2011 1412000 .
+sd:Netherlands a dbpedia-owl:country .
+sd:Netherlands gn:countryCode "NLD" .
+sd:Netherlands ei:has_tourists_in_2004 9646000 .
+sd:Netherlands ei:has_tourists_in_2005 10012000 .
+sd:Netherlands ei:has_tourists_in_2006 10739000 .
+sd:Netherlands ei:has_tourists_in_2007 11008000 .
+sd:Netherlands ei:has_tourists_in_2008 10104000 .
+sd:Netherlands ei:has_tourists_in_2009 9921000 .
+sd:Netherlands ei:has_tourists_in_2010 10883000 .
+sd:Netherlands ei:has_tourists_in_2011 11300000 .
+sd:Macao SAR, China a dbpedia-owl:country .
+sd:Macao SAR, China gn:countryCode "MAC" .
+sd:Macao SAR, China ei:has_tourists_in_2004 8324000 .
+sd:Macao SAR, China ei:has_tourists_in_2005 9014000 .
+sd:Macao SAR, China ei:has_tourists_in_2006 10683000 .
+sd:Macao SAR, China ei:has_tourists_in_2007 12945000 .
+sd:Macao SAR, China ei:has_tourists_in_2008 10610000 .
+sd:Macao SAR, China ei:has_tourists_in_2009 10402000 .
+sd:Macao SAR, China ei:has_tourists_in_2010 11926000 .
+sd:Macao SAR, China ei:has_tourists_in_2011 12925000 .
+sd:Suriname a dbpedia-owl:country .
+sd:Suriname gn:countryCode "SUR" .
+sd:Suriname ei:has_tourists_in_2004 138000 .
+sd:Suriname ei:has_tourists_in_2005 161000 .
+sd:Suriname ei:has_tourists_in_2006 154000 .
+sd:Suriname ei:has_tourists_in_2007 167000 .
+sd:Suriname ei:has_tourists_in_2008 151000 .
+sd:Suriname ei:has_tourists_in_2009 151000 .
+sd:Suriname ei:has_tourists_in_2010 205000 .
+sd:Suriname ei:has_tourists_in_2011 220000 .
+sd:Turks and Caicos Islands a dbpedia-owl:country .
+sd:Turks and Caicos Islands gn:countryCode "TCA" .
+sd:Turks and Caicos Islands ei:has_tourists_in_2004 173000 .
+sd:Turks and Caicos Islands ei:has_tourists_in_2005 176000 .
+sd:Turks and Caicos Islands ei:has_tourists_in_2006 248000 .
+sd:Turks and Caicos Islands ei:has_tourists_in_2007 265000 .
+sd:Turks and Caicos Islands ei:has_tourists_in_2008 352000 .
+sd:Turks and Caicos Islands ei:has_tourists_in_2009 351000 .
+sd:Turks and Caicos Islands ei:has_tourists_in_2010 281000 .
+sd:Turks and Caicos Islands ei:has_tourists_in_2011 354000 .
+sd:St. Martin (French part) a dbpedia-owl:country .
+sd:St. Martin (French part) gn:countryCode "MAF" .
+sd:Iran, Islamic Rep. a dbpedia-owl:country .
+sd:Iran, Islamic Rep. gn:countryCode "IRN" .
+sd:Iran, Islamic Rep. ei:has_tourists_in_2004 1659000 .
+sd:Iran, Islamic Rep. ei:has_tourists_in_2005 1889000 .
+sd:Iran, Islamic Rep. ei:has_tourists_in_2006 2735000 .
+sd:Iran, Islamic Rep. ei:has_tourists_in_2007 2219000 .
+sd:Iran, Islamic Rep. ei:has_tourists_in_2008 2034000 .
+sd:Iran, Islamic Rep. ei:has_tourists_in_2009 2116000 .
+sd:Iran, Islamic Rep. ei:has_tourists_in_2010 2938000 .
+sd:Iran, Islamic Rep. ei:has_tourists_in_2011 3354000 .
+sd:Israel a dbpedia-owl:country .
+sd:Israel gn:countryCode "ISR" .
+sd:Israel ei:has_tourists_in_2004 1506000 .
+sd:Israel ei:has_tourists_in_2005 1903000 .
+sd:Israel ei:has_tourists_in_2006 1825000 .
+sd:Israel ei:has_tourists_in_2007 2067000 .
+sd:Israel ei:has_tourists_in_2008 2572000 .
+sd:Israel ei:has_tourists_in_2009 2321000 .
+sd:Israel ei:has_tourists_in_2010 2803000 .
+sd:Israel ei:has_tourists_in_2011 2820000 .
+sd:Indonesia a dbpedia-owl:country .
+sd:Indonesia gn:countryCode "IDN" .
+sd:Indonesia ei:has_tourists_in_2004 5321000 .
+sd:Indonesia ei:has_tourists_in_2005 5002000 .
+sd:Indonesia ei:has_tourists_in_2006 4871000 .
+sd:Indonesia ei:has_tourists_in_2007 5506000 .
+sd:Indonesia ei:has_tourists_in_2008 6234000 .
+sd:Indonesia ei:has_tourists_in_2009 6324000 .
+sd:Indonesia ei:has_tourists_in_2010 7003000 .
+sd:Indonesia ei:has_tourists_in_2011 7650000 .
+sd:Iceland a dbpedia-owl:country .
+sd:Iceland gn:countryCode "ISL" .
+sd:Iceland ei:has_tourists_in_2004 360000 .
+sd:Iceland ei:has_tourists_in_2005 374000 .
+sd:Iceland ei:has_tourists_in_2006 422000 .
+sd:Iceland ei:has_tourists_in_2007 485000 .
+sd:Iceland ei:has_tourists_in_2008 502000 .
+sd:Iceland ei:has_tourists_in_2009 494000 .
+sd:Iceland ei:has_tourists_in_2010 489000 .
+sd:Iceland ei:has_tourists_in_2011 566000 .
+sd:Zambia a dbpedia-owl:country .
+sd:Zambia gn:countryCode "ZMB" .
+sd:Zambia ei:has_tourists_in_2004 515000 .
+sd:Zambia ei:has_tourists_in_2005 669000 .
+sd:Zambia ei:has_tourists_in_2006 757000 .
+sd:Zambia ei:has_tourists_in_2007 897000 .
+sd:Zambia ei:has_tourists_in_2008 812000 .
+sd:Zambia ei:has_tourists_in_2009 710000 .
+sd:Zambia ei:has_tourists_in_2010 815000 .
+sd:Senegal a dbpedia-owl:country .
+sd:Senegal gn:countryCode "SEN" .
+sd:Senegal ei:has_tourists_in_2004 667000 .
+sd:Senegal ei:has_tourists_in_2005 769000 .
+sd:Senegal ei:has_tourists_in_2006 866000 .
+sd:Senegal ei:has_tourists_in_2007 875000 .
+sd:Senegal ei:has_tourists_in_2008 867000 .
+sd:Senegal ei:has_tourists_in_2009 810000 .
+sd:Senegal ei:has_tourists_in_2010 900000 .
+sd:Senegal ei:has_tourists_in_2011 1001000 .
+sd:Papua New Guinea a dbpedia-owl:country .
+sd:Papua New Guinea gn:countryCode "PNG" .
+sd:Papua New Guinea ei:has_tourists_in_2004 59000 .
+sd:Papua New Guinea ei:has_tourists_in_2005 69000 .
+sd:Papua New Guinea ei:has_tourists_in_2006 78000 .
+sd:Papua New Guinea ei:has_tourists_in_2007 104000 .
+sd:Papua New Guinea ei:has_tourists_in_2008 114000 .
+sd:Papua New Guinea ei:has_tourists_in_2009 126000 .
+sd:Papua New Guinea ei:has_tourists_in_2010 146000 .
+sd:Papua New Guinea ei:has_tourists_in_2011 165000 .
+sd:Malawi a dbpedia-owl:country .
+sd:Malawi gn:countryCode "MWI" .
+sd:Malawi ei:has_tourists_in_2004 427000 .
+sd:Malawi ei:has_tourists_in_2005 438000 .
+sd:Malawi ei:has_tourists_in_2006 638000 .
+sd:Malawi ei:has_tourists_in_2007 735000 .
+sd:Malawi ei:has_tourists_in_2008 742000 .
+sd:Malawi ei:has_tourists_in_2009 755000 .
+sd:Malawi ei:has_tourists_in_2010 746000 .
+sd:Malawi ei:has_tourists_in_2011 767000 .
+sd:Trinidad and Tobago a dbpedia-owl:country .
+sd:Trinidad and Tobago gn:countryCode "TTO" .
+sd:Trinidad and Tobago ei:has_tourists_in_2004 443000 .
+sd:Trinidad and Tobago ei:has_tourists_in_2005 463000 .
+sd:Trinidad and Tobago ei:has_tourists_in_2006 461000 .
+sd:Trinidad and Tobago ei:has_tourists_in_2007 449000 .
+sd:Trinidad and Tobago ei:has_tourists_in_2008 437000 .
+sd:Trinidad and Tobago ei:has_tourists_in_2009 419000 .
+sd:Trinidad and Tobago ei:has_tourists_in_2010 386000 .
+sd:Zimbabwe a dbpedia-owl:country .
+sd:Zimbabwe gn:countryCode "ZWE" .
+sd:Zimbabwe ei:has_tourists_in_2004 1854000 .
+sd:Zimbabwe ei:has_tourists_in_2005 1559000 .
+sd:Zimbabwe ei:has_tourists_in_2006 2287000 .
+sd:Zimbabwe ei:has_tourists_in_2007 2506000 .
+sd:Zimbabwe ei:has_tourists_in_2008 1956000 .
+sd:Zimbabwe ei:has_tourists_in_2009 2017000 .
+sd:Zimbabwe ei:has_tourists_in_2010 2239000 .
+sd:Zimbabwe ei:has_tourists_in_2011 2423000 .
+sd:Germany a dbpedia-owl:country .
+sd:Germany gn:countryCode "DEU" .
+sd:Germany ei:has_tourists_in_2004 20137000 .
+sd:Germany ei:has_tourists_in_2005 21500000 .
+sd:Germany ei:has_tourists_in_2006 23569000 .
+sd:Germany ei:has_tourists_in_2007 24421000 .
+sd:Germany ei:has_tourists_in_2008 24884000 .
+sd:Germany ei:has_tourists_in_2009 24220000 .
+sd:Germany ei:has_tourists_in_2010 26875000 .
+sd:Germany ei:has_tourists_in_2011 28374000 .
+sd:Kazakhstan a dbpedia-owl:country .
+sd:Kazakhstan gn:countryCode "KAZ" .
+sd:Kazakhstan ei:has_tourists_in_2004 3073000 .
+sd:Kazakhstan ei:has_tourists_in_2005 3143000 .
+sd:Kazakhstan ei:has_tourists_in_2006 3468000 .
+sd:Kazakhstan ei:has_tourists_in_2007 3876000 .
+sd:Kazakhstan ei:has_tourists_in_2008 3447000 .
+sd:Kazakhstan ei:has_tourists_in_2009 3118000 .
+sd:Kazakhstan ei:has_tourists_in_2010 3393000 .
+sd:Poland a dbpedia-owl:country .
+sd:Poland gn:countryCode "POL" .
+sd:Poland ei:has_tourists_in_2004 14290000 .
+sd:Poland ei:has_tourists_in_2005 15200000 .
+sd:Poland ei:has_tourists_in_2006 15670000 .
+sd:Poland ei:has_tourists_in_2007 14975000 .
+sd:Poland ei:has_tourists_in_2008 12960000 .
+sd:Poland ei:has_tourists_in_2009 11890000 .
+sd:Poland ei:has_tourists_in_2010 12470000 .
+sd:Poland ei:has_tourists_in_2011 13350000 .
+sd:Eritrea a dbpedia-owl:country .
+sd:Eritrea gn:countryCode "ERI" .
+sd:Eritrea ei:has_tourists_in_2004 87000 .
+sd:Eritrea ei:has_tourists_in_2005 83000 .
+sd:Eritrea ei:has_tourists_in_2006 78000 .
+sd:Eritrea ei:has_tourists_in_2007 81000 .
+sd:Eritrea ei:has_tourists_in_2008 70000 .
+sd:Eritrea ei:has_tourists_in_2009 79000 .
+sd:Eritrea ei:has_tourists_in_2010 84000 .
+sd:Eritrea ei:has_tourists_in_2011 107000 .
+sd:New Caledonia a dbpedia-owl:country .
+sd:New Caledonia gn:countryCode "NCL" .
+sd:New Caledonia ei:has_tourists_in_2004 100000 .
+sd:New Caledonia ei:has_tourists_in_2005 101000 .
+sd:New Caledonia ei:has_tourists_in_2006 100000 .
+sd:New Caledonia ei:has_tourists_in_2007 103000 .
+sd:New Caledonia ei:has_tourists_in_2008 104000 .
+sd:New Caledonia ei:has_tourists_in_2009 99000 .
+sd:New Caledonia ei:has_tourists_in_2010 99000 .
+sd:New Caledonia ei:has_tourists_in_2011 112000 .
+sd:Sri Lanka a dbpedia-owl:country .
+sd:Sri Lanka gn:countryCode "LKA" .
+sd:Sri Lanka ei:has_tourists_in_2004 566000 .
+sd:Sri Lanka ei:has_tourists_in_2005 549000 .
+sd:Sri Lanka ei:has_tourists_in_2006 560000 .
+sd:Sri Lanka ei:has_tourists_in_2007 494000 .
+sd:Sri Lanka ei:has_tourists_in_2008 438000 .
+sd:Sri Lanka ei:has_tourists_in_2009 448000 .
+sd:Sri Lanka ei:has_tourists_in_2010 654000 .
+sd:Sri Lanka ei:has_tourists_in_2011 856000 .
+sd:Latvia a dbpedia-owl:country .
+sd:Latvia gn:countryCode "LVA" .
+sd:Latvia ei:has_tourists_in_2004 1079000 .
+sd:Latvia ei:has_tourists_in_2005 1116000 .
+sd:Latvia ei:has_tourists_in_2006 1535000 .
+sd:Latvia ei:has_tourists_in_2007 1653000 .
+sd:Latvia ei:has_tourists_in_2008 1684000 .
+sd:Latvia ei:has_tourists_in_2009 1323000 .
+sd:Latvia ei:has_tourists_in_2010 1373000 .
+sd:Latvia ei:has_tourists_in_2011 1493000 .
+sd:South Sudan a dbpedia-owl:country .
+sd:South Sudan gn:countryCode "SSD" .
+sd:Guyana a dbpedia-owl:country .
+sd:Guyana gn:countryCode "GUY" .
+sd:Guyana ei:has_tourists_in_2004 122000 .
+sd:Guyana ei:has_tourists_in_2005 117000 .
+sd:Guyana ei:has_tourists_in_2006 113000 .
+sd:Guyana ei:has_tourists_in_2007 134000 .
+sd:Guyana ei:has_tourists_in_2008 130000 .
+sd:Guyana ei:has_tourists_in_2009 141000 .
+sd:Guyana ei:has_tourists_in_2010 152000 .
+sd:Guyana ei:has_tourists_in_2011 157000 .
+sd:Honduras a dbpedia-owl:country .
+sd:Honduras gn:countryCode "HND" .
+sd:Honduras ei:has_tourists_in_2004 641000 .
+sd:Honduras ei:has_tourists_in_2005 673000 .
+sd:Honduras ei:has_tourists_in_2006 739000 .
+sd:Honduras ei:has_tourists_in_2007 804000 .
+sd:Honduras ei:has_tourists_in_2008 869000 .
+sd:Honduras ei:has_tourists_in_2009 836000 .
+sd:Honduras ei:has_tourists_in_2010 863000 .
+sd:Honduras ei:has_tourists_in_2011 871000 .
+sd:Myanmar a dbpedia-owl:country .
+sd:Myanmar gn:countryCode "MMR" .
+sd:Myanmar ei:has_tourists_in_2004 242000 .
+sd:Myanmar ei:has_tourists_in_2005 232000 .
+sd:Myanmar ei:has_tourists_in_2006 264000 .
+sd:Myanmar ei:has_tourists_in_2007 248000 .
+sd:Myanmar ei:has_tourists_in_2008 193000 .
+sd:Myanmar ei:has_tourists_in_2009 243000 .
+sd:Myanmar ei:has_tourists_in_2010 311000 .
+sd:Myanmar ei:has_tourists_in_2011 391000 .
+sd:Equatorial Guinea a dbpedia-owl:country .
+sd:Equatorial Guinea gn:countryCode "GNQ" .
+sd:Tunisia a dbpedia-owl:country .
+sd:Tunisia gn:countryCode "TUN" .
+sd:Tunisia ei:has_tourists_in_2004 5998000 .
+sd:Tunisia ei:has_tourists_in_2005 6378000 .
+sd:Tunisia ei:has_tourists_in_2006 6550000 .
+sd:Tunisia ei:has_tourists_in_2007 6762000 .
+sd:Tunisia ei:has_tourists_in_2008 7050000 .
+sd:Tunisia ei:has_tourists_in_2009 6901000 .
+sd:Tunisia ei:has_tourists_in_2010 6903000 .
+sd:Tunisia ei:has_tourists_in_2011 4785000 .
+sd:Nicaragua a dbpedia-owl:country .
+sd:Nicaragua gn:countryCode "NIC" .
+sd:Nicaragua ei:has_tourists_in_2004 615000 .
+sd:Nicaragua ei:has_tourists_in_2005 712000 .
+sd:Nicaragua ei:has_tourists_in_2006 749000 .
+sd:Nicaragua ei:has_tourists_in_2007 800000 .
+sd:Nicaragua ei:has_tourists_in_2008 858000 .
+sd:Nicaragua ei:has_tourists_in_2009 932000 .
+sd:Nicaragua ei:has_tourists_in_2010 1011000 .
+sd:Nicaragua ei:has_tourists_in_2011 1060000 .
+sd:Congo, Dem. Rep. a dbpedia-owl:country .
+sd:Congo, Dem. Rep. gn:countryCode "ZAR" .
+sd:Congo, Dem. Rep. ei:has_tourists_in_2004 36000 .
+sd:Congo, Dem. Rep. ei:has_tourists_in_2005 61000 .
+sd:Congo, Dem. Rep. ei:has_tourists_in_2006 55000 .
+sd:Congo, Dem. Rep. ei:has_tourists_in_2007 47000 .
+sd:Congo, Dem. Rep. ei:has_tourists_in_2008 50000 .
+sd:Congo, Dem. Rep. ei:has_tourists_in_2009 53000 .
+sd:Congo, Dem. Rep. ei:has_tourists_in_2010 81000 .
+sd:Congo, Dem. Rep. ei:has_tourists_in_2011 186000 .
+sd:Serbia a dbpedia-owl:country .
+sd:Serbia gn:countryCode "SRB" .
+sd:Serbia ei:has_tourists_in_2004 392000 .
+sd:Serbia ei:has_tourists_in_2005 453000 .
+sd:Serbia ei:has_tourists_in_2006 469000 .
+sd:Serbia ei:has_tourists_in_2007 696000 .
+sd:Serbia ei:has_tourists_in_2008 646000 .
+sd:Serbia ei:has_tourists_in_2009 645000 .
+sd:Serbia ei:has_tourists_in_2010 683000 .
+sd:Serbia ei:has_tourists_in_2011 764000 .
+sd:Botswana a dbpedia-owl:country .
+sd:Botswana gn:countryCode "BWA" .
+sd:Botswana ei:has_tourists_in_2004 1523000 .
+sd:Botswana ei:has_tourists_in_2005 1474000 .
+sd:Botswana ei:has_tourists_in_2006 1426000 .
+sd:Botswana ei:has_tourists_in_2007 1736000 .
+sd:Botswana ei:has_tourists_in_2008 2101000 .
+sd:Botswana ei:has_tourists_in_2009 2103000 .
+sd:Botswana ei:has_tourists_in_2010 2145000 .
+sd:United Kingdom a dbpedia-owl:country .
+sd:United Kingdom gn:countryCode "GBR" .
+sd:United Kingdom ei:has_tourists_in_2004 25678000 .
+sd:United Kingdom ei:has_tourists_in_2005 28039000 .
+sd:United Kingdom ei:has_tourists_in_2006 30654000 .
+sd:United Kingdom ei:has_tourists_in_2007 30870000 .
+sd:United Kingdom ei:has_tourists_in_2008 30142000 .
+sd:United Kingdom ei:has_tourists_in_2009 28199000 .
+sd:United Kingdom ei:has_tourists_in_2010 28295000 .
+sd:United Kingdom ei:has_tourists_in_2011 29306000 .
+sd:Gambia, The a dbpedia-owl:country .
+sd:Gambia, The gn:countryCode "GMB" .
+sd:Gambia, The ei:has_tourists_in_2004 90000 .
+sd:Gambia, The ei:has_tourists_in_2005 108000 .
+sd:Gambia, The ei:has_tourists_in_2006 125000 .
+sd:Gambia, The ei:has_tourists_in_2007 143000 .
+sd:Gambia, The ei:has_tourists_in_2008 147000 .
+sd:Gambia, The ei:has_tourists_in_2009 142000 .
+sd:Gambia, The ei:has_tourists_in_2010 91000 .
+sd:Gambia, The ei:has_tourists_in_2011 106000 .
+sd:Sint Maarten (Dutch part) a dbpedia-owl:country .
+sd:Sint Maarten (Dutch part) gn:countryCode "SXM" .
+sd:Sint Maarten (Dutch part) ei:has_tourists_in_2004 475000 .
+sd:Sint Maarten (Dutch part) ei:has_tourists_in_2005 468000 .
+sd:Sint Maarten (Dutch part) ei:has_tourists_in_2006 468000 .
+sd:Sint Maarten (Dutch part) ei:has_tourists_in_2007 469000 .
+sd:Sint Maarten (Dutch part) ei:has_tourists_in_2008 475000 .
+sd:Sint Maarten (Dutch part) ei:has_tourists_in_2009 440000 .
+sd:Sint Maarten (Dutch part) ei:has_tourists_in_2010 443000 .
+sd:Sint Maarten (Dutch part) ei:has_tourists_in_2011 424000 .
+sd:Greece a dbpedia-owl:country .
+sd:Greece gn:countryCode "GRC" .
+sd:Greece ei:has_tourists_in_2004 13313000 .
+sd:Greece ei:has_tourists_in_2005 14765000 .
+sd:Greece ei:has_tourists_in_2006 16039000 .
+sd:Greece ei:has_tourists_in_2007 16165000 .
+sd:Greece ei:has_tourists_in_2008 15939000 .
+sd:Greece ei:has_tourists_in_2009 14915000 .
+sd:Greece ei:has_tourists_in_2010 15007000 .
+sd:Greece ei:has_tourists_in_2011 16427000 .
+sd:Paraguay a dbpedia-owl:country .
+sd:Paraguay gn:countryCode "PRY" .
+sd:Paraguay ei:has_tourists_in_2004 309000 .
+sd:Paraguay ei:has_tourists_in_2005 341000 .
+sd:Paraguay ei:has_tourists_in_2006 388000 .
+sd:Paraguay ei:has_tourists_in_2007 416000 .
+sd:Paraguay ei:has_tourists_in_2008 428000 .
+sd:Paraguay ei:has_tourists_in_2009 439000 .
+sd:Paraguay ei:has_tourists_in_2010 465000 .
+sd:Paraguay ei:has_tourists_in_2011 524000 .
+sd:Lebanon a dbpedia-owl:country .
+sd:Lebanon gn:countryCode "LBN" .
+sd:Lebanon ei:has_tourists_in_2004 1278000 .
+sd:Lebanon ei:has_tourists_in_2005 1140000 .
+sd:Lebanon ei:has_tourists_in_2006 1063000 .
+sd:Lebanon ei:has_tourists_in_2007 1017000 .
+sd:Lebanon ei:has_tourists_in_2008 1333000 .
+sd:Lebanon ei:has_tourists_in_2009 1844000 .
+sd:Lebanon ei:has_tourists_in_2010 2168000 .
+sd:Lebanon ei:has_tourists_in_2011 1655000 .
+sd:Comoros a dbpedia-owl:country .
+sd:Comoros gn:countryCode "COM" .
+sd:Comoros ei:has_tourists_in_2004 23000 .
+sd:Comoros ei:has_tourists_in_2005 26000 .
+sd:Comoros ei:has_tourists_in_2006 29000 .
+sd:Comoros ei:has_tourists_in_2007 15000 .
+sd:Comoros ei:has_tourists_in_2008 15000 .
+sd:Comoros ei:has_tourists_in_2009 11000 .
