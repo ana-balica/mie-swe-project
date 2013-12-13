@@ -1,10 +1,18 @@
-@prefix co:<http://www.geonames.org/countries/#>
-@prefix ei:<http://www.economic_indicators.org/ontology/#>
+@prefix rdf:		 <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix ei:			 <http://www.economic_indicators.org/ontology/tourism#> .
+@prefix gn:			 <http://www.geonames.org/ontology#> .
+@prefix sd:			 <http://www.self-defined.org/country#>
 
-{% for country_name, tourism_data in countries.iteritems() %}
+{% for country_name, tourism_data in countries.iteritems() -%}
+sd:{{ country_name }} a dbpedia-owl:country .
 {%- for tourism in tourism_data %}
-{%- for year, tourists in tourism.iteritems() -%}
-co:{{ country_name }} ei:has_tourists_in_{{ year }} {{ tourists }}
+{%- for key, value in tourism.iteritems() -%}
+{% if key == "country_code" %}
+sd:{{ country_name }} gn:countryCode "{{ value }}" .
+{% else -%}
+sd:{{ country_name }} ei:has_tourists_in_{{ key }} {{ value }} .
+{% endif -%}
 {% endfor -%}
 {% endfor -%}
 {% endfor -%}
