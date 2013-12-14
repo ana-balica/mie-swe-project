@@ -1,6 +1,7 @@
 import sys
 import os
 import csv
+import re
 
 sys.path.append(os.getcwd())
 from triplifier import env
@@ -28,7 +29,7 @@ class CountryTriplifier(object):
             reader = csv.reader(csvfile, delimiter=",")
             for i, row in enumerate(reader):
                 if i != 0:
-                    country_name = row[2]
+                    country_name = re.sub('[\s,\.\(\)\']', '_', row[2])
                     country_code = row[3]
                     country_data = {}
                     country_data["country_code"] = country_code
