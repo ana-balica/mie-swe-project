@@ -19,7 +19,8 @@ class CountryTriplifier(object):
     def triplify(self):
         """ Convert csv data to turtle format
 
-        @return: dict of lists of the format {country_name: [{year: gdp_value}, ]}
+        @return: dict of dicts of the format {country_name: {country_code: code, 
+                 year: value, another_year: value}, ]}
         """
         countries = {}
         years = [2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013]
@@ -29,13 +30,13 @@ class CountryTriplifier(object):
                 if i != 0:
                     country_name = row[2]
                     country_code = row[3]
-                    country_data = []
-                    country_data.extend([{"country_code": country_code}])
+                    country_data = {}
+                    country_data["country_code"] = country_code
                     offset = 4
                     for i, year in enumerate(years):
                         gdp_value = row[i+offset]
                         if gdp_value:
-                            country_data.extend([{year: row[i+offset]}])
+                            country_data[year] = row[i+offset]
                     countries[country_name] = country_data
         return countries
 
