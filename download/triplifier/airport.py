@@ -1,6 +1,7 @@
 import sys
 import os
 import csv
+import re
 
 sys.path.append(os.getcwd())
 from triplifier import env
@@ -29,16 +30,23 @@ class AirportTriplifier(object):
                 if i != 0:
                     # even if it says that data is encoded to latin-1, it actually
                     # contains a lot of unicode characters
-                    airport_name = row[1].decode('utf-8')
-                    country = row[3]
-                    faa, icao = row[4], row[5]
+                    airport_name = re.sub('[\s,\.\(\)\'/\\\]', '_', row[1]).decode('utf-8')
+                    country = re.sub('[\s,\.\(\)\']', '_', row[3])
+                    location, icao = row[4], row[5]
                     lat, long, alt = row[6], row[7], row[8]
-                    airports[airport_name] = dict(country=country,
-                                                  faa=faa,
-                                                  icao=icao,
-                                                  lat=lat,
-                                                  long=long,
-                                                  alt=alt)
+                    airports_data = dict(country=country,
+                                         icao=icao,
+                                         lat=lat,
+                                         long=long,
+                                         alt=alt)
+                    if country == "United_States":
+                        airports_data["faa"] = location
+                    else:
+                        airports_data["iata"] = location
+                    airports[airport_name] = {}
+                    for key, value in airports_data.iteritems():
+                        if value and value != "\\N":
+                            airports[airport_name].update({key: value})
         return airports
 
     def render_template(self, template_name, data):
