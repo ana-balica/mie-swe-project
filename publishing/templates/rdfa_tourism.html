@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Table of country names and their tourism rates</title>
+  </head>
+  <style type="text/css">
+    table {border-collapse: collapse;}
+    table, th, td {border: 1px solid #eeeeee;}
+  </style>
+  <body prefix="dbpedia-owl:http://dbpedia.org/ontology/
+                gn:http://www.geonames.org/ontology#
+                xsd:http://www.w3.org/2001/XMLSchema#
+                country:http://www.self-defined.org/country#">
+    <table vocab="http://schema.org/">
+      <th>Country name</th>
+      <th>Number of visiting tourists</th>
+      <th>Year</th>
+      {% for data in gdp_data %}
+      {% set country = data[0] -%}
+      {% set tourists = data[1] -%}
+      {% set year = data[2] -%}
+      <tr>
+        <td typeof="Country" about="{{ country }}" property="gn:name" datatype="xsd:string">{{ country }}</td>
+        <td about="_:{{ country }}{{ year }}" property="rdf:value" datatype="xsd:double">{{ tourists }}</td>
+        <td about="_:{{ country }}{{ year }}" property="ei:inYear" datatype="xsd:gYear">{{ year }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
