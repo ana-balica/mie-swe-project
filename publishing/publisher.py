@@ -42,7 +42,7 @@ def publish(template_name, output_file, data):
     template = env.get_template(template_name)
     output = template.render(**data)
     with open(output_file, "w") as f:
-        f.write(output)
+        f.write(output.encode('utf-8'))
 
 
 if __name__ == "__main__":
@@ -89,14 +89,16 @@ if __name__ == "__main__":
     template_dicts.append(dict(gdp_data=None))
 
     # === Airport names ==== #
-    # queries.append("""SELECT ?airport_name
-    #     WHERE {
-    #         ?airport_objects dc:title ?airport_name .
-    #     }""")
-    # source_files.append(os.path.join(pwd, "../download/output/airports.ttl"))
-    # template_names.append("rdfa_airport_names.html")
-    # output_files.append(os.path.join(pwd, 'rdfa/rdfa_country_codes.html'))
-    # template_dicts.append(dict(countries=None))
+    queries.append("""SELECT ?airport_name ?airport_id ?iata
+        WHERE {
+            ?airport_object dc:title ?airport_name .
+            ?airport_object dc:identifier ?airport_id .
+            ?airport_object air:iataCode ?iata .
+        }""")
+    source_files.append(os.path.join(pwd, "../download/output/airports.ttl"))
+    template_names.append("rdfa_airports.html")
+    output_files.append(os.path.join(pwd, 'rdfa/rdfa_airports.html'))
+    template_dicts.append(dict(airports=None))
 
     for i, query in enumerate(queries):
         extractor.parse_graph(source_files[i])
