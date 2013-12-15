@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Table of airports</title>
+  </head>
+  <style type="text/css">
+    table {border-collapse: collapse;}
+    table, th, td {border: 1px solid #eeeeee;}
+  </style>
+  <body prefix="dbpedia-owl:http://dbpedia.org/ontology/
+                dc:http://purl.org/dc/elements/1.1/
+                air:http://www.daml.org/2001/10/html/airport-ont#
+                xsd:http://www.w3.org/2001/XMLSchema#">
+    <table vocab="http://schema.org/">
+      <th>Airport name</th>
+      <th>Airport ICAO identifier</th>
+      <th>IATA code</th>
+      {% for airport in airports %}
+      {% set name = airport[0] -%}
+      {% set icao = airport[1] -%}
+      {% set iata = airport[2] -%}
+      <tr typeof="Airport">
+        <td about="dbpedia-owl:{{ name }}" property="dc:title" datatype="xsd:string">{{ name }}</td>
+        <td about="dbpedia-owl:{{ name }}" property="dc:identifier" datatype="xsd:string">{{ icao }}</td>
+        <td about="dbpedia-owl:{{ name }}" property="air:iataCode" datatype="xsd:string">{{ iata }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
+
