@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Table of country names</title>
+  </head>
+  <style type="text/css">
+    table {border-collapse: collapse;}
+    table, th, td {border: 1px solid #eeeeee;}
+  </style>
+  <body prefix="gn:http://www.geonames.org/ontology#
+                xsd:http://www.w3.org/2001/XMLSchema#
+                country:http://www.self-defined.org/country#">
+    <table>
+      {% for country in countries %}
+      <tr>
+        <td about="country:{{ country[0] }}" property="gn:countryCode" datatype="xsd:string">{{ country[1] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
