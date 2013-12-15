@@ -7,6 +7,7 @@
 
 {% for country_name, gdp_data in countries.iteritems() -%}
 country:{{ country_name }} a dbpedia-owl:country .
+country:{{ country_name }} gn:name "{{ country_name }}"^^xsd:string .
 {%- for key, value in gdp_data.iteritems() -%}
 {% if key == "country_code" %}
 country:{{ country_name }} gn:countryCode "{{ value }}"^^xsd:string .
