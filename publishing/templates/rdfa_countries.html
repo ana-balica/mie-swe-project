@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Table of country names</title>
+  </head>
+  <style type="text/css">
+    table {border-collapse: collapse;}
+    table, th, td {border: 1px solid #eeeeee;}
+  </style>
+  <body prefix="dbpedia-owl:http://dbpedia.org/ontology/
+                gn:http://www.geonames.org/ontology#
+                xsd:http://www.w3.org/2001/XMLSchema#">
+    <table vocab="http://schema.org/">
+      <th>Country name</th>
+      <th>Country code</th>
+      {% for country in countries %}
+      <tr typeof="Country">
+        <td about="{{ country[0] }}" property="name" datatype="xsd:string">{{ country[0] }}</td>
+        <td about="{{ country[0] }}" property="gn:countryCode" datatype="xsd:string">{{ country[1] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
