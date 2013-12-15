@@ -51,16 +51,34 @@ if __name__ == "__main__":
     pwd = os.getcwd()
     extractor = Extractor()
 
-    # === Countries ==== #
-    queries = []
-    query.append("""SELECT ?country_name ?country_code
-               WHERE {
-               ?country_object gn:name ?country_name .
-               ?country_object gn:countryCode ?country_code .
-            }""")
+    # === Country names ==== #
+    queries, source_files = [], []
+    template_names, output_files = [], []
+    template_dicts = []
+    queries.append("""SELECT ?country_name
+        WHERE {
+            ?country_object gn:name ?country_name .
+        }""")
 
-    extractor.parse_graph(os.path.join(pwd, "../download/output/gdp.ttl"))
-    res = extractor.extract_items(query)
-    publish("rdfa_country.html", os.path.join(pwd, 'rdfa/rdfa_country.html'), dict(countries=res))
+    source_files.append(os.path.join(pwd, "../download/output/gdp.ttl"))
+    template_names.append("rdfa_country_names.html")
+    output_files.append(os.path.join(pwd, 'rdfa/rdfa_country_names.html'))
+    template_dicts.append(dict(countries=None))
 
-    # === GDP ==== #
+    # === Country codes ==== #
+    queries.append("""SELECT ?country_name ?country_code
+        WHERE {
+            ?country_object gn:name ?country_name .
+            ?country_object gn:countryCode ?country_code .
+        }""")
+    source_files.append(os.path.join(pwd, "../download/output/gdp.ttl"))
+    template_names.append("rdfa_country_codes.html")
+    output_files.append(os.path.join(pwd, 'rdfa/rdfa_country_codes.html'))
+    template_dicts.append(dict(countries=None))
+
+    for i, query in enumerate(queries):
+        extractor.parse_graph(source_files[i])
+        res = extractor.extract_items(query)
+        for key, value in template_dicts[i].iteritems():
+            template_dicts[i][key] = res
+        publish(template_names[i], output_files[i], template_dicts[i])
