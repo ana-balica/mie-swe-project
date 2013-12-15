@@ -1,27 +1,32 @@
 @prefix rdf:		 <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
-@prefix dc:			 <http://purl.org/dc/elements/1.1/>
-@prefix geo:		 <http://www.w3.org/2003/01/geo/wgs84_pos#>
-@prefix sd:			 <http://www.self-defined.org/>
-
+@prefix xsd:		 <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc:			 <http://purl.org/dc/elements/1.1/> .
+@prefix geo:		 <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix air: 		 <http://www.daml.org/2001/10/html/airport-ont#> .
+@prefix sd-airport:	 <http://www.self-defined.org/airport#> .
+@prefix sd-country:	 <http://www.self-defined.org/country#> .
+@prefix sd-location: <http://www.self-defined.org/location#> .
 
 {% for airport_name, airport_data in airports.iteritems() %}
-sd:airport#{{ airport_name }} a dbpedia-owl:Airport
+sd-airport:{{ airport_name }} a dbpedia-owl:Airport .
 {%- for key, value in airport_data.iteritems() -%}
 {% if key == "icao" %}
-sd:airport#{{ airport_name }} pr:identifier {{ value }} .
+sd-airport:{{ airport_name }} dc:identifier "{{ value }}"^^xsd:string .
 {% elif key == "country" -%}
-sd:coutry#{{ value }} a dbpedia-owl:country .
-sd:airport#{{ airport_name }} pr:coverage sd:coutry#{{ value }} .
+sd-country:{{ value }} a dbpedia-owl:country .
+sd-airport:{{ airport_name }} dc:coverage sd-country:{{ value }} .
 {% elif key == "faa" -%}
-sd:location#{{ value }} rdf:domain dbpedia-owl:faaLocationIdentifier .
-sd:airport#{{ airport_name }} pr:coverage sd:location#{{ value }} .
+sd-location:{{ value }} rdf:domain dbpedia-owl:faaLocationIdentifier .
+sd-airport:{{ airport_name }} dc:coverage sd-location:{{ value }} .
+{% elif key == "iata" -%}
+sd-airport:{{ airport_name }} air:iataCode "{{ value }}"^^xsd:string .
 {% elif key == "lat" -%}
-sd:airport#{{ airport_name }} geo:latitude {{ value }} .
+sd-airport:{{ airport_name }} geo:latitude "{{ value }}"^^xsd:float .
 {% elif key == "long" -%}
-sd:airport#{{ airport_name }} geo:longitude {{ value }} .
+sd-airport:{{ airport_name }} geo:longitude "{{ value }}"^^xsd:float .
 {% elif key == "alt" -%}
-sd:airport#{{ airport_name }} geo:altitude {{ value }} .
+sd-airport:{{ airport_name }} geo:altitude "{{ value }}"^^xsd:integer .
 {% endif -%}
 {% endfor -%}
 {% endfor -%}
