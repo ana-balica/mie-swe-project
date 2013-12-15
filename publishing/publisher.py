@@ -49,30 +49,54 @@ if __name__ == "__main__":
     pwd = os.getcwd()
     extractor = Extractor()
 
-    # === Country names ==== #
     queries, source_files = [], []
     template_names, output_files = [], []
     template_dicts = []
-    queries.append("""SELECT ?country_name
-        WHERE {
-            ?country_object gn:name ?country_name .
-        }""")
 
-    source_files.append(os.path.join(pwd, "../download/output/gdp.ttl"))
-    template_names.append("rdfa_country_names.html")
-    output_files.append(os.path.join(pwd, 'rdfa/rdfa_country_names.html'))
-    template_dicts.append(dict(countries=None))
-
-    # === Country codes ==== #
+    # === Country names and codes ==== #
     queries.append("""SELECT ?country_name ?country_code
         WHERE {
             ?country_object gn:name ?country_name .
             ?country_object gn:countryCode ?country_code .
         }""")
     source_files.append(os.path.join(pwd, "../download/output/gdp.ttl"))
-    template_names.append("rdfa_country_codes.html")
-    output_files.append(os.path.join(pwd, 'rdfa/rdfa_country_codes.html'))
+    template_names.append("rdfa_countries.html")
+    output_files.append(os.path.join(pwd, 'rdfa/rdfa_countries.html'))
     template_dicts.append(dict(countries=None))
+
+    # === Country GDP in year yyyy ==== #
+    queries.append("""SELECT ?country_name ?gdp ?year
+        WHERE {
+            ?country_object gn:name ?country_name .
+            ?blank rdf:value ?gdp .
+            ?blank ei:inYear ?year .
+        }""")
+    source_files.append(os.path.join(pwd, "../download/output/gdp.ttl"))
+    template_names.append("rdfa_gdp.html")
+    output_files.append(os.path.join(pwd, 'rdfa/rdfa_gdp.html'))
+    template_dicts.append(dict(gdp_data=None))
+
+    # === Country Tourism rate in year yyyy ==== #
+    queries.append("""SELECT ?country_name ?tourists ?year
+        WHERE {
+            ?country_object gn:name ?country_name .
+            ?blank rdf:value ?tourists .
+            ?blank ei:inYear ?year .
+        }""")
+    source_files.append(os.path.join(pwd, "../download/output/tourism.ttl"))
+    template_names.append("rdfa_tourism.html")
+    output_files.append(os.path.join(pwd, 'rdfa/rdfa_tourism.html'))
+    template_dicts.append(dict(gdp_data=None))
+
+    # === Airport names ==== #
+    # queries.append("""SELECT ?airport_name
+    #     WHERE {
+    #         ?airport_objects dc:title ?airport_name .
+    #     }""")
+    # source_files.append(os.path.join(pwd, "../download/output/airports.ttl"))
+    # template_names.append("rdfa_airport_names.html")
+    # output_files.append(os.path.join(pwd, 'rdfa/rdfa_country_codes.html'))
+    # template_dicts.append(dict(countries=None))
 
     for i, query in enumerate(queries):
         extractor.parse_graph(source_files[i])
