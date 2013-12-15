@@ -24,13 +24,11 @@ class Extractor(object):
         """ Run the query and return results in Python format (strings, integers)
 
         @param query: a SPARQL query string (don't include prefixes)
-        @return: set of results tuples
+        @return: generator of tuples containing the data
         """
         qres = self.g.query(query)
-        result = []
         for row in qres:
-            result.append(tuple([item.toPython() for item in row]))
-        return result
+            yield tuple([item.toPython() for item in row])
 
 
 def publish(template_name, output_file, data):
