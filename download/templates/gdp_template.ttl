@@ -12,7 +12,10 @@ country:{{ country_name }} gn:name "{{ country_name }}"^^xsd:string .
 {% if key == "country_code" %}
 country:{{ country_name }} gn:countryCode "{{ value }}"^^xsd:string .
 {% else -%}
-country:{{ country_name }} ei:has_gdp_in_{{ key }} "{{ value }}"^^xsd:double .
+country:{{ country_name }} ei:hasGDP _:{{ country_name }}{{ key }} .
+_:{{ country_name }}{{ key }}
+	rdf:value "{{ value }}"^^xsd:double ;
+	ei:inYear "{{ key }}"^^xsd:gYear .
 {% endif -%}
 {% endfor -%}
 {% endfor -%}

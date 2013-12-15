@@ -13,7 +13,10 @@ country:{{ country_name }}
 {% if key == "country_code" %}
 country:{{ country_name }} gn:countryCode "{{ value }}"^^xsd:string .
 {% else -%}
-country:{{ country_name }} ei:has_tourists_in_{{ key }} "{{ value }}"^^xsd:integer .
+country:{{ country_name }} ei:hasTouristsNr _:{{ country_name }}{{ key }} .
+_:{{ country_name }}{{ key }}
+	rdf:value "{{ value }}"^^xsd:integer ;
+	ei:inYear "{{ key }}"^^xsd:gYear .
 {% endif -%}
 {% endfor -%}
 {% endfor -%}
