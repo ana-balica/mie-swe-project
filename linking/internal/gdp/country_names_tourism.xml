@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Silk>
+  <Prefixes>
+    <Prefix id="rdf" namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#" />
+    <Prefix id="rdfs" namespace="http://www.w3.org/2000/01/rdf-schema#" />
+    <Prefix id="owl" namespace="http://www.w3.org/2002/07/owl#" />
+    <Prefix id="dbpedia-owl" namespace="http://dbpedia.org/ontology/" />
+    <Prefix id="gn" namespace="http://www.geonames.org/ontology#" />
+  </Prefixes>
+
+  <DataSources>
+    <DataSource id="gdp" type="file">
+      <Param name="file" value="gdp.ttl" />
+      <Param name="format" value="TTL" />
+    </DataSource>
+
+    <DataSource id="tourism" type="file">
+      <Param name="file" value="tourism.ttl" />
+      <Param name="format" value="TTL" />
+    </DataSource>
+  </DataSources>
+
+  <Interlinks>
+    <Interlink id="country_code">
+      <LinkType>owl:sameAs</LinkType>
+
+      <SourceDataset dataSource="gdp" var="a">
+        <RestrictTo>
+          ?a a dbpedia-owl:country
+        </RestrictTo>
+      </SourceDataset>
+
+      <TargetDataset dataSource="tourism" var="b">
+        <RestrictTo>
+          ?b a dbpedia-owl:country
+        </RestrictTo>
+      </TargetDataset>
+
+      <LinkageRule>
+        <Compare metric="levenshteinDistance" threshold="2.0">
+          <TransformInput function="lowerCase">
+            <Input path="?a/gn:name" />
+          </TransformInput>
+          <TransformInput function="lowerCase">
+            <Input path="?b/gn:name" />
+          </TransformInput>
+        </Compare>
+      </LinkageRule>
+
+      <Filter />
+
+      <Outputs>
+        <Output type="file" minConfidence="0.8">
+          <Param name="file" value="gdp_tourism_country_names.xml"/>
+          <Param name="format" value="alignment"/>
+        </Output>
+      </Outputs>
+    </Interlink>
+  </Interlinks>
+</Silk>
