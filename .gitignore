@@ -37,3 +37,6 @@ nosetests.xml
 
 # Virtual env
 env/
+
+# Project specific
+download/output/*.rdf
