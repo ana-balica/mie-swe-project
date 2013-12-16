@@ -31,6 +31,9 @@ class Extractor(object):
         for row in qres:
             yield tuple([item.toPython() for item in row])
 
+    def get_size(self):
+        return len(self.g)
+
 
 def publish(template_name, output_file, data):
     """ Publish the results to a file
