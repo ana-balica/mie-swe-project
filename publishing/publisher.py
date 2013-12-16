@@ -11,6 +11,7 @@ template_dir = os.path.join(pwd, 'templates/')
 env = Environment(loader=FileSystemLoader(template_dir))
 
 
+# TODO: create a module and put Extractor to a single file
 class Extractor(object):
     """ Wrapper around rdflib for extracting data from turtle files
     """
@@ -70,6 +71,8 @@ if __name__ == "__main__":
     template_names, output_files = [], []
     template_dicts = []
 
+    # TODO: !!! organize the mess, split to files in the module, remove redundant copy-pasting !!!
+
     # === Country names and codes ==== #
     queries.append("""SELECT ?country_name ?country_code
         WHERE {
@@ -117,9 +120,48 @@ if __name__ == "__main__":
     output_files.append(os.path.join(pwd, 'rdfa/rdfa_airports.html'))
     template_dicts.append(dict(airports=None))
 
+    # === Airport location ==== #
+    queries.append("""SELECT ?airport_name ?country ?long ?lat ?alt
+        WHERE {
+            ?airport_object a dbpedia-owl:Airport .
+            ?airport_object dc:title ?airport_name .
+            ?country_object a dbpedia-owl:country .
+            ?country_object dc:title ?country .
+            ?airport_object geo:longitude ?long .
+            ?airport_object geo:latitude ?lat .
+            ?airport_object geo:altitude ?alt .
+        }""")
+    source_files.append(os.path.join(pwd, "../download/output/airports.ttl"))
+    template_names.append("rdfa_airports_location.html")
+    output_files.append(os.path.join(pwd, 'rdfa/rdfa_airports_location.html'))
+    template_dicts.append(dict(airports=None))
+
+    # === Country names microformat ==== #
+    queries.append("""SELECT ?country_name
+        WHERE {
+            ?country_object gn:name ?country_name .
+        }""")
+    source_files.append(os.path.join(pwd, "../download/output/gdp.ttl"))
+    template_names.append("microformat_countries.html")
+    output_files.append(os.path.join(pwd, 'microformats/microformat_countries.html'))
+    template_dicts.append(dict(countries=None))
+
+    # === Geo location microformat ==== #
+    queries.append("""SELECT ?long ?lat ?alt
+        WHERE {
+            ?airport_object geo:longitude ?long .
+            ?airport_object geo:latitude ?lat .
+            ?airport_object geo:altitude ?alt .
+        }""")
+    source_files.append(os.path.join(pwd, "../download/output/airports.ttl"))
+    template_names.append("microformat_geo.html")
+    output_files.append(os.path.join(pwd, 'microformats/microformat_geo.html'))
+    template_dicts.append(dict(positions=None))
+
     for i, query in enumerate(queries):
         extractor.parse_graph(source_files[i])
         res = extractor.extract_items(query)
+        result = islice(res, 0, 10000)
         for key, value in template_dicts[i].iteritems():
-            template_dicts[i][key] = res
+            template_dicts[i][key] = result
         publish(template_names[i], output_files[i], template_dicts[i])
