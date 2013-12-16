@@ -1,6 +1,7 @@
 import os
 import sys
 import rdflib
+from itertools import islice
 
 from jinja2 import FileSystemLoader, Environment
 
@@ -43,6 +44,19 @@ def publish(template_name, output_file, data):
     output = template.render(**data)
     with open(output_file, "w") as f:
         f.write(output.encode('utf-8'))
+
+def split_iterator(iterator, size, delimiter):
+    """ Helper function to split a generator into chuncks of generators
+
+    @param iterator: an iterator
+    @param size: total size of the iterator
+    @param delimiter: the size of the final chuncks
+    @return: list of iterators
+    """
+    iterables = []
+    for i in xrange(0, size, delimiter):
+        iterables.extend([islice(iterator, 0, delimiter)])
+    return iterables
 
 
 if __name__ == "__main__":
