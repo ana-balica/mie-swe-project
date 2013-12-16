@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Table of airports and their location</title>
+  </head>
+  <style type="text/css">
+    table {border-collapse: collapse;}
+    table, th, td {border: 1px solid #eeeeee;}
+  </style>
+  <body prefix="dbpedia-owl:http://dbpedia.org/ontology/
+                dc:http://purl.org/dc/elements/1.1/
+                air:http://www.daml.org/2001/10/html/airport-ont#
+                xsd:http://www.w3.org/2001/XMLSchema#">
+    <table vocab="http://schema.org/">
+      <th>Airport name</th>
+      <th>Country</th>
+      <th>Longitude</th>
+      <th>Latitude</th>
+      <th>Altitude</th>
+      {% for airport in airports %}
+      {% set name = airport[0] -%}
+      {% set country = airport[1] -%}
+      {% set long = airport[2] -%}
+      {% set lat = airport[3] -%}
+      {% set alt = airport[4] -%}
+      <tr>
+        <td typeof="Airport" about="{{ name }}" property="dc:title" datatype="xsd:string">{{ name }}</td>
+        <td typeof="Country" about="{{ country }}" property="dc:title" datatype="xsd:string">{{ country }}</td>
+        <td about="{{ name }}" property="dc:coverage">{{ country }}</td>
+        <td about="{{ name }}" property="geo:longitude" datatype="xsd:float">{{ long }}</td>
+        <td about="{{ name }}" property="geo:latitude" datatype="xsd:float">{{ lat }}</td>
+        <td about="{{ name }}" property="geo:altitude" datatype="xsd:integer">{{ alt }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
