@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airports</title>
+  </head>
+  <body>
+    {% for airport in airports -%}
+    {% set airport_name = airport[0] -%}
+    {% set airport_icao_code = airport[1] -%}
+    {% set country_name = airport[2] -%}
+    {% set long = airport[3] -%}
+    {% set lat = airport[4] -%}
+    {% set alt = airport[5] -%}
+    <div itemscope itemtype="http://schema.org/Airport">
+      <p itemprop="name">{{ airport_name }}</p>
+      <p itemprop="alternateName">{{ airport_icao_code }}</p>
+      <div itemprop="containedIn" itemscope itemtype="http://schema.org/Place">
+        <p itemprop="name">{{ country_name }}</p>
+      </div>
+    </div>
+    <div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+      <p itemprop="longitude">{{ long }}</p>
+      <p itemprop="latitude">{{ lat }}</p>
+      <p itemprop="elevation">{{ alt }}</p>
+    </div>
+    {% endfor -%}
+  </body>
+</html>
