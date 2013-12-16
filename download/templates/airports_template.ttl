@@ -10,11 +10,13 @@
 
 {% for airport_name, airport_data in airports.iteritems() %}
 sd-airport:{{ airport_name }} a dbpedia-owl:Airport .
+sd-airport:{{ airport_name }} dc:title "{{ airport_name }}"^^xsd:string .
 {%- for key, value in airport_data.iteritems() -%}
 {% if key == "icao" %}
 sd-airport:{{ airport_name }} dc:identifier "{{ value }}"^^xsd:string .
 {% elif key == "country" -%}
 sd-country:{{ value }} a dbpedia-owl:country .
+sd-country:{{ value }} dc:title "{{ value }}"^^xsd:string .
 sd-airport:{{ airport_name }} dc:coverage sd-country:{{ value }} .
 {% elif key == "faa" -%}
 sd-location:{{ value }} rdf:domain dbpedia-owl:faaLocationIdentifier .
