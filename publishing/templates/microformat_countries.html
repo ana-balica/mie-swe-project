@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Country names</title>
+  </head>
+  <body>
+    <div class="h-geo">
+      {% for country in countries -%}
+      {% set country_name = country[0] -%}
+      <p class="p-country-name">{{ country_name }}</p>
+      {% endfor -%}
+    </div>
+  </body>
+</html>
