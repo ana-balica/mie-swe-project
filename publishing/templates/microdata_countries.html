@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Countries</title>
+  </head>
+  <body>
+    {% for country in countries -%}
+    {% set country_name = country[0] -%}
+    {% set country_code = country[1] -%}
+    <div itemscope itemtype="http://schema.org/Country">
+      <p itemprop="name">{{ country_name }}</p>
+      <p itemprop="alternateName">{{ country_code }}</p>
+    </div>
+    {% endfor -%}
+  </body>
+</html>
