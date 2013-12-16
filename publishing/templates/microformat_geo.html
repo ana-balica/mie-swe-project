@@ -4,15 +4,15 @@
     <title>Geo location</title>
   </head>
   <body>
+    {% for position in positions -%}
+    {% set long = position[0] -%}
+    {% set lat = position[1] -%}
+    {% set alt = position[2] -%}
     <div class="h-adr">
-      {% for airport in airports -%}
-      {% set long = airport[2] -%}
-      {% set lat = airport[3] -%}
-      {% set alt = airport[4] -%}
       <p class="p-longitude">{{ long }}</p>
       <p class="p-latitude">{{ lat }}</p>
       <p class="p-altitude">{{ alt }}</p>
-      {% endfor -%}
     </div>
+    {% endfor -%}
   </body>
 </html>
