@@ -40,3 +40,6 @@ env/
 
 # Project specific
 download/output/*.rdf
+
+# 3rd party scripts
+vendor/
