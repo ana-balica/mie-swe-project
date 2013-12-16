@@ -158,6 +158,34 @@ if __name__ == "__main__":
     output_files.append(os.path.join(pwd, 'microformats/microformat_geo.html'))
     template_dicts.append(dict(positions=None))
 
+    # === Country names and codes microdata === #
+    queries.append("""SELECT ?country_name ?country_code
+        WHERE {
+            ?country_object gn:name ?country_name .
+            ?country_object gn:countryCode ?country_code .
+        }""")
+    source_files.append(os.path.join(pwd, "../download/output/gdp.ttl"))
+    template_names.append("microdata_countries.html")
+    output_files.append(os.path.join(pwd, 'microdata/microdata_countries.html'))
+    template_dicts.append(dict(countries=None))
+
+    # === Airports microdata === #
+    queries.append("""SELECT ?airport_name ?icao ?country ?long ?lat ?alt
+        WHERE {
+            ?airport_object a dbpedia-owl:Airport .
+            ?airport_object dc:title ?airport_name .
+            ?airport_object dc:identifier ?icao .
+            ?country_object a dbpedia-owl:country .
+            ?country_object dc:title ?country .
+            ?airport_object geo:longitude ?long .
+            ?airport_object geo:latitude ?lat .
+            ?airport_object geo:altitude ?alt .
+        }""")
+    source_files.append(os.path.join(pwd, "../download/output/airports.ttl"))
+    template_names.append("microdata_airports.html")
+    output_files.append(os.path.join(pwd, 'microdata/microdata_airports.html'))
+    template_dicts.append(dict(airports=None))
+
     for i, query in enumerate(queries):
         extractor.parse_graph(source_files[i])
         res = extractor.extract_items(query)
