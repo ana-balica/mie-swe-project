@@ -21,7 +21,7 @@
   </DataSources>
 
   <Interlinks>
-    <Interlink id="country_code">
+    <Interlink id="country_name">
       <LinkType>owl:sameAs</LinkType>
 
       <SourceDataset dataSource="gdp" var="a">
