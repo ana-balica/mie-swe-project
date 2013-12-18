@@ -1,0 +1,512 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'
+    xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+    xmlns:xsd='http://www.w3.org/2001/XMLSchema#'
+    xmlns:align='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'>
+<Alignment>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1983711862"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Bosnia_and_Herzegovina"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1694010854"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Burundi"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1602889766"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Isle_of_Man"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node432425032"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Mali"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424311645"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Mali"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424297816"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Malawi"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424297816"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Malta"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node433483552"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Niger"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424316663"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Niger"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424311675"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Nigeria"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424312044"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Faeroe_Islands"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node432424956"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Central_African_Republic"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424311104"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#China"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424311848"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Togo"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424311827"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Tonga"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node249399444"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Trinidad_and_Tobago"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424310703"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#United_Arab_Emirates"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node432424926"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Nigeria"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424316663"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Algeria"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424313836"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#China"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node432424929"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Antigua_and_Barbuda"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424315584"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Austria"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node26847709"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Australia"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424297931"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Papua_New_Guinea"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node432425123"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Namibia"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node432425064"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Somalia"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424317039"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Romania"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424311662"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Zambia"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424297579"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Namibia"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node432425079"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Slovenia"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424313836"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Guyana"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424311328"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Ghana"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424316663"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Liberia"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424311573"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Nigeria"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424311806"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Serbia"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424316758"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Canada"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424313760"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Panama"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424317406"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Rwanda"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424311738"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Uganda"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node424298311"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Oman"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node249399313"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Aruba"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1770467684"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Cuba"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+</Alignment>
+</rdf:RDF>

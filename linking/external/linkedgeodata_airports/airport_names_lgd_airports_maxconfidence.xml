@@ -1,0 +1,3944 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'
+    xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+    xmlns:xsd='http://www.w3.org/2001/XMLSchema#'
+    xmlns:align='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'>
+<Alignment>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way183746136"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Ercan_International_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369161254"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Elko_Regional_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368388775"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Emporia_Municipal_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042031769"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Eastmain_River_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way91737623"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Fair_Isle_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way218360505"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Flagstaff_Pulliam_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369168993"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Fullerton_Municipal_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369033883"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Friday_Harbor_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node315302559"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Faizabad_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way130799616"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Imo_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node711532958"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Ilam_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node412253159"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Irkutsk-2"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369144298"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Icy_Bay_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way30128569"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Delta_County_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way161983314"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Dawadmi_Domestic_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node57758213"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Daru_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node573457894"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Deir_Zzor"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369147780"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Dawson_Community_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369022593"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Drummond_Island_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368990189"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#DuBois_Regional_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368383036"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Dillant_Hopkins_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node278493129"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Dolpa"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042048522"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Drake_Bay_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369161571"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Jeh_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369132139"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Jackson_Hole_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369028826"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Jackson_County_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368383879"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Jamestown_Regional_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042101518"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Jiujiang_Lushan_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way186495935"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Hayward_Executive_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node388719734"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Harle_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369144216"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Healy_River_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368395626"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Hilton_Head_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368388729"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Hays_Regional_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node320409970"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Hrodno_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368383844"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Hector_International_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node191816463"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Hami_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1237937917"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Hami_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way75208002"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Naga_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way75208002"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Nyala_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way181897013"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Nuku_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way181326537"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Neerlerit_Inaat_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way110028501"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Niue_International_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node998394167"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Nain_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node87893860"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#North_Ronaldsay_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369169633"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Napa_County_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369017088"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Newport_Municipal_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1237844745"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Naja"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042040938"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Naga_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369159796"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Grant_County_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368381042"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Greenbrier_Valley_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node296350397"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Guerrero_Negro_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node26151321"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Gore_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node26151321"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Gode_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node26151321"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Gove_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1237960980"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Guiuan"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way115698794"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Ontario_Municipal_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node711452966"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Odate_Noshiro_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node412252211"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Okadama_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369044709"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Oneonta_Municipal_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node2053419478"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Ofu_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node391059605"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Quezaltenango_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368382717"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Quonset_State_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node271641467"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Qurghonteppa_International_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042101613"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Qiqihar_Sanjiazi_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way88560946"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Allegheny_County_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way27467559"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Agri_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node727538589"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Agri_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node676777726"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Araracuara_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368393220"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Aberdeen_Regional_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node313624245"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Alma_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node313624245"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Altai_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node313624245"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Altay_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368386442"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Alliance_Municipal_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node296960513"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Atka_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node280076374"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Alma_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node280076374"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Anda_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node254432999"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Adiyaman_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1237343258"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Alpha"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1236690603"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Alpha"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042047142"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Arua_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042046244"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Aksu_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042059804"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Araracuara_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way64042602"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Lee_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way64042602"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Leon_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way189482707"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Louisville_International_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way107642924"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Longreach_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way107535242"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Lewis_University_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node837524403"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Lyudao"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369170303"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Lake_Tahoe_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node412062830"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Lee_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node412062830"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Lae_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369158762"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Los_Alamos_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369148531"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Lewistown_Municipal_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369132294"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Laramie_Regional_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369044069"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Lake_Placid_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368979555"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Lemhi_County_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368396137"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Lynden_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368388803"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Lawrence_Municipal_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368383064"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Lebanon_Municipal_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042030120"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#La_Romaine_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way17012632"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Redlands_Municipal_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node998495887"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Raron_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1237829000"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Ras_Mishab"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1237547054"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Rasht"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1237547054"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Rada"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1236703838"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Riyan"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way75208093"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Khanty_Mansiysk_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way213217494"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Kake_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way113711631"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Kamishly_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node568606749"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Kerema_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node410997739"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Kars_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node408726015"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Kuria_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369144263"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Karuluk_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369014274"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Klamath_Falls_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368886878"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Kenosha_Regional_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node331777879"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Korla_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node277933114"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Kake_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node248876206"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Kerema_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042040749"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Kake_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node390939696"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Uzhhorod_International_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368989953"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#University_Park_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way178540364"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Valenca_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369122557"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Victoria_Regional_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368997829"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Valdosta_Regional_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node266969789"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Ventspils_International_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way155016316"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Xining_Caojiabu_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042027912"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Xuzhou_Guanyin_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369168988"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Yolo_County_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1535564850"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Yongzhou_Lingling_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way26166412"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Burg_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way26166412"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Burgos_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node412045405"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Bo_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node408725616"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Binhai"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node408725616"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Busia"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node408725616"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Bhisho"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node408725616"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Biskra"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369169455"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Buchanan_Field_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369003735"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Bemidji_Regional_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368393210"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Brookings_Regional_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node317984579"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Buckeye_Municipal_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368383600"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Barkley_Regional_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node309741681"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Burns_Municipal_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node30419199"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Burg_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node30419199"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Burgos_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node292530328"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Baita_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node292530328"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Bam_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node292530328"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Batna_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node290766049"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Bakki_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node277753664"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Baita_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042040852"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Bourke_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way62060973"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Coen_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way62060973"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Co_Ong_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way28902695"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Chinggis_Khaan_Intl"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way199302867"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Christmas_Valley_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way112691853"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Cherry_Capital_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node643023985"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Coen_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node643023985"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Co_Ong_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node389146328"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Ciudad_Constitución_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node544449499"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Changzhi_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node419499762"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Choibalsan_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369143932"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Circle_City_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369121416"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Cherokee_County_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369013959"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Christmas_Valley_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368996747"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Cherokee_County_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368996742"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Columbus_Metropolitan_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368979427"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#McCall_Municipal_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368386690"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#McCook_Regional_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368386498"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Chadron_Municipal_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368888311"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Wittman_Regional_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368393093"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Watertown_Regional_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368388670"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Waterloo_Regional_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368382656"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Westerly_State_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042030077"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Welke_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way17901515"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Hubli_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node293562145"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Robe_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1236320556"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Tabas"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node87893858"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Papa_Westray_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node667954115"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Phu_Cat_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node391221673"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Puerto_Jimenez_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node391093587"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Puerto_Barrios_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node390091830"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Palo_Verde_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node408711763"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Peenemunde_Airfield"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369028374"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Pitt-Greenville_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368979367"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Pocatello_Regional_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368391634"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Prineville_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368383076"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Plymouth_Municipal_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node357803711"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Provo_Municipal_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node301773602"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Poliarny_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1237547054"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Mafia"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1237547054"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Gafsa"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way207697091"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Madera_Municipal_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way168057996"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Mackinac_Island_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369034191"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Tacoma_Narrows_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node315799171"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Macaé_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way34771150"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Matei_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way28923106"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Mali_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way181124712"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Moma_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way156580173"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Mary_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node388484491"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Mammoth_Yosemite_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node387124328"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Mys_Shmidta_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node478067264"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Marau_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node416322339"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Morawa_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369165879"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Montrose_Regional_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369027649"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Moore_County_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369023564"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Muskegon_County_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369013998"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Makin_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node324940584"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Mount_Hotham_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368387025"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Monroe_County_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node302371684"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Moma_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node301212139"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Mae_Sot_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node215302536"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Minsk_2"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node215302536"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Minsk_1"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042053470"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Mary_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042031376"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Matak_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way75546826"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Tainan"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way75546826"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Tatry"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way75546826"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Tawau"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way75546826"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Taraz"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way75546826"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Tanga"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way75546826"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Tabas"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way75208203"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Tiksi_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node391224428"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Tunica_Municipal_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369042926"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Tri_Cities_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369033872"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Tri_Cities_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368396349"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Trenton-Robbinsville_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node322392470"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Truckee-Tahoe_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368386131"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Tupelo_Regional_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node338725325"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Tari_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node255261167"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Tiga_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node254443662"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Tokua_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node254441089"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Tekirdağ_Çorlu_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1943791665"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Tengchong_Tuofeng_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node21187883"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Taree_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042101540"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Tunxi_International_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042090511"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Tari_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node711620501"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Naga_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node339385076"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Naga_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node339385076"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Saga_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node711365779"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Nuku_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node412253159"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Yakutsk"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369034606"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Suki_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way196292136"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Roma_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way196292136"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Boma_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node412877710"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Samsun-Çarşamba_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node312632830"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Sambu_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node306090567"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Bam_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node302371684"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Bam_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node278493129"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Goma"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node191816463"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Bam_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way214170072"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Shigatse_Peace_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node416697430"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Sharona"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369132318"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Sheridan_County_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369057086"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Shelby_County_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way43538797"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Salina_Municipal_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node998558075"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Suki_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node711620501"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Sara_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node711449853"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Shonai_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node391082048"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Salina_Municipal_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node380749693"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#St_Marys_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369170360"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#San_Carlos_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node415525374"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Sorkjosen_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node411882902"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Severo-Evensk_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369161563"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Silver_Springs_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369139094"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#South_Lakeland_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369023758"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Sawyer_International_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node353289451"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Syros_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042048300"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#San_Carlos_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042031502"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#St_George_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042031301"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#St_Augustin_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042029802"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Soure_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way122257171"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Qasim"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node408725616"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Lishe"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node408725616"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Tiska"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node408725616"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Lista"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node408725616"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Pisa"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way142382433"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Mali_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way110768423"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Gulu_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node678308221"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Gulu_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node261704763"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Dalma_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node2259637347"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Malakal"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node2259637347"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Dalaman"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042030077"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Teller_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node663936162"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Luzhou_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node638295342"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Quzhou_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1237960980"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Kazan"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way75546826"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Banak"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way75546826"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Wana"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way75546826"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Manas"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way75546826"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Lanai"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way75546826"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Hana"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way123063927"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Canakkale_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node368391664"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Ranai_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node346873828"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Ganzhou_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node215302536"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Lins"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node215302536"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Lensk"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node215302536"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Usinsk"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1237960980"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Jinan"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1237960980"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Vigan"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1237960980"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Riyan"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node290876259"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#EuroAirport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042040852"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Soure_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way91953032"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Jerez"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way91953032"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Mezen"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node369171063"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Lee_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way168477885"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Tofino"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way168477885"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Torino"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node711572453"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Moro_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node415142657"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Torino"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node415142657"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Yoron"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node415142657"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Pori"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node415142657"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Ilorin"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node415142657"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Moron"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042029802"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Gore_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/way188749757"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Lar_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node57758213"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Sara_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node415142657"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Surin"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node410997739"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Daru_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node254484625"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Lar_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042090511"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Lar_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042090511"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Sara_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042040938"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Lar_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1042040938"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Sara_Airport"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node611183059"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Magan"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node611183059"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Xakan"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node611183059"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Daman"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node611183059"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Bagan"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node611183059"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Valan"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://linkedgeodata.org/triplify/node1237547054"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/airport#Naha"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+</Alignment>
+</rdf:RDF>
