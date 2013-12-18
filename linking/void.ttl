@@ -1,0 +1,135 @@
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <#> .
+
+# ===== Internal datasets ===== #
+:GDP a void:Dataset;
+    dcterms:title "GDP";
+    dcterms:description "RDF data extracted from structured data provided by Worldbank";
+    dcterms:contributor :Ana_Balica;
+    dcterms:source <http://www.self-defined.org/resourses/gdp.ttl>;
+    dcterms:modified "2013-12-18"^^xsd:date;
+    void:feature <http://www.w3.org/ns/formats/Turtle>
+    .
+
+:Tourism a void:Dataset;
+    dcterms:title "Tourism";
+    dcterms:description "RDF data extracted from structured data provided by Worldbank";
+    dcterms:contributor :Ana_Balica;
+    dcterms:source <http://www.self-defined.org/resourses/tourism.ttl>;
+    dcterms:modified "2013-12-18"^^xsd:date;
+    void:feature <http://www.w3.org/ns/formats/Turtle>
+    .
+
+:Airports a void:Dataset;
+    dcterms:title "Airports";
+    dcterms:description "RDF data extracted from the CSV dump provided by OpenFlights";
+    dcterms:contributor :Ana_Balica;
+    dcterms:source <http://www.self-defined.org/resourses/tourism.ttl>;
+    dcterms:modified "2013-12-18"^^xsd:date;
+    void:feature <http://www.w3.org/ns/formats/Turtle>
+    .
+
+
+# ===== External datasets ===== #
+:DBpedia a void:Dataset;
+    dcterms:title "DBPedia";
+    foaf:homepage <http://dbpedia.org/> ;
+    dcterms:description "RDF data extracted from Wikipedia";
+    dcterms:contributor :FU_Berlin;
+    dcterms:contributor :University_Leipzig;
+    dcterms:contributor :OpenLink_Software;
+    dcterms:contributor :DBpedia_community;
+    dcterms:source <http://dbpedia.org/resource/Wikipedia>;
+    dcterms:modified "2008-11-17"^^xsd:date;
+    void:sparqlEndpoint <http://dbpedia.org/sparql>
+    .
+
+:LinkedGeoData a void:Dataset;
+    dcterms:title "LinkedGeoData";
+    foaf:homepage <http://linkedgeodata.org/> ;
+    dcterms:description "RDF data extracted from OpenStreetMap.org";
+    dcterms:contributor :University_Leipzig ; 
+    dcterms:source <http://dbpedia.org/resource/OpenStreetMap> ; 
+    dcterms:modified "2010-07-15"^^xsd:date ;
+    void:sparqlEndpoint <http://linkedgeodata.org/sparql>
+    .
+
+
+# ===== Internal linksets ===== #
+:GDP_Tourism a void:Linkset;
+    void:linkPredicate owl:sameAs ;
+    void:target :GDP;
+    void:target :Tourism
+    .
+
+:GDP_Airports a void:Linkset;
+    void:linkPredicate owl:sameAs ;
+    void:target :GDP;
+    void:target :Airports
+    .
+
+:Tourism_Airports a void:Linkset;
+    void:linkPredicate owl:sameAs ;
+    void:target :Tourism;
+    void:target :Airports
+    .
+
+
+# ===== External linksets ===== #
+:DBpedia_GDP a void:Linkset;
+    void:linkPredicate owl:sameAs ;
+    void:target :DBpedia;
+    void:target :GDP
+    .
+
+:DBpedia_Tourism a void:Linkset;
+    void:linkPredicate owl:sameAs ;
+    void:target :DBpedia;
+    void:target :Tourism
+    .
+
+:DBpedia_Airports a void:Linkset;
+    void:linkPredicate owl:sameAs ;
+    void:target :DBpedia;
+    void:target :Airports
+    .
+
+:LinkedGeoData_GDP a void:Linkset;
+    void:linkPredicate owl:sameAs ;
+    void:target :LinkedGeoData;
+    void:target :GDP
+    .
+
+:DBpedia_Tourism a void:Linkset;
+    void:linkPredicate owl:sameAs ;
+    void:target :LinkedGeoData;
+    void:target :Tourism
+    .
+
+:LinkedGeoData_Airports a void:Linkset;
+    void:linkPredicate owl:sameAs ;
+    void:target :LinkedGeoData;
+    void:target :Airports
+    .
+
+
+# ===== Contributors ===== #
+:FU_Berlin a foaf:Organization;
+    rdfs:label "Freie Universität Berlin";
+    foaf:homepage <http://www.fu-berlin.de/>;
+    .
+
+:University_Leipzig a foaf:Organization ; 
+    rdfs:label "UniversitÃ¤t Leipzig" ; 
+    foaf:homepage <http://www.uni-leipzig.de/> 
+    . 
+
+:Ana_Balica a foaf:Person;
+    rdfs:label "Ana Balica";
+    foaf:mbox <mailto:balicana@fit.cvut.cz>
+    .
