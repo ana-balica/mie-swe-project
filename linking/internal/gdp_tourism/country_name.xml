@@ -50,8 +50,12 @@
       <Filter />
 
       <Outputs>
-        <Output type="file" minConfidence="0.8">
-          <Param name="file" value="gdp_tourism_country_names.xml"/>
+        <Output type="file" minConfidence="0.5">
+          <Param name="file" value="country_names_gdp_tourism_minconfidence.xml"/>
+          <Param name="format" value="alignment"/>
+        </Output>
+        <Output type="file" maxConfidence="0.5">
+          <Param name="file" value="country_names_gdp_tourism_maxconfidence.xml"/>
           <Param name="format" value="alignment"/>
         </Output>
       </Outputs>

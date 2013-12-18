@@ -51,8 +51,12 @@
       <Filter />
 
       <Outputs>
-        <Output type="file" minConfidence="0.8">
-          <Param name="file" value="tourism_airports_country_names.xml"/>
+        <Output type="file" minConfidence="0.5">
+          <Param name="file" value="country_names_tourism_airports_minconfidence.xml"/>
+          <Param name="format" value="alignment"/>
+        </Output>
+        <Output type="file" maxConfidence="0.5">
+          <Param name="file" value="country_names_tourism_airports_maxconfidence.xml"/>
           <Param name="format" value="alignment"/>
         </Output>
       </Outputs>
