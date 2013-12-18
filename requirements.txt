@@ -1,7 +1,6 @@
 Flask==0.10.1
 Jinja2==2.7.1
 MarkupSafe==0.18
-SPARQLWrapper==1.5.2
 Werkzeug==0.9.4
 argparse==1.2.1
 html5lib==0.99
@@ -9,6 +8,7 @@ isodate==0.4.9
 itsdangerous==0.23
 pyparsing==1.5.7
 quik==0.2.2
+rdfextras==0.4
 rdflib==4.0.1
 simplejson==3.3.1
 six==1.4.1
