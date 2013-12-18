@@ -51,11 +51,11 @@
 
       <Outputs>
         <Output type="file" minConfidence="0.5">
-          <Param name="file" value="country_names_gdp_tourism_minconfidence.xml"/>
+          <Param name="file" value="country_names_gdp_tourism_minconfidence.rdf"/>
           <Param name="format" value="alignment"/>
         </Output>
         <Output type="file" maxConfidence="0.5">
-          <Param name="file" value="country_names_gdp_tourism_maxconfidence.xml"/>
+          <Param name="file" value="country_names_gdp_tourism_maxconfidence.rdf"/>
           <Param name="format" value="alignment"/>
         </Output>
       </Outputs>

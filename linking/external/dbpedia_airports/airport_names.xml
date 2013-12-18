@@ -52,11 +52,11 @@
 
       <Outputs>
         <Output type="file" minConfidence="0.5">
-          <Param name="file" value="airport_names_dbpedia_airports_minconfidence.xml"/>
+          <Param name="file" value="airport_names_dbpedia_airports_minconfidence.rdf"/>
           <Param name="format" value="alignment"/>
         </Output>
         <Output type="file" maxConfidence="0.5">
-          <Param name="file" value="airport_names_dbpedia_airports_maxconfidence.xml"/>
+          <Param name="file" value="airport_names_dbpedia_airports_maxconfidence.rdf"/>
           <Param name="format" value="alignment"/>
         </Output>
       </Outputs>
