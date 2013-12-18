@@ -1,0 +1,18 @@
+{% from "_formhelper.html" import render_field %}
+{% extends "layout.html" %}
+{% block content %}
+<p>I am travelling to</p>
+<form method="post" action="{{ url_for('index') }}">
+  {{ render_field(form.country, placeholder='Country name') }}
+  {{ render_field(form.submit, value='search') }}
+  {% if form.errors %}
+    <ul class="errors">
+      {% for field_name, field_errors in form.errors|dictsort if field_errors %}
+        {% for error in field_errors %}
+          <li>{{ form[field_name].label }}: {{ error }}</li>
+        {% endfor %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+</form>
+{% endblock %}
