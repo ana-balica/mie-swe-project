@@ -1,0 +1,452 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'
+    xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+    xmlns:xsd='http://www.w3.org/2001/XMLSchema#'
+    xmlns:align='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'>
+<Alignment>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#China"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Chile"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#China"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Ghana"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Chile"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#China"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Ghana"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#China"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Niger"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Nigeria"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Nigeria"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Niger"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Nigeria"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Algeria"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Ghana"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Guyana"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Guyana"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Ghana"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Algeria"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Nigeria"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Burundi"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Brunei"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Malawi"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Mali"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Slovenia"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Slovakia"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Mali"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Malawi"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Mali"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Malta"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Malta"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Mali"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Romania"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Somalia"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Somalia"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Romania"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Namibia"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Zambia"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Namibia"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Gambia"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Zambia"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Namibia"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Liberia"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Nigeria"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Niger"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Niue"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Nigeria"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Liberia"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Panama"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Canada"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Canada"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Panama"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Tonga"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Togo"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Togo"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Tonga"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Austria"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Australia"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Serbia"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Syria"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Australia"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Austria"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Cuba"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Aruba"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Aruba"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Cuba"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Oman"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Iran"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Rwanda"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Uganda"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Palau"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Macau"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.self-defined.org/country#Uganda"></entity1>
+          <entity2 rdf:resource="http://www.self-defined.org/country#Rwanda"></entity2>
+        <relation>
+          =
+        </relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">
+          Some(0.0)
+        </measure>
+      </Cell>
+    </map>
+</Alignment>
+</rdf:RDF>
