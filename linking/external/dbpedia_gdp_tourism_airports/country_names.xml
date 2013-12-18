@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Silk>
+  <Prefixes>
+    <Prefix id="rdf" namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#" />
+    <Prefix id="rdfs" namespace="http://www.w3.org/2000/01/rdf-schema#" />
+    <Prefix id="owl" namespace="http://www.w3.org/2002/07/owl#" />
+    <Prefix id="dbpedia-owl" namespace="http://dbpedia.org/ontology/" />
+    <Prefix id="gn" namespace="http://www.geonames.org/ontology#" />
+    <Prefix id="lgdo" namespace="http://linkedgeodata.org/ontology/"/>
+  </Prefixes>
+
+  <DataSources>
+    <DataSource id="dbpedia" type="sparqlEndpoint">
+      <Param name="endpointURI" value="http://dbpedia.org/sparql" />
+      <Param name="retryCount" value="100" />
+      <Param name="retryPause" value="1000" />
+    </DataSource>
+
+    <DataSource id="gdp" type="file">
+      <Param name="file" value="gdp.ttl" />
+      <Param name="format" value="TTL" />
+    </DataSource>
+
+    <DataSource id="tourism" type="file">
+      <Param name="file" value="tourism.ttl" />
+      <Param name="format" value="TTL" />
+    </DataSource>
+
+    <DataSource id="airports" type="file">
+      <Param name="file" value="airports.ttl" />
+      <Param name="format" value="TTL" />
+    </DataSource>
+  </DataSources>
+
+  <Interlinks>
+    <Interlink id="country_names_gdp">
+      <LinkType>owl:sameAs</LinkType>
+
+      <SourceDataset dataSource="dbpedia" var="a">
+        <RestrictTo>
+          ?a rdf:type dbpedia-owl:Country
+        </RestrictTo>
+      </SourceDataset>
+
+      <TargetDataset dataSource="gdp" var="b">
+        <RestrictTo>
+          ?b rdf:type dbpedia-owl:country
+        </RestrictTo>
+      </TargetDataset>
+
+      <LinkageRule>
+          <Compare metric="levenshteinDistance" threshold="2.0">
+            <TransformInput function="stripUriPrefix">
+              <Input path="?a" />
+            </TransformInput>
+            <TransformInput function="stripUriPrefix">
+              <Input path="?b" />
+            </TransformInput>
+          </Compare>
+      </LinkageRule>
+
+      <Filter />
+
+      <Outputs>
+        <Output type="file" minConfidence="0.5">
+          <Param name="file" value="country_names_dbpedia_gdp_minconfidence.xml"/>
+          <Param name="format" value="alignment"/>
+        </Output>
+        <Output type="file" maxConfidence="0.5">
+          <Param name="file" value="country_names_dbpedia_gdp_maxconfidence.xml"/>
+          <Param name="format" value="alignment"/>
+        </Output>
+      </Outputs>
+    </Interlink>
+
+    <Interlink id="country_names_tourism">
+      <LinkType>owl:sameAs</LinkType>
+
+      <SourceDataset dataSource="dbpedia" var="a">
+        <RestrictTo>
+          ?a rdf:type dbpedia-owl:Country
+        </RestrictTo>
+      </SourceDataset>
+
+      <TargetDataset dataSource="tourism" var="b">
+        <RestrictTo>
+          ?b rdf:type dbpedia-owl:country
+        </RestrictTo>
+      </TargetDataset>
+
+      <LinkageRule>
+          <Compare metric="levenshteinDistance" threshold="2.0">
+            <TransformInput function="stripUriPrefix">
+              <Input path="?a" />
+            </TransformInput>
+            <TransformInput function="stripUriPrefix">
+              <Input path="?b" />
+            </TransformInput>
+          </Compare>
+      </LinkageRule>
+
+      <Filter />
+
+      <Outputs>
+        <Output type="file" minConfidence="0.5">
+          <Param name="file" value="country_names_dbpedia_tourism_minconfidence.xml"/>
+          <Param name="format" value="alignment"/>
+        </Output>
+        <Output type="file" maxConfidence="0.5">
+          <Param name="file" value="country_names_dbpedia_tourism_maxconfidence.xml"/>
+          <Param name="format" value="alignment"/>
+        </Output>
+      </Outputs>
+    </Interlink>
+
+    <Interlink id="country_names_airports">
+      <LinkType>owl:sameAs</LinkType>
+
+      <SourceDataset dataSource="dbpedia" var="a">
+        <RestrictTo>
+          ?a rdf:type dbpedia-owl:Country
+        </RestrictTo>
+      </SourceDataset>
+
+      <TargetDataset dataSource="airports" var="b">
+        <RestrictTo>
+          ?b rdf:type dbpedia-owl:country
+        </RestrictTo>
+      </TargetDataset>
+
+      <LinkageRule>
+          <Compare metric="levenshteinDistance" threshold="2.0">
+            <TransformInput function="stripUriPrefix">
+              <Input path="?a" />
+            </TransformInput>
+            <TransformInput function="stripUriPrefix">
+              <Input path="?b" />
+            </TransformInput>
+          </Compare>
+      </LinkageRule>
+
+      <Filter />
+
+      <Outputs>
+        <Output type="file" minConfidence="0.5">
+          <Param name="file" value="country_names_dbpedia_airports_minconfidence.xml"/>
+          <Param name="format" value="alignment"/>
+        </Output>
+        <Output type="file" maxConfidence="0.5">
+          <Param name="file" value="country_names_dbpedia_airports_maxconfidence.xml"/>
+          <Param name="format" value="alignment"/>
+        </Output>
+      </Outputs>
+    </Interlink>
+  </Interlinks>
+</Silk>
