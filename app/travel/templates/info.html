@@ -6,6 +6,7 @@
   #map-canvas { height: 300px; width: 500px; }
 </style>
 
+{% if airports != {} %}
 <script type="text/javascript"
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbF2-Rrsdr1CldjOEcf3M3qrxTyDCWtNI&sensor=false">
 </script>
@@ -34,6 +35,81 @@ function initialize() {
   }
 google.maps.event.addDomListener(window, 'load', initialize);
 </script>
+{% endif %}
+
+{% if tourists != {} %}
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+  google.load('visualization', '1.0', {'packages':['corechart']});
+  google.setOnLoadCallback(drawMouseoverVisualization);
+
+  var barsVisualization;
+
+  function drawMouseoverVisualization() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Year');
+    data.addColumn('number', 'Tourists');
+    data.addRows([
+      {% for t in tourists|dictsort %}
+      ['{{ t[0] }}', {{ t[1] }}],
+      {% endfor %}
+    ]);
+
+    barsVisualization = new google.visualization.ColumnChart(document.getElementById('tourism_chart'));
+    barsVisualization.draw(data, null);
+
+    // Add our over/out handlers.
+    google.visualization.events.addListener(barsVisualization, 'onmouseover', barMouseOver);
+    google.visualization.events.addListener(barsVisualization, 'onmouseout', barMouseOut);
+  }
+
+  function barMouseOver(e) {
+    barsVisualization.setSelection([e]);
+  }
+
+  function barMouseOut(e) {
+    barsVisualization.setSelection([{'row': null, 'column': null}]);
+  }
+
+</script>
+{% endif %}
+
+{% if gdp != {} %}
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+  google.load('visualization', '1.0', {'packages':['corechart']});
+  google.setOnLoadCallback(drawMouseoverVisualization);
+
+  var barsVisualization;
+
+  function drawMouseoverVisualization() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Year');
+    data.addColumn('number', 'GDP');
+    data.addRows([
+      {% for t in gdp|dictsort %}
+      ['{{ t[0] }}', {{ t[1] }}],
+      {% endfor %}
+    ]);
+
+    barsVisualization = new google.visualization.ColumnChart(document.getElementById('gdp_chart'));
+    barsVisualization.draw(data, null);
+
+    // Add our over/out handlers.
+    google.visualization.events.addListener(barsVisualization, 'onmouseover', barMouseOver);
+    google.visualization.events.addListener(barsVisualization, 'onmouseout', barMouseOut);
+  }
+
+  function barMouseOver(e) {
+    barsVisualization.setSelection([e]);
+  }
+
+  function barMouseOut(e) {
+    barsVisualization.setSelection([{'row': null, 'column': null}]);
+  }
+
+</script>
+{% endif %}
 {% endblock %}
 
 {% block content %}
@@ -50,10 +126,12 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 {% if tourists != {} %}
 <h3>Tourists visiting</h3>
+<div id="tourism_chart"></div>
 {% endif %}
 
 {% if gdp != {} %}
 <h3>GDP indicator</h3>
+<div id="gdp_chart"></div>
 {% endif %}
 
 {% endblock %}
