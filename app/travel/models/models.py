@@ -106,9 +106,7 @@ SELECT DISTINCT ?year ?value
     return results
 
 
-
 if __name__ == '__main__':
     get_airports("Moldova")
     get_tourists("Moldova")
     get_gdp("Moldova")
-
