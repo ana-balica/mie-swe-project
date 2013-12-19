@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% block header %}
+<style type="text/css">
+  html { height: 100% }
+  body { height: 100%; margin: 0; padding: 0 }
+  #map-canvas { height: 300px; width: 500px; }
+</style>
+
+<script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbF2-Rrsdr1CldjOEcf3M3qrxTyDCWtNI&sensor=false">
+</script>
+<script type="text/javascript">
+function initialize() {
+  
+  var mapOptions = {
+    zoom: 6
+  };
+  var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+  var country = "{{ country_name }}";
+  var geocoder = new google.maps.Geocoder();
+
+  geocoder.geocode( {'address' : country}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+        map.setCenter(results[0].geometry.location);
+    }
+  });
+  {% for airport, geo in airports.iteritems() %}
+  var {{ airport }} = new google.maps.Marker({
+    position: new google.maps.LatLng({{ geo["lat"] }}, {{ geo["long"] }}),
+    map: map,
+    title:"{{ airport }}"
+  });
+  {% endfor %}
+  }
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+{% endblock %}
+
+{% block content %}
+<h1>{{ country_name }}</h1>
+{% if airports != {} %}
+<h3>Available airports:</h3>
+<ul>
+{% for airport, geo in airports.iteritems() %}
+<li>{{ airport }}</li>
+{% endfor %}
+</ul>
+<div id="map-canvas"></div>
+{% endif %}
+
+{% if tourists != {} %}
+<h3>Tourists visiting</h3>
+{% endif %}
+
+{% if gdp != {} %}
+<h3>GDP indicator</h3>
+{% endif %}
+
+{% endblock %}
