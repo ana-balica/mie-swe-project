@@ -1,13 +1,11 @@
 import re
+import json
 
 from flask import render_template, request, flash, redirect, url_for, jsonify
 
 from travel.models.models import *
-
 from travel import app
 from forms import CountryForm
-
-API_KEY = "AIzaSyBbF2-Rrsdr1CldjOEcf3M3qrxTyDCWtNI"
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -16,19 +14,21 @@ def index():
     if request.method == 'POST' and form.validate():
         country = form.country.data
         form = CountryForm()
-        info = get_country_info(country)
-        if not info:
-            return render_template('no_info.html', country_name=country)
-        else:
-            airports, tourists, gdp = info
-            print airports
-            return render_template('info.html', country_name=country, airports=airports,
-                tourists=tourists, gdp=gdp)
+        return redirect(url_for('info', country_name=country))
+        
     return render_template('index.html', form=form)
 
-@app.route('/no_info')
-def no_info():
-    return render
+
+@app.route('/<country_name>')
+def info(country_name):
+    info = get_country_info(country_name)
+    if not info:
+            return render_template('no_info.html', country_name=country_name)
+    else:
+        airports, tourists, gdp = info
+        return render_template('info.html', country_name=country_name, airports=airports,
+            tourists=tourists, gdp=gdp)
+
 
 def get_country_info(country_name):
     country_name = re.sub('[\s,\.\(\)\']', '_', country_name)
