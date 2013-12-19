@@ -77,7 +77,7 @@ SELECT DISTINCT ?year ?value
     elements = extract_elements(result)
     results = {}
     for i in range(len(elements))[::2]:
-        results[elements[i].text] = elements[i+1].text
+        results[int(elements[i].text)] = int(elements[i+1].text)
     return results
 
 def get_gdp(country_name):
@@ -102,7 +102,7 @@ SELECT DISTINCT ?year ?value
     elements = extract_elements(result)
     results = {}
     for i in range(len(elements))[::2]:
-        results[elements[i].text] = elements[i+1].text
+        results[int(elements[i].text)] = float(elements[i+1].text)
     return results
 
 
