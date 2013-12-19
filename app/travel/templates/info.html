@@ -1,8 +1,10 @@
 {% extends "layout.html" %}
 {% block header %}
 <style type="text/css">
-  html { height: 100% }
-  body { height: 100%; margin: 0; padding: 0 }
+  h1, h3 {text-align: center;}
+  h1 {font-family: 'Bowlby One SC', Arial; font-size: 40px;}
+  h3 { font-weight: 500; font-size: 27px;}
+  ul {list-style-type: none; text-align: center; padding: 0; }
   #map-canvas { height: 300px; width: 500px; }
 </style>
 
@@ -115,7 +117,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 {% block content %}
 <h1>{{ country_name }}</h1>
 {% if airports != {} %}
-<h3>Available airports:</h3>
+<h3>Available airports</h3>
 <ul>
 {% for airport, geo in airports.iteritems() %}
 <li>{{ airport }}</li>

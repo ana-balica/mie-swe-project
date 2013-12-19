@@ -1,7 +1,16 @@
 {% from "_formhelper.html" import render_field %}
 {% extends "layout.html" %}
+{% block header %}
+<style type="text/css">
+  #country {padding: 10px 10px; width: 475px; font-size: 20px; border: 1px solid #a2a2a2; margin-bottom: 10px;}
+  #submit {width: 100px; height: 33px; font-variant: small-caps; font-size: 17px; background-color: #4D4D4D;
+            border: none; color: white; margin-left: 192px;}
+</style>
+{% endblock %}
+
+
 {% block content %}
-<p>I am travelling to</p>
+<p style="font-family: 'Bowlby One SC', Arial; font-size: 48px; margin-bottom: 10px;">i am travelling to</p>
 <form method="post" action="{{ url_for('index') }}">
   {{ render_field(form.country, placeholder='Country name') }}
   {{ render_field(form.submit, value='search') }}
